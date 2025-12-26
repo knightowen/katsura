@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas K - Final Fixed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    
+    <style>
+        body { margin: 0; overflow: hidden; background: #020024; font-family: 'Mouse Memoirs', sans-serif; user-select: none; }
+        canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+        
+        /* UI Layer - Normal State */
+        #ui-layer {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 10;
+            display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+            padding-top: 20px; 
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
+        }
+
+        h1 { 
+            font-size: 4.5rem; color: #fff; margin: 0; 
+            text-shadow: 0 0 10px #ffd700, 0 0 20px #ff0055;
+            opacity: 0.95; letter-spacing: 2px;
+            transition: all 0.6s;
+        }
+
+        .k-hint { 
+            font-size: 0.3em; vertical-align: top; color: #ffd700; 
+            margin-left: 5px; opacity: 0.8; text-shadow: 0 0 5px #fff;
+        }
+
+        p { 
+            color: #fff; font-size: 1.8rem; opacity: 0.9; margin-top: 5px; 
+            text-shadow: 0 2px 4px #000; transition: opacity 0.3s; 
+        }
+
+        /* --- FINALE MODE (Active via JS) --- */
+        body.finale-mode #ui-layer {
+            justify-content: center; /* Force Center Vertical */
+            padding-top: 0;
+            background: rgba(0,0,0,0.2); /* Slight dim */
+        }
+
+        body.finale-mode h1 {
+            transform: scale(2.5); /* Massive Scale */
+            text-shadow: 0 0 20px #ffd700, 0 0 40px #ff00de, 0 0 80px #fff;
+            animation: shake 0.5s infinite;
+        }
+
+        body.finale-mode p {
+            opacity: 0; /* Hide subtitle to focus on K */
+        }
+
+        @keyframes shake {
+            0% { transform: scale(2.5) rotate(0deg); }
+            25% { transform: scale(2.6) rotate(-2deg); }
+            50% { transform: scale(2.5) rotate(0deg); }
+            75% { transform: scale(2.6) rotate(2deg); }
+            100% { transform: scale(2.5) rotate(0deg); }
+        }
+
+        /* Start Screen */
+        #overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle, #1a1a2e 0%, #000000 100%);
+            display: flex; justify-content: center; align-items: center;
+            flex-direction: column; z-index: 20; transition: opacity 0.5s;
+            pointer-events: auto;
+        }
+        
+        .btn {
+            border: 2px solid #ffd700; color: #ffd700; background: rgba(0,0,0,0.5);
+            padding: 15px 40px; border-radius: 50px; font-size: 2.5rem;
+            font-family: 'Mouse Memoirs', sans-serif; cursor: pointer;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); animation: pulse 2s infinite;
+        }
+
+        .upload-btn-mini {
+            position: absolute; top: 20px; right: 20px; pointer-events: auto;
+            background: rgba(200, 0, 0, 0.6); border: 2px solid #ffd700; 
+            color: #ffd700; padding: 8px 15px; border-radius: 25px; 
+            font-family: 'Mouse Memoirs', sans-serif; font-size: 1.2rem; cursor: pointer; z-index: 50;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); transition: transform 0.1s;
+        }
+        .upload-btn-mini:active { transform: scale(0.95); }
+        .upload-btn-mini input { display: none; }
+
+        #cam-container {
+            position: absolute; bottom: 20px; right: 20px; width: 100px; height: 75px;
+            z-index: 5; border-radius: 8px; border: 2px solid #ffd700; 
+            overflow: hidden; opacity: 0.8; background: #000;
+        }
+        #cam-preview { width: 100%; height: 100%; object-fit: cover; transform: scaleX(-1); }
+        
+        #status-text { margin-top: 20px; color: #aaa; font-size: 1.2rem; }
+        
+        @keyframes pulse { 0% {transform: scale(1);} 50% {transform: scale(1.05);} 100% {transform: scale(1);} }
+    </style>
+</head>
+<body>
+
+    <div id="ui-layer">
+        <h1>Merry Christmas<span class="k-hint">K</span></h1>
+        <p>Try with friends! 🧑‍🤝‍🧑✨</p>
+    </div>
+
+    <div id="overlay">
+        <h1 style="font-size: 5rem; color:#ffd700; text-align:center;">Enter Magic Christmas</h1>
+        <p style="margin-bottom: 40px;">Touch the orbs with your head!</p>
+        <button id="main-btn" class="btn">Start Magic</button>
+        <div id="status-text"></div>
+    </div>
+
+    <label class="upload-btn-mini">
+        Hop on the Sleigh! 🎅📸
+        <input type="file" id="photo-upload" accept="image/png, image/jpeg" />
+    </label>
+
+    <div id="cam-container"><video id="cam-preview" playsinline></video></div>
+    <canvas id="canvas"></canvas>
+    <audio id="bgm" src="santa.mp3" loop></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/face_detection.js"></script>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const overlay = document.getElementById('overlay');
+        const mainBtn = document.getElementById('main-btn');
+        const statusText = document.getElementById('status-text');
+        const videoElem = document.getElementById('cam-preview');
+        let width, height;
+
+        // --- STATE ---
+        let isRunning = false;
+        let sleighPos = { x: 0, y: 0 };
+        let targetPos = { x: 0, y: 0 };
+        let time = 0;
+        let userPhotoImg = new Image();
+        let userPhotoLoaded = false;
+        let isFinaleActive = false;
+
+        // --- PALETTE ---
+        const C = {
+            SKY_TOP: '#020024', SKY_BOT: '#100b2e',
+            HOUSE: ['#4a2c2c', '#2c4a2c', '#2c2c4a', '#5c4e4e'],
+            ROOF: ['#111', '#222', '#333'],
+            WINDOW_ON: '#ffdb58', WINDOW_OFF: '#1a1a2e',
+            ORBS: ['#ff0055', '#00ddff', '#ffe600', '#cc00ff', '#ff3300'],
+            TREE: '#0f3826', TREE_LIGHTS: ['#ff0000', '#ffff00', '#00ff00'],
+            GIFT_COLORS: ['#ff4757', '#2ed573', '#1e90ff', '#ffa502', '#ffffff']
+        };
+        const FIREWORK_SHAPES = ['burst', 'willow', 'ring', 'heart', 'starburst', 'spiral', 'saturn', 'glitter', 'cross', 'doubleRing'];
+        const COLOR_PALETTES = [['#ff0044'], ['#ffd700'], ['#ffffff', '#88ccff'], ['#ff0055', '#00ffaa'], ['#ff00ff', '#00ffff', '#ffff00'], ['#ff9900', '#ff0000'], ['#ff0055', '#ffd700', '#ffffff']];
+
+        // --- ENTITIES ---
+        let stars = [], shootingStars = [], snow = [], houses = [], trees = [], cars = [];
+        let orbs = [], particles = [], fallingGifts = [];
+
+        // --- AUDIO ---
+        let audioCtx;
+        function playBang() {
+            if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            const t = audioCtx.currentTime;
+            const osc = audioCtx.createOscillator(); const gain = audioCtx.createGain();
+            osc.frequency.setValueAtTime(180, t); osc.frequency.exponentialRampToValueAtTime(40, t + 0.4);
+            gain.gain.setValueAtTime(0.3, t); gain.gain.exponentialRampToValueAtTime(0.01, t + 0.3);
+            osc.connect(gain); gain.connect(audioCtx.destination); osc.start(); osc.stop(t + 0.3);
+            const osc2 = audioCtx.createOscillator(); const gain2 = audioCtx.createGain();
+            osc2.type = 'sine'; const tones = [523.25, 659.25, 783.99, 1046.50]; const pitch = tones[Math.floor(Math.random()*tones.length)];
+            osc2.frequency.setValueAtTime(pitch, t); gain2.gain.setValueAtTime(0.15, t); gain2.gain.exponentialRampToValueAtTime(0.001, t + 1.2);
+            osc2.connect(gain2); gain2.connect(audioCtx.destination); osc2.start(); osc2.stop(t + 1.2);
+        }
+
+        // --- INIT ---
+        function init() {
+            resize(); window.addEventListener('resize', () => { resize(); initWorld(); });
+            initWorld();
+            sleighPos = { x: width*0.2, y: height*0.5 }; targetPos = { x: width*0.2, y: height*0.5 };
+            window.addEventListener('mousemove', e => { if(isRunning && !camera.video.srcObject) { targetPos.x = e.clientX; targetPos.y = Math.min(e.clientY, height * 0.7); } });
+            document.getElementById('photo-upload').addEventListener('change', (e) => { if (e.target.files[0]) { const r = new FileReader(); r.onload = (ev) => { userPhotoImg.onload = () => { userPhotoLoaded = true; }; userPhotoImg.src = ev.target.result; }; r.readAsDataURL(e.target.files[0]); } });
+            mainBtn.addEventListener('click', () => {
+                if (!isRunning) {
+                    statusText.innerText = "Waking up Santa..."; document.getElementById('bgm').play().catch(()=>{});
+                    if (!camera.video.srcObject) { camera.start().then(() => { startGame(); }).catch(() => { statusText.innerText = "Camera issue, using mouse."; setTimeout(startGame, 1000); }); } else { startGame(); }
+                }
+            });
+            requestAnimationFrame(loop);
+        }
+        function startGame() { isRunning = true; statusText.innerText = ""; overlay.style.opacity = 0; setTimeout(() => overlay.style.display = 'none', 800); }
+        function resize() { width = canvas.width = window.innerWidth; height = canvas.height = window.innerHeight; }
+
+        function initWorld() {
+            stars = Array.from({length: 120}, () => ({x:Math.random()*width, y:Math.random()*height*0.7, size:Math.random()*2, blink: Math.random()}));
+            snow = Array.from({length: 150}, () => ({x:Math.random()*width, y:Math.random()*height, r:Math.random()*2, s:Math.random()+0.5}));
+            houses = []; trees = []; cars = [];
+            for(let i=0; i<width*2; i+=100) { if(Math.random()>0.3) houses.push(generateHouse(i)); else trees.push(generateTree(i)); }
+            for(let i=0; i<width*2; i+=250) cars.push({x:i, color: ['#ff0000', '#ffff00', '#e4e4e4', '#ff5500'][Math.floor(Math.random()*4)], speed: 2+Math.random()});
+        }
+        function generateHouse(x) { return { x, w: 60+Math.random()*40, h: 80+Math.random()*120, color: C.HOUSE[Math.floor(Math.random()*C.HOUSE.length)], roof: C.ROOF[Math.floor(Math.random()*C.ROOF.length)], windows: Array.from({length:6}, ()=>Math.random()>0.3) }; }
+        function generateTree(x) { return { x, h: 60+Math.random()*60, lights: Array.from({length: 12}, () => ({x: Math.random()*20, y: Math.random(), color: C.TREE_LIGHTS[Math.floor(Math.random()*3)], blinkOffset: Math.random()*Math.PI })) }; }
+
+        function spawnOrb() { if (Math.random() < 0.05) { orbs.push({ x: width + 50, y: Math.random() * (height * 0.6) + 50, r: 10 + Math.random() * 10, color: C.ORBS[Math.floor(Math.random() * C.ORBS.length)], pulse: Math.random() }); } }
+        function spawnGift() { if (Math.random() > 0.85) { fallingGifts.push({ x: sleighPos.x, y: sleighPos.y + 20, size: 15 + Math.random()*10, color: C.GIFT_COLORS[Math.floor(Math.random()*C.GIFT_COLORS.length)], rotation: Math.random() * Math.PI, rotSpeed: (Math.random()-0.5) * 0.1, vy: 2 + Math.random()*3, vx: (Math.random()-0.5)*4 }); } }
+        function spawnShootingStar() { if (Math.random() < 0.02) { shootingStars.push({ x: Math.random() * width, y: Math.random() * (height * 0.3), vx: -15 - Math.random() * 10, vy: 2 + Math.random() * 5, len: 50 + Math.random() * 50, life: 1.0 }); } }
+
+        // --- TRIGGER FINALE UI & FIREWORKS ---
+        function triggerGrandFinale() {
+            if(isFinaleActive) return;
+            isFinaleActive = true;
+            document.body.classList.add('finale-mode'); // CSS handles the move & scale
+
+            for(let wave = 0; wave < 5; wave++) {
+                setTimeout(() => {
+                    const count = 3 + Math.floor(Math.random() * 3); 
+                    for(let k=0; k<count; k++) {
+                        explode(Math.random() * width, Math.random() * height * 0.5 + height*0.1, true);
+                    }
+                    playBang();
+                }, wave * 600);
+            }
+
+            setTimeout(() => {
+                document.body.classList.remove('finale-mode');
+                isFinaleActive = false;
+            }, 6000);
+        }
+
+        function explode(x, y, isFinale = false) {
+            if(!isFinale) playBang(); 
+
+            const shape = FIREWORK_SHAPES[Math.floor(Math.random() * FIREWORK_SHAPES.length)];
+            const palette = COLOR_PALETTES[Math.floor(Math.random() * COLOR_PALETTES.length)];
+            particles.push({ x, y, life: 1.0, color: '#fff', type: 'flash', decay: 0.1 });
+            
+            const particleCount = (shape === 'willow' || shape === 'heart') ? 180 : 250;
+            
+            for(let i=0; i<particleCount; i++) {
+                const angle = Math.random() * Math.PI * 2; 
+                let speed, gravity, friction, life, size, vx, vy;
+                let pColor = palette[Math.floor(Math.random() * palette.length)];
+                let flicker = false;
+
+                if (shape === 'willow') {
+                    speed = (Math.min(width, height) * 0.01) + Math.random() * (Math.min(width, height) * 0.015);
+                    gravity = 0.08; friction = 0.98; life = 1.5 + Math.random()*1.0; size = Math.random()*3+3; 
+                    vx = Math.cos(angle) * speed; vy = Math.sin(angle) * speed;
+                } else if (shape === 'ring' || shape === 'saturn' || shape === 'doubleRing') {
+                    speed = (Math.min(width, height) * 0.025);
+                    if (shape === 'saturn' && i % 2 === 0) speed *= 0.5;
+                    if (shape === 'doubleRing' && i % 2 === 0) speed *= 1.4; 
+                    speed += Math.random() * (Math.min(width, height) * 0.005);
+                    gravity = 0.02; friction = 0.92; life = 1.0 + Math.random()*0.5; size = Math.random()*4+4; 
+                    vx = Math.cos(angle) * speed; vy = Math.sin(angle) * speed;
+                } else if (shape === 'heart') {
+                    const t = angle;
+                    const _x = 16 * Math.pow(Math.sin(t), 3);
+                    const _y = -(13 * Math.cos(t) - 5 * Math.cos(2*t) - 2 * Math.cos(3*t) - Math.cos(4*t));
+                    speed = (Math.min(width, height) * 0.0018); 
+                    vx = _x * speed; vy = _y * speed;
+                    gravity = 0.03; friction = 0.96; life = 1.2 + Math.random()*0.6; size = Math.random()*4+4; pColor = '#ff0055'; 
+                } else if (shape === 'starburst') {
+                    speed = (Math.min(width, height) * 0.03) + Math.random() * (Math.min(width, height) * 0.02); 
+                    gravity = 0.01; friction = 0.99; life = 0.8 + Math.random()*0.4; size = Math.random()*5+5; 
+                    vx = Math.cos(angle) * speed; vy = Math.sin(angle) * speed;
+                } else if (shape === 'spiral') {
+                    const arm = i % 5; const radius = (i / particleCount) * (Math.min(width, height) * 0.05);
+                    const spiralAngle = angle + (radius * 0.1);
+                    vx = Math.cos(spiralAngle) * radius * 2; vy = Math.sin(spiralAngle) * radius * 2;
+                    gravity = 0.03; friction = 0.95; life = 1.2 + Math.random()*0.5; size = Math.random()*3+3; 
+                } else if (shape === 'glitter') {
+                    speed = (Math.min(width, height) * 0.02) * Math.random();
+                    gravity = 0.05; friction = 0.95; life = 1.5; size = Math.random()*3+2;
+                    vx = Math.cos(angle) * speed; vy = Math.sin(angle) * speed; flicker = true;
+                } else if (shape === 'cross') {
+                     const quarters = [0, Math.PI/2, Math.PI, 3*Math.PI/2];
+                     const baseAngle = quarters[Math.floor(Math.random()*4)];
+                     const finalAngle = baseAngle + (Math.random()-0.5) * 0.4;
+                     speed = (Math.min(width, height) * 0.02) + Math.random() * (Math.min(width, height) * 0.04);
+                     gravity = 0.05; friction = 0.96; life = 1.0 + Math.random()*0.5; size = Math.random()*4+4;
+                     vx = Math.cos(finalAngle) * speed; vy = Math.sin(finalAngle) * speed;
+                } else { // Burst
+                    speed = (Math.min(width, height) * 0.015) + Math.random() * (Math.min(width, height) * 0.04); 
+                    gravity = 0.05; friction = 0.96; life = 1.0 + Math.random()*0.5; size = Math.random()*4+4; 
+                    vx = Math.cos(angle) * speed; vy = Math.sin(angle) * speed;
+                }
+
+                if(isFinale) {
+                    vx *= 0.6; vy *= 0.6;
+                    gravity *= 0.1; friction = 0.99; life *= 3.0;
+                }
+
+                particles.push({
+                    x: x, y: y, prevX: x, prevY: y, vx: vx, vy: vy,
+                    life: life, color: pColor, size: size,
+                    decay: isFinale ? 0.002 : (0.005 + Math.random()*0.01),
+                    gravity: gravity, friction: friction,
+                    shape: shape, flicker: flicker
+                });
+            }
+        }
+
+        function loop(timestamp) {
+            requestAnimationFrame(loop);
+            time = timestamp * 0.001;
+
+            const grad = ctx.createLinearGradient(0, 0, 0, height); grad.addColorStop(0, C.SKY_TOP); grad.addColorStop(1, C.SKY_BOT); ctx.fillStyle = grad; ctx.fillRect(0, 0, width, height);
+
+            ctx.fillStyle = '#fff'; stars.forEach(s => { ctx.globalAlpha = 0.5 + Math.sin(time*2 + s.blink)*0.5; ctx.beginPath(); ctx.arc(s.x, s.y, s.size, 0, Math.PI*2); ctx.fill(); }); ctx.globalAlpha = 1;
+            
+            if(isRunning) spawnShootingStar();
+            ctx.strokeStyle = '#fff'; ctx.lineWidth = 2;
+            for(let i = shootingStars.length - 1; i >= 0; i--) {
+                let s = shootingStars[i]; s.x += s.vx; s.y += s.vy; s.life -= 0.02;
+                if(s.life <= 0) { shootingStars.splice(i, 1); continue; }
+                ctx.globalAlpha = s.life; ctx.beginPath(); ctx.moveTo(s.x, s.y); ctx.lineTo(s.x - s.vx*0.5, s.y - s.vy*0.5); ctx.stroke();
+            }
+            ctx.globalAlpha = 1;
+
+            ctx.fillStyle = '#fffcdd'; ctx.shadowBlur = 50; ctx.shadowColor='#fffcdd'; ctx.beginPath(); ctx.arc(width*0.15, height*0.15, 60, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur = 0;
+
+            const groundY = height * 0.85; const scroll = isRunning ? 4 : 1;
+            
+            [...houses, ...trees].forEach(o => {
+                o.x -= scroll; if(o.x < -100) o.x = width + Math.random()*100;
+                if(o.color) { 
+                    ctx.fillStyle = o.color; ctx.fillRect(o.x, groundY-o.h, o.w, o.h); ctx.fillStyle = o.roof; ctx.beginPath(); ctx.moveTo(o.x-5, groundY-o.h); ctx.lineTo(o.x+o.w/2, groundY-o.h-20); ctx.lineTo(o.x+o.w+5, groundY-o.h); ctx.fill();
+                    ctx.fillStyle = C.WINDOW_ON; if(o.windows[0]) ctx.fillRect(o.x+10, groundY-o.h+20, 15, 15); if(o.windows[1]) ctx.fillRect(o.x+35, groundY-o.h+20, 15, 15);
+                } else { 
+                    ctx.fillStyle = '#3f2e22'; ctx.fillRect(o.x+15, groundY-15, 10, 15); ctx.fillStyle = C.TREE; ctx.beginPath(); ctx.moveTo(o.x, groundY-15); ctx.lineTo(o.x+20, groundY-o.h); ctx.lineTo(o.x+40, groundY-15); ctx.fill();
+                    o.lights.forEach(l => { ctx.fillStyle = l.color; ctx.globalAlpha = 0.6 + Math.sin(time*5 + l.blinkOffset)*0.4; ctx.beginPath(); ctx.arc(o.x + 5 + l.x, groundY - 20 - l.y*(o.h-30), 2.5, 0, Math.PI*2); ctx.fill(); }); ctx.globalAlpha = 1;
+                }
+            });
+            
+            ctx.fillStyle = '#222'; ctx.fillRect(0, groundY, width, height-groundY); ctx.fillStyle = '#555'; for(let i=-50; i<width; i+=100) ctx.fillRect((i - (time*100*scroll/4))%width, groundY+25, 40, 5);
+            
+            cars.forEach(c => { 
+                c.x -= c.speed + (scroll*0.5); if(c.x < -50) c.x = width + Math.random()*500;
+                ctx.fillStyle = c.color; ctx.beginPath(); ctx.roundRect(c.x, groundY+15, 40, 12, 5); ctx.fill();
+                ctx.beginPath(); ctx.moveTo(c.x+5, groundY+15); ctx.quadraticCurveTo(c.x+20, groundY, c.x+35, groundY+15); ctx.fill();
+                ctx.fillStyle = '#111'; ctx.beginPath(); ctx.arc(c.x+10, groundY+25, 4, 0, Math.PI*2); ctx.fill(); ctx.beginPath(); ctx.arc(c.x+30, groundY+25, 4, 0, Math.PI*2); ctx.fill();
+                ctx.fillStyle = '#fff'; ctx.fillRect(c.x+38, groundY+18, 3, 3);
+            });
+
+            if(isRunning) {
+                sleighPos.x += (targetPos.x - sleighPos.x) * 0.12; sleighPos.y += (targetPos.y - sleighPos.y) * 0.12;
+                spawnOrb(); spawnGift();
+
+                if (Math.random() < 0.001) triggerGrandFinale();
+
+                fallingGifts.forEach((g, i) => {
+                    g.y += g.vy; g.x += g.vx; g.rotation += g.rotSpeed; g.vy+=0.1;
+                    ctx.save(); ctx.translate(g.x, g.y); ctx.rotate(g.rotation);
+                    ctx.fillStyle = g.color; ctx.fillRect(-g.size/2, -g.size/2, g.size, g.size);
+                    ctx.fillStyle = 'rgba(255,255,255,0.8)'; ctx.fillRect(-g.size/6, -g.size/2, g.size/3, g.size); ctx.fillRect(-g.size/2, -g.size/6, g.size, g.size/3);
+                    ctx.restore(); 
+                    if(g.y > groundY + 15) fallingGifts.splice(i, 1);
+                });
+
+                for (let i = orbs.length - 1; i >= 0; i--) {
+                    let o = orbs[i]; o.x -= 5; 
+                    ctx.save(); ctx.globalCompositeOperation = 'lighter';
+                    const pulse = 5 + Math.sin(time * 10 + o.pulse) * 3;
+                    const grad = ctx.createRadialGradient(o.x, o.y, 2, o.x, o.y, o.r + pulse);
+                    grad.addColorStop(0, '#fff'); grad.addColorStop(0.5, o.color); grad.addColorStop(1, 'rgba(0,0,0,0)');
+                    ctx.fillStyle = grad; ctx.beginPath(); ctx.arc(o.x, o.y, o.r + pulse, 0, Math.PI*2); ctx.fill(); ctx.restore();
+                    const dx = o.x - sleighPos.x; const dy = o.y - sleighPos.y;
+                    
+                    if (Math.sqrt(dx*dx + dy*dy) < 60) { 
+                        explode(o.x, o.y); 
+                        setTimeout(() => explode(o.x + (Math.random()-0.5)*40, o.y + (Math.random()-0.5)*40), 100);
+                        setTimeout(() => explode(o.x + (Math.random()-0.5)*40, o.y + (Math.random()-0.5)*40), 200);
+                        orbs.splice(i, 1); 
+                    } else if (o.x < -50) orbs.splice(i, 1);
+                }
+
+                ctx.save(); ctx.globalCompositeOperation = 'lighter';
+                for (let i = particles.length - 1; i >= 0; i--) {
+                    let p = particles[i]; p.life -= p.decay;
+                    if (p.life > 0) {
+                        ctx.globalAlpha = p.flicker ? (Math.random()>0.5 ? p.life : 0.2) : p.life;
+                        ctx.fillStyle = p.color;
+                        if (p.type === 'flash') {
+                             ctx.beginPath(); ctx.arc(p.x, p.y, 150 * (1.0-p.life), 0, Math.PI*2); ctx.fill();
+                        } else {
+                            p.prevX = p.x; p.prevY = p.y; p.x += p.vx; p.y += p.vy; p.vy += p.gravity; p.vx *= p.friction; p.vy *= p.friction;
+                            ctx.lineWidth = p.size; ctx.strokeStyle = p.color; ctx.beginPath(); ctx.moveTo(p.prevX, p.prevY); ctx.lineTo(p.x, p.y); ctx.stroke();
+                        }
+                    } else { particles.splice(i, 1); }
+                }
+                ctx.restore();
+            }
+
+            drawSleigh();
+            ctx.fillStyle = 'rgba(255,255,255,0.6)'; snow.forEach(p => { p.y += p.s; p.x -= 1; if(p.y > height) p.y = -10; if(p.x < 0) p.x = width; ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI*2); ctx.fill(); }); ctx.globalAlpha = 1;
+        }
+
+        function drawSleigh() {
+            ctx.save(); ctx.translate(sleighPos.x, sleighPos.y);
+            const tilt = (targetPos.y - sleighPos.y) * 0.02; ctx.rotate(Math.max(Math.min(tilt, 0.4), -0.4));
+            const s = Math.min(width/1000, 1) * 1.3; ctx.scale(s, s);
+            ctx.fillStyle = 'rgba(255, 215, 0, 0.5)'; if(isRunning) { for(let i=0; i<4; i++) ctx.fillRect(-80 - Math.random()*60, 0 + Math.random()*20, 4, 4); }
+            ctx.fillStyle = '#d42424'; ctx.beginPath(); ctx.moveTo(-60, 20); ctx.quadraticCurveTo(-70, 20, -80, -10); ctx.lineTo(40, -10); ctx.quadraticCurveTo(50, 20, -60, 20); ctx.fill();
+            ctx.strokeStyle = '#ffd700'; ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(-70, 25); ctx.lineTo(50, 25); ctx.quadraticCurveTo(70, 25, 80, 0); ctx.stroke();
+            if (userPhotoLoaded) { ctx.save(); ctx.beginPath(); ctx.arc(-30, -20, 20, 0, Math.PI*2); ctx.clip(); ctx.drawImage(userPhotoImg, -50, -40, 40, 40); ctx.restore(); }
+            ctx.fillStyle = '#ffccaa'; ctx.beginPath(); ctx.arc(10, -25, 12, 0, Math.PI*2); ctx.fill(); ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(10, -18, 14, 0, Math.PI*2); ctx.fill(); ctx.fillStyle = '#d42424'; ctx.beginPath(); ctx.moveTo(0, -30); ctx.lineTo(10, -55); ctx.lineTo(20, -30); ctx.fill();
+            ctx.translate(100, 10 + Math.sin(time*10)*8); ctx.fillStyle = '#8b4513'; ctx.fillRect(0, -10, 40, 20); ctx.fillStyle = '#ff0000'; ctx.beginPath(); ctx.arc(50, -15, 5, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=15; ctx.shadowColor='#ff0000'; ctx.fill(); ctx.shadowBlur=0;
+            ctx.restore();
+        }
+
+        function onResults(results) {
+            if (results.detections.length > 0) {
+                let sumX = 0, sumY = 0; results.detections.forEach(d => { const n = d.landmarks[2]; sumX += n.x; sumY += n.y; });
+                const avgX = sumX / results.detections.length; const avgY = sumY / results.detections.length;
+                const range = 0.15; let dx = (1 - avgX) - 0.5; let dy = avgY - 0.5;
+                let nx = 0.5 + (dx / (range * 2)); let ny = 0.5 + (dy / (range * 2));
+                targetPos.x = Math.max(0, Math.min(1, nx)) * width; targetPos.y = Math.max(0, Math.min(0.7, ny)) * height;
+            }
+        }
+        const faceDetection = new FaceDetection({locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/${file}`});
+        faceDetection.setOptions({ model: 'short', minDetectionConfidence: 0.5 });
+        faceDetection.onResults(onResults);
+        const camera = new Camera(videoElem, { onFrame: async () => { await faceDetection.send({image: videoElem}); }, width: 320, height: 240 });
+        init();
+    </script>
+    <script src="../footer.js"></script>
+</body>
+</html>

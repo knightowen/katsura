@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Warp V25 (Solid)</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: #000; font-family: 'Segoe UI', sans-serif; user-select: none; }
+        
+        #overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: #000; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; z-index: 100; transition: opacity 1.5s;
+        }
+        h1 { 
+            color: #fff; letter-spacing: 12px; font-weight: 300; font-size: 36px; margin-bottom: 30px;
+            text-transform: uppercase; border-bottom: 1px solid #444; padding-bottom: 15px;
+        }
+        
+        #start-btn {
+            padding: 15px 55px; background: transparent; border: 1px solid rgba(255,255,255,0.2);
+            color: #999; font-size: 11px; cursor: pointer; border-radius: 50px; 
+            transition: all 0.5s; letter-spacing: 4px; text-transform: uppercase;
+        }
+        #start-btn:hover { background: #fff; color: #000; box-shadow: 0 0 60px rgba(255,255,255,0.15); }
+        
+        #debug-box { position: absolute; top: 10px; left: 10px; color: #222; font-size: 10px; pointer-events: none; z-index: 50; }
+        #error-msg { color: #884444; margin-top: 20px; font-size: 11px; text-align: center; }
+
+        #controls {
+            position: absolute; top: 20px; right: 20px; z-index: 20; display: flex; gap: 10px; 
+            opacity: 0; pointer-events: none; transition: opacity 1s;
+        }
+        .btn {
+            background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); color: #666;
+            padding: 6px 15px; border-radius: 30px; cursor: pointer; backdrop-filter: blur(5px);
+            font-size: 10px; letter-spacing: 2px; transition: 0.3s;
+        }
+        .btn:hover { border-color: #fff; color: #fff; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+<div id="debug-box">V25 SOLID CORE</div>
+
+<div id="overlay">
+    <h1>HYPER CORE</h1>
+    <button id="start-btn">ENGAGE</button>
+    <div id="error-msg"></div>
+</div>
+
+<div id="controls">
+    <button class="btn" id="pause-btn">PAUSE</button>
+    <button class="btn" id="upload-btn">MUSIC</button>
+    <input type="file" id="file-inp" accept="audio/*" style="display:none">
+</div>
+
+<script>
+    const CONFIG = {
+        count: 150000, 
+        audio: './gooddays.mp3',
+        morphTime: 4.0,
+        holdTime: 8.0,
+        tunnelLen: 8000.0
+    };
+
+    const STATE_NAMES = [
+        "CYBER TUNNEL", "STAR GALAXY", "QUANTUM FIELD", "CRYSTAL CAVE", 
+        "NEBULA CLOUD", "HYPER JUMP", "DNA HELIX", "VOID EXPANSION",
+        "ATOMIC ORBIT", "MOBIUS STRIP", "MATRIX RAIN", "GEODESIC SPHERE"
+    ];
+
+    let scene, camera, renderer, particles, uniforms;
+    let sound, analyser;
+    let isPaused = false;
+    let clock = new THREE.Clock();
+    let currentState = 0, nextState = 1, stateStartTime = 0, totalDist = 0;
+    let currentColorSeed = Math.random()*10, nextColorSeed = Math.random()*10;
+
+    const startBtn = document.getElementById('start-btn');
+    const overlay = document.getElementById('overlay');
+    const controls = document.getElementById('controls');
+    const errorMsg = document.getElementById('error-msg');
+    const pauseBtn = document.getElementById('pause-btn');
+    const uploadBtn = document.getElementById('upload-btn');
+    const fileInp = document.getElementById('file-inp');
+
+    window.onerror = (msg) => { errorMsg.innerHTML = `⚠️ ${msg}`; };
+
+    startBtn.onclick = async () => {
+        startBtn.innerText = "LOADING...";
+        try { await initAudio(CONFIG.audio); } 
+        catch (e) { console.warn("Silent Mode"); errorMsg.innerText = "Audio not found - Visuals Only"; }
+
+        try {
+            initVisuals();
+            stateStartTime = clock.getElapsedTime();
+            animate();
+            overlay.style.opacity = 0;
+            setTimeout(() => overlay.style.display = 'none', 1500);
+            controls.style.opacity = 1;
+            controls.style.pointerEvents = 'auto';
+        } catch (e) { errorMsg.innerHTML = `Error: ${e.message}`; }
+    };
+
+    pauseBtn.onclick = () => {
+        if(isPaused) {
+            if(sound && sound.context) sound.context.resume();
+            if(sound && !sound.isPlaying) sound.play();
+            clock.start(); isPaused = false; pauseBtn.innerText = "PAUSE";
+            stateStartTime = clock.getElapsedTime() - (uniforms.uMix.value * CONFIG.morphTime);
+            animate();
+        } else {
+            if(sound) sound.pause();
+            clock.stop(); isPaused = true; pauseBtn.innerText = "RESUME";
+        }
+    };
+    uploadBtn.onclick = () => fileInp.click();
+    fileInp.onchange = (e) => {
+        const file = e.target.files[0];
+        if(!file) return;
+        if(sound && sound.isPlaying) sound.stop();
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+            if(sound) {
+                sound.context.decodeAudioData(ev.target.result, (buf) => {
+                    sound.setBuffer(buf);
+                    sound.setLoop(true);
+                    sound.setVolume(0.6);
+                    sound.play();
+                    if(isPaused) { isPaused = false; clock.start(); animate(); }
+                });
+            }
+        };
+        reader.readAsArrayBuffer(file);
+    };
+
+    function initAudio(url) {
+        return new Promise((resolve, reject) => {
+            const listener = new THREE.AudioListener();
+            sound = new THREE.Audio(listener);
+            const loader = new THREE.AudioLoader();
+            loader.load(url, (buffer) => {
+                sound.setBuffer(buffer);
+                sound.setLoop(true);
+                sound.setVolume(0.6);
+                sound.play();
+                analyser = new THREE.AudioAnalyser(sound, 512);
+                resolve();
+            }, undefined, (err) => reject(err));
+        });
+    }
+
+    function initVisuals() {
+        scene = new THREE.Scene();
+        scene.fog = new THREE.FogExp2(0x000000, 0.0003); 
+
+        camera = new THREE.PerspectiveCamera(90, window.innerWidth/window.innerHeight, 0.1, 10000);
+        camera.position.set(0, 0, 0); 
+        camera.lookAt(0, 0, -1);
+
+        renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: "high-performance" });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
+        document.body.appendChild(renderer.domElement);
+
+        const geo = new THREE.BufferGeometry();
+        const count = CONFIG.count;
+        const pos = new Float32Array(count * 3);
+        const rands = new Float32Array(count * 3);
+        const shapes = new Float32Array(count);
+
+        for(let i=0; i<count; i++) {
+            pos[i*3] = Math.random(); 
+            pos[i*3+1] = Math.random();
+            pos[i*3+2] = Math.random() * CONFIG.tunnelLen; 
+            
+            rands[i*3] = Math.random(); 
+            rands[i*3+1] = Math.random(); 
+            rands[i*3+2] = Math.random(); 
+
+            // 0=Nebula(2.5%), 2=Ray(2.5%), 1=Dust(95%)
+            const r = Math.random();
+            if(r < 0.025) shapes[i] = 0.0;
+            else if(r < 0.05) shapes[i] = 2.0; 
+            else shapes[i] = 1.0;
+        }
+
+        geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+        geo.setAttribute('aRand', new THREE.BufferAttribute(rands, 3));
+        geo.setAttribute('aShape', new THREE.BufferAttribute(shapes, 1));
+
+        uniforms = {
+            uTime: { value: 0 },
+            uDist: { value: 0 },
+            uBass: { value: 0 },
+            uMix: { value: 0.0 },
+            uStateA: { value: 0.0 },
+            uStateB: { value: 1.0 },
+            uColorSeedA: { value: 0.0 },
+            uColorSeedB: { value: 1.0 },
+            uLen: { value: CONFIG.tunnelLen }
+        };
+
+        const material = new THREE.ShaderMaterial({
+            uniforms: uniforms,
+            vertexShader: `
+                uniform float uTime;
+                uniform float uDist;
+                uniform float uBass;
+                uniform float uMix;
+                uniform float uStateA;
+                uniform float uStateB;
+                uniform float uLen;
+
+                attribute vec3 aRand;
+                attribute float aShape;
+
+                varying float vAlpha;
+                varying float vRandId;
+                varying float vShapeID;
+                varying float vAngle;
+
+                mat2 rot(float a) { return mat2(cos(a), -sin(a), sin(a), cos(a)); }
+
+                vec3 getPos(float state, vec3 seed, float t) {
+                    vec3 p = vec3(0.0);
+                    float s = floor(state + 0.1);
+                    
+                    // --- V25 核心：填充中心逻辑 ---
+                    if (s < 0.5) { // TUNNEL
+                        float a = seed.x * 6.28; 
+                        // V25修改: 半径从 20 开始（填充中心），而不是 300
+                        float r = 20.0 + pow(seed.y, 1.5) * 800.0; 
+                        p.x = cos(a)*r; p.y = sin(a)*r; p.xy *= rot(t*0.1 + seed.z*0.001);
+                    } 
+                    else if (s < 1.5) { // GALAXY
+                        float r = seed.x * 900.0; // 从0开始，中心有粒子
+                        float a = seed.y*6.28 + r*0.003 - t*0.5;
+                        p.x = cos(a)*r; p.y = sin(a)*r; p.y *= 0.2; p.xy *= rot(0.3);
+                    } 
+                    else if (s < 2.5) { // FIELD
+                        p.x = (seed.x-0.5)*1600.0; p.y = (seed.y-0.5)*1600.0;
+                    } 
+                    else if (s < 3.5) { // CAVE
+                        float w = 100.0; // V25修改: 缩窄通道，填充中心
+                        float side=floor(seed.x*4.0);
+                        float jitter = (seed.z - 0.5) * 200.0; // 内部随机填充
+                        if(side<1.0){p.x=w+jitter;p.y=(seed.y-0.5)*w*8.0;} 
+                        else if(side<2.0){p.x=-w+jitter;p.y=(seed.y-0.5)*w*8.0;}
+                        else if(side<3.0){p.y=w+jitter;p.x=(seed.y-0.5)*w*8.0;} 
+                        else{p.y=-w+jitter;p.x=(seed.y-0.5)*w*8.0;}
+                        p.xy*=rot(seed.z*0.0005);
+                    } 
+                    else if (s < 4.5) { // CLOUD
+                        p.x=(seed.x-0.5)*1400.0; p.y=(seed.y-0.5)*1400.0; p.x+=sin(seed.z*0.1+t)*200.0;
+                    } 
+                    else if (s < 5.5) { // HYPER
+                        float a=seed.x*6.28; 
+                        float r=10.0+seed.y*150.0; // V25: 极窄核心
+                        p.x=cos(a)*r; p.y=sin(a)*r;
+                    } 
+                    else if (s < 6.5) { // DNA
+                        float a=t*0.5+seed.z*0.003; float r=250.0; p.x=cos(a)*r; p.y=sin(a)*r;
+                        if(seed.y>0.5){p.x=-p.x;p.y=-p.y;} 
+                        p.x+=(seed.x-0.5)*400.0; // V25: 增加弥散度，填充空隙
+                    } 
+                    else if (s < 7.5) { // VOID
+                        float a=seed.x*6.28; float r=50.0+pow(seed.y,2.0)*1200.0; p.x=cos(a)*r; p.y=sin(a)*r;
+                    } 
+                    else if (s < 8.5) { // ORBIT
+                        float ax=floor(seed.x*3.0); float a=seed.y*6.28+t; 
+                        float r=300.0+fract(seed.z*0.1)*200.0;
+                        
+                        // V25 核心修复: 添加中心核
+                        if (seed.z < 0.2) { // 20% 粒子构成核心
+                            r = seed.y * 100.0; // 实心球核
+                        }
+
+                        if(ax<1.0){p.x=cos(a)*r;p.y=sin(a)*r;p.xy*=rot(0.5);}
+                        else if(ax<2.0){p.x=cos(a)*r;p.y=sin(a)*r;p.xy*=rot(-0.5);}
+                        else{p.x=cos(a)*r;p.y=sin(a)*r;p.xy*=rot(1.57);}
+                    } 
+                    else if (s < 9.5) { // MOBIUS
+                        float w=(seed.x-0.5)*600.0; float tw=seed.z*0.001; p.x=cos(tw)*w; p.y=sin(tw)*w; p.xy+=(seed.y-0.5)*100.0;
+                    } 
+                    else if (s < 10.5) { // RAIN
+                        float c=floor(seed.x*20.0); p.x=(c-10.0)*100.0; p.y=(seed.y-0.5)*1000.0;
+                    } 
+                    else { // SPHERE
+                        float th=seed.x*6.28; float ph=acos(2.0*seed.y-1.0); float r=400.0+sin(t+seed.z)*50.0;
+                        
+                        // V25: 允许一部分粒子在球体内部
+                        if (seed.z < 0.3) r *= seed.x; 
+
+                        p.x=r*sin(ph)*cos(th); p.y=r*sin(ph)*sin(th);
+                    }
+                    return p;
+                }
+
+                void main() {
+                    vRandId = aRand.x;
+                    vShapeID = aShape;
+
+                    float flowZ = mod(position.z - uDist, uLen);
+                    float finalZ = -flowZ; 
+
+                    vec3 pA = getPos(uStateA, position, uTime);
+                    vec3 pB = getPos(uStateB, position, uTime);
+                    vec3 finalPos = mix(pA, pB, smoothstep(0.0, 1.0, uMix));
+                    
+                    float transitionNoise = sin(uMix * 3.14159);
+                    finalPos.xy += (aRand.xy - 0.5) * 300.0 * transitionNoise;
+
+                    finalPos.z = finalZ;
+                    float rollSpeed = uTime * 0.05;
+                    finalPos.xy *= rot(rollSpeed);
+
+                    float kick = uBass * 150.0 * aRand.z;
+                    finalPos.xy += normalize(finalPos.xy + vec2(0.001)) * kick;
+
+                    vAngle = atan(finalPos.y, finalPos.x);
+
+                    vec4 mvPos = modelViewMatrix * vec4(finalPos, 1.0);
+                    gl_Position = projectionMatrix * mvPos;
+
+                    float dist = max(-mvPos.z, 10.0);
+                    float size = (40.0 + uBass * 50.0) * (500.0 / dist);
+                    float stretch = 1.0 + uBass * 3.0;
+
+                    if (aShape > 1.5) size *= 4.0 * stretch; 
+                    else if (aShape > 0.5) size *= 0.5; // Dust
+                    else size *= 1.2; // Nebula
+
+                    if(uMix > 0.5 && uStateB > 4.5 && uStateB < 5.5) size *= 3.0; 
+                    
+                    // V24/V25: Selective Depth Filter
+                    float depthFactor = clamp((-finalZ) / uLen, 0.0, 1.0);
+                    
+                    if (aShape < 0.5 || aShape > 1.5) {
+                        float cleanCenter = 1.0 - smoothstep(0.5, 0.8, depthFactor);
+                        size *= cleanCenter;
+                    }
+
+                    gl_PointSize = clamp(size, 0.0, 600.0);
+
+                    float fadeOut = 1.0 - smoothstep(0.5, 0.95, depthFactor); 
+                    float fadeIn = smoothstep(0.0, 0.05, depthFactor);
+                    vAlpha = fadeIn * fadeOut;
+                }
+            `,
+            fragmentShader: `
+                uniform float uTime;
+                uniform float uColorSeedA;
+                uniform float uColorSeedB;
+                uniform float uMix;
+                
+                varying float vAlpha;
+                varying float vRandId;
+                varying float vShapeID;
+                varying float vAngle;
+
+                vec3 palette( float t, vec3 offset ) {
+                    vec3 a = vec3(0.5, 0.5, 0.5);
+                    vec3 b = vec3(0.5, 0.5, 0.5);
+                    vec3 c = vec3(1.0, 1.0, 1.0);
+                    vec3 d = vec3(0.00, 0.33, 0.67) + offset;
+                    return a + b*cos( 6.28318*(c*t+d) );
+                }
+
+                mat2 rot(float a) { return mat2(cos(a), -sin(a), sin(a), cos(a)); }
+
+                float drawShape(vec2 uv, float id, float angle) {
+                    float d = 0.0;
+                    if (id < 0.5) { // NEBULA
+                        float r = length(uv);
+                        d = 1.0 - smoothstep(0.0, 0.5, r);
+                        d = pow(d, 2.0);
+                    } 
+                    else if (id < 1.5) { // DUST
+                        float r = length(uv);
+                        d = 1.0 - smoothstep(0.0, 0.2, r);
+                        d *= 0.7;
+                    } 
+                    else { // RAY
+                        vec2 rotatedUV = rot(-angle) * uv;
+                        float thickness = 0.008; 
+                        float feather = 0.005;
+                        float line = 1.0 - smoothstep(thickness - feather, thickness + feather, abs(rotatedUV.y));
+                        float ends = 1.0 - smoothstep(0.0, 0.12, abs(rotatedUV.x));
+                        d = line * ends * 3.0;
+                    }
+                    return d;
+                }
+
+                void main() {
+                    vec2 uv = gl_PointCoord - 0.5;
+                    float shape = drawShape(uv, vShapeID, vAngle);
+                    if (shape < 0.01) discard;
+
+                    vec3 colA = palette(uTime * 0.1 + vRandId * 3.0, vec3(uColorSeedA));
+                    vec3 colB = palette(uTime * 0.1 + vRandId * 3.0, vec3(uColorSeedB));
+                    vec3 finalColor = mix(colA, colB, uMix);
+                    finalColor *= 1.5;
+
+                    gl_FragColor = vec4(finalColor, vAlpha * shape);
+                }
+            `,
+            transparent: true,
+            depthWrite: false,
+            blending: THREE.AdditiveBlending
+        });
+
+        particles = new THREE.Points(geo, material);
+        scene.add(particles);
+    }
+
+    function animate() {
+        if(isPaused) return;
+        requestAnimationFrame(animate);
+
+        const time = clock.getElapsedTime();
+        const delta = clock.getDelta();
+        
+        let speed = 800.0; 
+
+        if(analyser && sound && sound.isPlaying) {
+            const data = analyser.getAverageFrequency();
+            const bass = data / 256.0;
+            uniforms.uBass.value += (bass - uniforms.uBass.value) * 0.2;
+            speed += bass * 4000.0;
+        }
+
+        totalDist += speed * delta;
+        uniforms.uDist.value = totalDist;
+        uniforms.uTime.value = time;
+
+        const cycle = CONFIG.morphTime + CONFIG.holdTime;
+        const localT = time - stateStartTime;
+
+        if (localT > cycle) {
+            stateStartTime = time;
+            currentState = nextState;
+            currentColorSeed = nextColorSeed;
+            nextColorSeed = Math.random() * 10.0;
+            do { nextState = Math.floor(Math.random() * STATE_NAMES.length); } 
+            while(nextState === currentState);
+
+            uniforms.uStateA.value = currentState;
+            uniforms.uStateB.value = nextState;
+            uniforms.uColorSeedA.value = currentColorSeed;
+            uniforms.uColorSeedB.value = nextColorSeed;
+        } 
+        else if (localT > CONFIG.holdTime) {
+            const t = (localT - CONFIG.holdTime) / CONFIG.morphTime;
+            uniforms.uMix.value = t;
+        } 
+        else {
+            uniforms.uMix.value = 0.0;
+        }
+
+        const skiFreq = 0.25; 
+        const skiAmpX = 180; 
+        const skiAmpY = 60;  
+        const bankStrength = 0.003;
+
+        const x = Math.sin(time * skiFreq) * skiAmpX;
+        const y = Math.cos(time * skiFreq * 1.3) * skiAmpY + Math.sin(time*0.5)*30;
+        const dx = Math.cos(time * skiFreq) * skiAmpX * skiFreq;
+        
+        camera.position.x = x;
+        camera.position.y = y;
+        camera.lookAt(0,0,-2000);
+        camera.rotation.z = -dx * bankStrength;
+
+        renderer.render(scene, camera);
+    }
+
+    window.onresize = () => {
+        camera.aspect = window.innerWidth/window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+</script>
+</body>
+</html>
