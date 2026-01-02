@@ -2,7 +2,7 @@
 
 /**
  * 趋势词发现器 v6 - 多源50条版 + API + 4小时更新
- * 数据源: X(getdaytrends) + TikTok(TokChart) + Reddit(PullPush) + HackerNews + Wikipedia
+ * 数据源: X(getdaytrends) + TikTok(TokChart) + Reddit(PullPush) + Wikipedia + HackerNews
  */
 
 const https = require('https');
@@ -314,7 +314,7 @@ function makeHTML(trends, ts) {
 <body>
   <div class="box">
     <h1>TRENDS ${ts.date} ${ts.slot}:00 UTC</h1>
-    <div class="stats">${trends.length} keywords | X + TikTok + Reddit + HN + Wiki</div>
+    <div class="stats">${trends.length} keywords | X + TikTok + Reddit + Wiki + HN</div>
     ${items}
     <div class="nav">
       <a href="./">Archive</a>
@@ -402,7 +402,7 @@ function makeJSON(trends, ts) {
     slot: ts.slot,
     generated: new Date().toISOString(),
     count: trends.length,
-    sources: ['X', 'TikTok', 'Reddit', 'HN', 'Wiki'],
+    sources: ['X', 'TikTok', 'Reddit', 'Wiki', 'HN'],
     trends: trends.map(t => ({
       keyword: t.keyword,
       traffic: t.traffic,
@@ -428,16 +428,16 @@ async function main() {
   console.log(`\n📅 ${ts.full}\n`);
 
   // 并行获取数据
-  const [xtrends, tiktok, reddit, hn, wiki] = await Promise.all([
+  const [xtrends, tiktok, reddit, wiki, hn] = await Promise.all([
     fetchXTrends(),
     fetchTikTok(),
     fetchReddit(),
-    fetchHN(),
     fetchWikipedia(),
+    fetchHN(),
   ]);
 
   // 合并去重
-  let all = dedupe([...xtrends, ...tiktok, ...reddit, ...hn, ...wiki]);
+  let all = dedupe([...xtrends, ...tiktok, ...reddit, ...wiki, ...hn]);
   console.log(`\n✅ Total: ${all.length} unique keywords\n`);
 
   // 确保目录存在
