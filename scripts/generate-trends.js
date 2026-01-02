@@ -75,14 +75,18 @@ async function fetchWikipedia() {
     }
 
     const skip = ['Main_Page', 'Special:', 'Wikipedia:', 'Portal:', 'File:'];
+    let count = 0;
     for (const a of json.items[0].articles) {
       if (skip.some(s => a.article.includes(s))) continue;
+      count++;
+      // 跳过前9个，取第10-20名
+      if (count < 10) continue;
       trends.push({
         keyword: a.article.replace(/_/g, ' '),
         traffic: `${Math.round(a.views / 1000)}K`,
         source: 'Wiki',
       });
-      if (trends.length >= 12) break;
+      if (trends.length >= 11) break;
     }
     console.log(`   ✅ Got ${trends.length} items`);
   } catch (e) {
@@ -132,21 +136,6 @@ async function fetchHN() {
   return trends;
 }
 
-// 手动维护的热词（保底）
-function getCurated() {
-  return [
-    { keyword: 'DeepSeek R1', traffic: '🔥', source: 'Curated' },
-    { keyword: 'Claude 3.5 Sonnet', traffic: '🔥', source: 'Curated' },
-    { keyword: 'GPT-5', traffic: '🔥', source: 'Curated' },
-    { keyword: 'Gemini 2.0', traffic: '🔥', source: 'Curated' },
-    { keyword: 'Sora AI video', traffic: '🔥', source: 'Curated' },
-    { keyword: 'Apple Vision Pro', traffic: '🔥', source: 'Curated' },
-    { keyword: 'Neuralink', traffic: '🔥', source: 'Curated' },
-    { keyword: 'Starship launch', traffic: '🔥', source: 'Curated' },
-    { keyword: 'Perplexity AI', traffic: '🔥', source: 'Curated' },
-    { keyword: 'Cursor IDE', traffic: '🔥', source: 'Curated' },
-  ];
-}
 
 // 去重
 function dedupe(arr) {
@@ -161,7 +150,7 @@ function dedupe(arr) {
 
 // 生成 HTML
 function makeHTML(trends, date) {
-  const colors = { Wiki: '#000', HN: '#f60', Curated: '#0a0' };
+  const colors = { Wiki: '#000', HN: '#f60' };
 
   const items = trends.slice(0, 30).map((t, i) => `
     <div class="item">
@@ -251,17 +240,10 @@ async function main() {
   // 获取数据
   const wiki = await fetchWikipedia();
   const hn = await fetchHN();
-  const curated = getCurated();
 
   // 合并
-  let all = dedupe([...wiki, ...hn, ...curated]);
+  let all = dedupe([...wiki, ...hn]);
   console.log(`\n✅ Total: ${all.length} keywords\n`);
-
-  // 确保有数据
-  if (all.length < 5) {
-    console.log('⚠️ Using curated only');
-    all = curated;
-  }
 
   // 确保目录存在
   if (!fs.existsSync(CONFIG.outputDir)) {
@@ -283,12 +265,5 @@ async function main() {
 
 main().catch(e => {
   console.error('Fatal:', e);
-  // 即使出错也生成一个基本页面
-  const today = getToday();
-  const curated = getCurated();
-  const dir = path.join(__dirname, '..', 'trends');
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, `${today}.html`), makeHTML(curated, today));
-  fs.writeFileSync(path.join(dir, 'index.html'), makeIndex([`${today}.html`]));
-  console.log('⚠️ Fallback page created');
+  process.exit(1);
 });
