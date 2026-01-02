@@ -137,6 +137,82 @@ async function fetchHN() {
 }
 
 
+// TokChart - TikTok 热门 Hashtags
+async function fetchTokChart() {
+  console.log('🎵 Fetching TokChart Hashtags...');
+  const trends = [];
+  try {
+    const res = await safeFetch('https://tokchart.com/dashboard/hashtags/most-views', 15000);
+    if (!res.ok) {
+      console.log('   ⚠️ TokChart failed');
+      return trends;
+    }
+
+    // 提取 hashtag - 匹配 #xxx 格式 (排除颜色代码)
+    const matches = res.data.matchAll(/#([a-zA-Z][a-zA-Z0-9_]{2,})/g);
+    const seen = new Set();
+    for (const m of matches) {
+      const tag = m[1].trim().toLowerCase();
+      if (!tag || seen.has(tag)) continue;
+      // 跳过通用词和颜色代码
+      if (['fyp', 'foryou', 'foryoupage', 'viral', 'trending', 'ffffff', 'fff'].includes(tag)) continue;
+      if (/^[a-f0-9]{3,6}$/i.test(tag)) continue; // 颜色代码
+      seen.add(tag);
+      trends.push({
+        keyword: '#' + tag,
+        traffic: '🔥',
+        source: 'TikTok',
+      });
+      if (trends.length >= 10) break;
+    }
+    console.log(`   ✅ Got ${trends.length} items`);
+  } catch (e) {
+    console.log(`   ❌ Error: ${e.message}`);
+  }
+  return trends;
+}
+
+// Reddit TikTok 相关
+async function fetchRedditTikTok() {
+  console.log('📱 Fetching Reddit TikTok...');
+  const trends = [];
+  try {
+    const res = await safeFetch('https://www.reddit.com/r/TikTokCringe/hot.json?limit=15', 10000);
+    if (!res.ok) {
+      console.log('   ⚠️ Reddit failed');
+      return trends;
+    }
+
+    const json = safeJSON(res.data);
+    if (!json?.data?.children) {
+      console.log('   ⚠️ Reddit no data');
+      return trends;
+    }
+
+    for (const post of json.data.children) {
+      const title = post.data?.title;
+      if (!title) continue;
+
+      // 提取关键词（去掉常见前缀）
+      let kw = title
+        .replace(/^\[.*?\]\s*/, '')
+        .replace(/^(POV|When|This|My|The)\s+/i, '');
+      if (kw.length > 50) kw = kw.slice(0, 47) + '...';
+
+      trends.push({
+        keyword: kw,
+        traffic: `${post.data.score} pts`,
+        source: 'TT/Reddit',
+      });
+      if (trends.length >= 8) break;
+    }
+    console.log(`   ✅ Got ${trends.length} items`);
+  } catch (e) {
+    console.log(`   ❌ Error: ${e.message}`);
+  }
+  return trends;
+}
+
 // 去重
 function dedupe(arr) {
   const seen = new Set();
@@ -150,7 +226,7 @@ function dedupe(arr) {
 
 // 生成 HTML
 function makeHTML(trends, date) {
-  const colors = { Wiki: '#000', HN: '#f60' };
+  const colors = { TikTok: '#fe2c55', 'TT/Reddit': '#ff4500', Wiki: '#000', HN: '#f60' };
 
   const items = trends.slice(0, 30).map((t, i) => `
     <div class="item">
@@ -238,11 +314,13 @@ async function main() {
   console.log(`\n📅 ${today}\n`);
 
   // 获取数据
+  const tiktok = await fetchTokChart();
+  const reddit = await fetchRedditTikTok();
   const wiki = await fetchWikipedia();
   const hn = await fetchHN();
 
-  // 合并
-  let all = dedupe([...wiki, ...hn]);
+  // 合并 (TikTok优先)
+  let all = dedupe([...tiktok, ...reddit, ...wiki, ...hn]);
   console.log(`\n✅ Total: ${all.length} keywords\n`);
 
   // 确保目录存在
