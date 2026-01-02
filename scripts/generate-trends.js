@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * 趋势词发现器 v5 - 多源50条版
- * 数据源: X(getdaytrends) + Reddit(PullPush) + HackerNews + Wikipedia
+ * 趋势词发现器 v6 - 多源50条版 + API + 4小时更新
+ * 数据源: X(getdaytrends) + TikTok(TokChart) + Reddit(PullPush) + HackerNews + Wikipedia
  */
 
 const https = require('https');
@@ -14,8 +14,14 @@ const CONFIG = {
   outputDir: path.join(__dirname, '..', 'trends'),
 };
 
-function getToday() {
-  return new Date().toISOString().split('T')[0];
+function getTimestamp() {
+  const now = new Date();
+  const date = now.toISOString().split('T')[0];
+  const hour = String(now.getUTCHours()).padStart(2, '0');
+  // 对齐到4小时: 00, 04, 08, 12, 16, 20
+  const slot = Math.floor(parseInt(hour) / 4) * 4;
+  const slotStr = String(slot).padStart(2, '0');
+  return { date, slot: slotStr, full: `${date}-${slotStr}` };
 }
 
 // 超级安全的 HTTP 请求
@@ -71,6 +77,42 @@ async function fetchXTrends() {
         keyword: topic,
         traffic: '🔥',
         source: 'X',
+      });
+      if (trends.length >= 50) break;
+    }
+    console.log(`   ✅ Got ${trends.length} items`);
+  } catch (e) {
+    console.log(`   ❌ Error: ${e.message}`);
+  }
+  return trends;
+}
+
+// ============ TikTok via TokChart ============
+async function fetchTikTok() {
+  console.log('🎵 Fetching TikTok (TokChart)...');
+  const trends = [];
+  try {
+    const res = await safeFetch('https://tokchart.com/dashboard/hashtags/most-views', 15000);
+    if (!res.ok) {
+      console.log('   ⚠️ TikTok failed');
+      return trends;
+    }
+
+    // 提取hashtag (不包含#前缀)
+    const matches = res.data.matchAll(/#([a-zA-Z][a-zA-Z0-9_]{2,})/g);
+    const seen = new Set();
+    const skip = ['fff', 'f4f', 'fyp', 'foryou', 'foryoupage', 'viral', 'trending', 'tiktok', 'xyzbca'];
+
+    for (const m of matches) {
+      let tag = m[1].toLowerCase();
+      if (seen.has(tag)) continue;
+      if (skip.includes(tag)) continue;
+      if (/^[0-9a-f]{3,6}$/.test(tag)) continue; // 跳过颜色代码
+      seen.add(tag);
+      trends.push({
+        keyword: tag, // 不带#前缀
+        traffic: '🎵',
+        source: 'TikTok',
       });
       if (trends.length >= 50) break;
     }
@@ -219,10 +261,11 @@ function dedupe(arr) {
   });
 }
 
-// ============ 生成 HTML ============
-function makeHTML(trends, date) {
+// ============ 生成 HTML (带时间戳) ============
+function makeHTML(trends, ts) {
   const colors = {
     X: '#000',
+    TikTok: '#ff0050',
     Reddit: '#ff4500',
     HN: '#f60',
     Wiki: '#1da1f2'
@@ -247,7 +290,7 @@ function makeHTML(trends, date) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Trends ${date}</title>
+  <title>Trends ${ts.full}</title>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:system-ui;background:#111;color:#eee;padding:20px}
@@ -270,8 +313,8 @@ function makeHTML(trends, date) {
 </head>
 <body>
   <div class="box">
-    <h1>TRENDS ${date}</h1>
-    <div class="stats">${trends.length} keywords | X + Reddit + HN + Wiki</div>
+    <h1>TRENDS ${ts.date} ${ts.slot}:00 UTC</h1>
+    <div class="stats">${trends.length} keywords | X + TikTok + Reddit + HN + Wiki</div>
     ${items}
     <div class="nav">
       <a href="./">Archive</a>
@@ -282,10 +325,40 @@ function makeHTML(trends, date) {
 </html>`;
 }
 
-// ============ 索引页 ============
+// ============ 索引页 (近2周展开，其他折叠) ============
 function makeIndex(files) {
-  const list = files.sort((a,b) => b.localeCompare(a)).slice(0, 60)
-    .map(f => `<a href="./${f}">${f.replace('.html','')}</a>`).join('');
+  // 按日期分组
+  const byDate = {};
+  for (const f of files) {
+    if (!f.endsWith('.html') || f === 'index.html') continue;
+    const date = f.slice(0, 10); // YYYY-MM-DD
+    if (!byDate[date]) byDate[date] = [];
+    byDate[date].push(f);
+  }
+
+  const dates = Object.keys(byDate).sort((a, b) => b.localeCompare(a));
+  const twoWeeksAgo = new Date();
+  twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
+  const cutoff = twoWeeksAgo.toISOString().split('T')[0];
+
+  let recentHTML = '';
+  let olderHTML = '';
+
+  for (const date of dates) {
+    const items = byDate[date].sort((a, b) => b.localeCompare(a))
+      .map(f => {
+        const slot = f.slice(11, 13) || '00';
+        return `<a href="./${f}">${slot}:00</a>`;
+      }).join('');
+
+    const dayBlock = `<div class="day"><span class="date">${date}</span><div class="slots">${items}</div></div>`;
+
+    if (date >= cutoff) {
+      recentHTML += dayBlock;
+    } else {
+      olderHTML += dayBlock;
+    }
+  }
 
   return `<!DOCTYPE html>
 <html>
@@ -295,52 +368,106 @@ function makeIndex(files) {
   <title>Trends Archive</title>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:system-ui;background:#111;color:#eee;padding:40px 20px;text-align:center}
-    h1{font-size:16px;color:#0f8;margin-bottom:20px}
-    a{display:block;color:#eee;text-decoration:none;padding:10px;background:#1a1a1a;margin:4px auto;max-width:300px;border-radius:4px}
-    a:hover{background:#222;color:#0f8}
-    .back{margin-top:20px;color:#08f}
+    body{font-family:system-ui;background:#111;color:#eee;padding:40px 20px}
+    .box{max-width:500px;margin:0 auto}
+    h1{font-size:16px;color:#0f8;margin-bottom:20px;text-align:center}
+    .day{background:#1a1a1a;margin-bottom:6px;border-radius:4px;padding:10px 12px;display:flex;align-items:center;gap:12px}
+    .date{color:#0f8;font-weight:bold;min-width:100px}
+    .slots{display:flex;gap:6px;flex-wrap:wrap}
+    .slots a{color:#888;text-decoration:none;padding:4px 8px;background:#222;border-radius:3px;font-size:12px}
+    .slots a:hover{color:#fff;background:#333}
+    .older{margin-top:20px}
+    .older summary{color:#666;cursor:pointer;padding:10px;text-align:center}
+    .older summary:hover{color:#888}
+    .older-content{margin-top:10px}
+    .back{display:block;margin-top:20px;text-align:center;color:#08f;text-decoration:none}
   </style>
 </head>
 <body>
-  <h1>TRENDS ARCHIVE</h1>
-  ${list}
-  <a href="../" class="back">← Home</a>
+  <div class="box">
+    <h1>TRENDS ARCHIVE</h1>
+    ${recentHTML}
+    ${olderHTML ? `<details class="older"><summary>Older entries...</summary><div class="older-content">${olderHTML}</div></details>` : ''}
+    <a href="../" class="back">← Home</a>
+  </div>
 </body>
 </html>`;
 }
 
+// ============ JSON API ============
+function makeJSON(trends, ts) {
+  return JSON.stringify({
+    timestamp: ts.full,
+    date: ts.date,
+    slot: ts.slot,
+    generated: new Date().toISOString(),
+    count: trends.length,
+    sources: ['X', 'TikTok', 'Reddit', 'HN', 'Wiki'],
+    trends: trends.map(t => ({
+      keyword: t.keyword,
+      traffic: t.traffic,
+      source: t.source
+    }))
+  }, null, 2);
+}
+
+// ============ API索引 ============
+function makeAPIIndex(files) {
+  const jsonFiles = files.filter(f => f.endsWith('.json')).sort((a, b) => b.localeCompare(a));
+  return JSON.stringify({
+    description: 'Trends API - Updated every 4 hours',
+    endpoints: jsonFiles.map(f => `/trends/api/${f}`),
+    latest: jsonFiles[0] ? `/trends/api/${jsonFiles[0]}` : null,
+    count: jsonFiles.length
+  }, null, 2);
+}
+
 // ============ 主函数 ============
 async function main() {
-  const today = getToday();
-  console.log(`\n📅 ${today}\n`);
+  const ts = getTimestamp();
+  console.log(`\n📅 ${ts.full}\n`);
 
   // 并行获取数据
-  const [xtrends, reddit, hn, wiki] = await Promise.all([
+  const [xtrends, tiktok, reddit, hn, wiki] = await Promise.all([
     fetchXTrends(),
+    fetchTikTok(),
     fetchReddit(),
     fetchHN(),
     fetchWikipedia(),
   ]);
 
   // 合并去重
-  let all = dedupe([...xtrends, ...reddit, ...hn, ...wiki]);
+  let all = dedupe([...xtrends, ...tiktok, ...reddit, ...hn, ...wiki]);
   console.log(`\n✅ Total: ${all.length} unique keywords\n`);
 
   // 确保目录存在
   if (!fs.existsSync(CONFIG.outputDir)) {
     fs.mkdirSync(CONFIG.outputDir, { recursive: true });
   }
+  const apiDir = path.join(CONFIG.outputDir, 'api');
+  if (!fs.existsSync(apiDir)) {
+    fs.mkdirSync(apiDir, { recursive: true });
+  }
 
-  // 写入文件
-  const file = path.join(CONFIG.outputDir, `${today}.html`);
-  fs.writeFileSync(file, makeHTML(all, today));
-  console.log(`📄 ${file}`);
+  // 写入HTML
+  const htmlFile = path.join(CONFIG.outputDir, `${ts.full}.html`);
+  fs.writeFileSync(htmlFile, makeHTML(all, ts));
+  console.log(`📄 ${htmlFile}`);
 
-  // 更新索引
-  const files = fs.readdirSync(CONFIG.outputDir).filter(f => f.endsWith('.html') && f !== 'index.html');
-  fs.writeFileSync(path.join(CONFIG.outputDir, 'index.html'), makeIndex(files));
+  // 写入JSON API
+  const jsonFile = path.join(apiDir, `${ts.full}.json`);
+  fs.writeFileSync(jsonFile, makeJSON(all, ts));
+  console.log(`📄 ${jsonFile}`);
+
+  // 更新HTML索引
+  const htmlFiles = fs.readdirSync(CONFIG.outputDir).filter(f => f.endsWith('.html') && f !== 'index.html');
+  fs.writeFileSync(path.join(CONFIG.outputDir, 'index.html'), makeIndex(htmlFiles));
   console.log(`📄 index.html`);
+
+  // 更新API索引
+  const jsonFiles = fs.readdirSync(apiDir).filter(f => f.endsWith('.json') && f !== 'index.json');
+  fs.writeFileSync(path.join(apiDir, 'index.json'), makeAPIIndex(jsonFiles));
+  console.log(`📄 api/index.json`);
 
   console.log('\n🎉 Done!\n');
 }

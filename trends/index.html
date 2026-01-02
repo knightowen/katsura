@@ -6,16 +6,27 @@
   <title>Trends Archive</title>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:system-ui;background:#111;color:#eee;padding:40px 20px;text-align:center}
-    h1{font-size:16px;color:#0f8;margin-bottom:20px}
-    a{display:block;color:#eee;text-decoration:none;padding:10px;background:#1a1a1a;margin:4px auto;max-width:300px;border-radius:4px}
-    a:hover{background:#222;color:#0f8}
-    .back{margin-top:20px;color:#08f}
+    body{font-family:system-ui;background:#111;color:#eee;padding:40px 20px}
+    .box{max-width:500px;margin:0 auto}
+    h1{font-size:16px;color:#0f8;margin-bottom:20px;text-align:center}
+    .day{background:#1a1a1a;margin-bottom:6px;border-radius:4px;padding:10px 12px;display:flex;align-items:center;gap:12px}
+    .date{color:#0f8;font-weight:bold;min-width:100px}
+    .slots{display:flex;gap:6px;flex-wrap:wrap}
+    .slots a{color:#888;text-decoration:none;padding:4px 8px;background:#222;border-radius:3px;font-size:12px}
+    .slots a:hover{color:#fff;background:#333}
+    .older{margin-top:20px}
+    .older summary{color:#666;cursor:pointer;padding:10px;text-align:center}
+    .older summary:hover{color:#888}
+    .older-content{margin-top:10px}
+    .back{display:block;margin-top:20px;text-align:center;color:#08f;text-decoration:none}
   </style>
 </head>
 <body>
-  <h1>TRENDS ARCHIVE</h1>
-  <a href="./2026-01-02.html">2026-01-02</a>
-  <a href="../" class="back">← Home</a>
+  <div class="box">
+    <h1>TRENDS ARCHIVE</h1>
+    <div class="day"><span class="date">2026-01-02</span><div class="slots"><a href="./2026-01-02.html">ht:00</a><a href="./2026-01-02-04.html">04:00</a></div></div>
+    
+    <a href="../" class="back">← Home</a>
+  </div>
 </body>
 </html>

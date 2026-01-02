@@ -1,8 +1,9 @@
-name: Generate Daily Trends
+name: Generate Trends (4h)
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    # Every 4 hours: 00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC
+    - cron: '0 */4 * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -34,5 +35,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add trends/
-          git diff --staged --quiet || git commit -m "trends: $(date +%Y-%m-%d) daily update"
+          git diff --staged --quiet || git commit -m "trends: $(date -u +%Y-%m-%d-%H)h UTC"
           git push
