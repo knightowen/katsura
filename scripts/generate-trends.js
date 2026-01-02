@@ -412,11 +412,18 @@ async function main() {
   console.log(`📅 Fetching trends for ${today}...`);
   console.log('');
 
-  const [wiki, hn, reddit] = await Promise.all([
+  const [wiki, hn] = await Promise.all([
     fetchWikipedia(),
     fetchHackerNews(),
-    fetchReddit(),
   ]);
+
+  // Reddit 单独跑，失败不影响整体
+  let reddit = [];
+  try {
+    reddit = await fetchReddit();
+  } catch (e) {
+    console.log('⚠️ Reddit skipped');
+  }
 
   const curated = getEmergingKeywords();
 
@@ -425,9 +432,9 @@ async function main() {
   console.log('');
   console.log(`✅ Total: ${trends.length} keywords`);
 
-  if (trends.length === 0) {
-    console.log('❌ No trends found!');
-    process.exit(1);
+  if (trends.length < 5) {
+    console.log('⚠️ Few trends, using curated only');
+    trends = curated;
   }
 
   const html = generateHTML(trends, today);
