@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * 趋势词发现器 v4 - 超级稳定版
- * 绝对不会失败
+ * 趋势词发现器 v5 - 多源50条版
+ * 数据源: X(getdaytrends) + Reddit(PullPush) + HackerNews + Wikipedia
  */
 
 const https = require('https');
@@ -19,12 +19,12 @@ function getToday() {
 }
 
 // 超级安全的 HTTP 请求
-function safeFetch(url, timeout = 10000) {
+function safeFetch(url, timeout = 15000) {
   return new Promise((resolve) => {
     try {
       const client = url.startsWith('https') ? https : http;
       const req = client.get(url, {
-        headers: { 'User-Agent': 'Mozilla/5.0' },
+        headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' },
         timeout: timeout
       }, (res) => {
         let data = '';
@@ -49,9 +49,121 @@ function safeJSON(str) {
   }
 }
 
-// Wikipedia 热门
+// ============ X/Twitter via getdaytrends ============
+async function fetchXTrends() {
+  console.log('🐦 Fetching X/Twitter (getdaytrends)...');
+  const trends = [];
+  try {
+    const res = await safeFetch('https://getdaytrends.com/united-states/', 20000);
+    if (!res.ok) {
+      console.log('   ⚠️ X Trends failed');
+      return trends;
+    }
+
+    const matches = res.data.matchAll(/<a[^>]*href="\/united-states\/trend\/[^"]*"[^>]*>([^<]+)<\/a>/gi);
+    const seen = new Set();
+    for (const m of matches) {
+      let topic = m[1].trim();
+      if (!topic || topic.length < 2 || seen.has(topic.toLowerCase())) continue;
+      if (['twitter', 'trending', 'trends'].includes(topic.toLowerCase())) continue;
+      seen.add(topic.toLowerCase());
+      trends.push({
+        keyword: topic,
+        traffic: '🔥',
+        source: 'X',
+      });
+      if (trends.length >= 50) break;
+    }
+    console.log(`   ✅ Got ${trends.length} items`);
+  } catch (e) {
+    console.log(`   ❌ Error: ${e.message}`);
+  }
+  return trends;
+}
+
+// ============ Reddit via PullPush API ============
+async function fetchReddit() {
+  console.log('📱 Fetching Reddit (PullPush)...');
+  const trends = [];
+  const subreddits = ['technology', 'programming', 'artificial', 'startups', 'webdev', 'machinelearning'];
+
+  try {
+    for (const sub of subreddits) {
+      const url = `https://api.pullpush.io/reddit/search/submission/?subreddit=${sub}&sort=score&size=10`;
+      const res = await safeFetch(url, 10000);
+      if (!res.ok) continue;
+
+      const json = safeJSON(res.data);
+      if (!json?.data) continue;
+
+      for (const post of json.data) {
+        let title = post.title;
+        if (!title) continue;
+
+        // 清理标题
+        title = title.replace(/^\[.*?\]\s*/, '').trim();
+        if (title.length > 60) title = title.slice(0, 57) + '...';
+
+        trends.push({
+          keyword: title,
+          traffic: `${post.score || 0} pts`,
+          source: 'Reddit',
+        });
+      }
+
+      if (trends.length >= 50) break;
+    }
+    console.log(`   ✅ Got ${trends.length} items`);
+  } catch (e) {
+    console.log(`   ❌ Error: ${e.message}`);
+  }
+  return trends.slice(0, 50);
+}
+
+// ============ HackerNews ============
+async function fetchHN() {
+  console.log('🔶 Fetching HackerNews...');
+  const trends = [];
+  try {
+    const res = await safeFetch('https://hacker-news.firebaseio.com/v0/topstories.json');
+    if (!res.ok) {
+      console.log('   ⚠️ HN failed');
+      return trends;
+    }
+
+    const ids = safeJSON(res.data);
+    if (!Array.isArray(ids)) {
+      console.log('   ⚠️ HN no data');
+      return trends;
+    }
+
+    // 取前50个
+    for (const id of ids.slice(0, 50)) {
+      const itemRes = await safeFetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`);
+      if (!itemRes.ok) continue;
+
+      const item = safeJSON(itemRes.data);
+      if (!item?.title) continue;
+
+      let kw = item.title;
+      if (kw.length > 60) kw = kw.slice(0, 57) + '...';
+
+      trends.push({
+        keyword: kw,
+        traffic: `${item.score} pts`,
+        source: 'HN',
+      });
+    }
+    console.log(`   ✅ Got ${trends.length} items`);
+  } catch (e) {
+    console.log(`   ❌ Error: ${e.message}`);
+  }
+  return trends;
+}
+
+// ============ Wikipedia (从第5个开始取50个) ============
 async function fetchWikipedia() {
-  console.log('📚 Fetching Wikipedia...');
+  console.log('📚 Fetching Wikipedia (5th-55th)...');
   const trends = [];
   try {
     const d = new Date();
@@ -74,19 +186,19 @@ async function fetchWikipedia() {
       return trends;
     }
 
-    const skip = ['Main_Page', 'Special:', 'Wikipedia:', 'Portal:', 'File:'];
+    const skip = ['Main_Page', 'Special:', 'Wikipedia:', 'Portal:', 'File:', 'Help:', 'Template:'];
     let count = 0;
     for (const a of json.items[0].articles) {
       if (skip.some(s => a.article.includes(s))) continue;
       count++;
-      // 跳过前9个，取第10-20名
-      if (count < 10) continue;
+      // 从第5个开始取
+      if (count < 5) continue;
       trends.push({
         keyword: a.article.replace(/_/g, ' '),
         traffic: `${Math.round(a.views / 1000)}K`,
         source: 'Wiki',
       });
-      if (trends.length >= 11) break;
+      if (trends.length >= 50) break;
     }
     console.log(`   ✅ Got ${trends.length} items`);
   } catch (e) {
@@ -95,174 +207,28 @@ async function fetchWikipedia() {
   return trends;
 }
 
-// Hacker News
-async function fetchHN() {
-  console.log('🔶 Fetching HackerNews...');
-  const trends = [];
-  try {
-    const res = await safeFetch('https://hacker-news.firebaseio.com/v0/topstories.json');
-    if (!res.ok) {
-      console.log('   ⚠️ HN failed');
-      return trends;
-    }
-
-    const ids = safeJSON(res.data);
-    if (!Array.isArray(ids)) {
-      console.log('   ⚠️ HN no data');
-      return trends;
-    }
-
-    for (const id of ids.slice(0, 10)) {
-      const itemRes = await safeFetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`);
-      if (!itemRes.ok) continue;
-
-      const item = safeJSON(itemRes.data);
-      if (!item?.title) continue;
-
-      let kw = item.title;
-      if (kw.includes(':')) kw = kw.split(':')[0].trim();
-      if (kw.length > 50) kw = kw.slice(0, 47) + '...';
-
-      trends.push({
-        keyword: kw,
-        traffic: `${item.score} pts`,
-        source: 'HN',
-      });
-    }
-    console.log(`   ✅ Got ${trends.length} items`);
-  } catch (e) {
-    console.log(`   ❌ Error: ${e.message}`);
-  }
-  return trends;
-}
-
-
-// TokChart - TikTok 热门 Hashtags
-async function fetchTokChart() {
-  console.log('🎵 Fetching TokChart Hashtags...');
-  const trends = [];
-  try {
-    const res = await safeFetch('https://tokchart.com/dashboard/hashtags/most-views', 15000);
-    if (!res.ok) {
-      console.log('   ⚠️ TokChart failed');
-      return trends;
-    }
-
-    // 提取 hashtag - 匹配 #xxx 格式 (排除颜色代码)
-    const matches = res.data.matchAll(/#([a-zA-Z][a-zA-Z0-9_]{2,})/g);
-    const seen = new Set();
-    for (const m of matches) {
-      const tag = m[1].trim().toLowerCase();
-      if (!tag || seen.has(tag)) continue;
-      // 跳过通用词和颜色代码
-      if (['fyp', 'foryou', 'foryoupage', 'viral', 'trending', 'ffffff', 'fff'].includes(tag)) continue;
-      if (/^[a-f0-9]{3,6}$/i.test(tag)) continue;
-      seen.add(tag);
-      trends.push({
-        keyword: '#' + tag,
-        traffic: '🔥',
-        source: 'TikTok',
-      });
-      if (trends.length >= 8) break;
-    }
-    console.log(`   ✅ Got ${trends.length} items`);
-  } catch (e) {
-    console.log(`   ❌ Error: ${e.message}`);
-  }
-  return trends;
-}
-
-// X/Twitter Trending via getdaytrends
-async function fetchXTrends() {
-  console.log('🐦 Fetching X Trends...');
-  const trends = [];
-  try {
-    const res = await safeFetch('https://getdaytrends.com/united-states/', 15000);
-    if (!res.ok) {
-      console.log('   ⚠️ X Trends failed');
-      return trends;
-    }
-
-    // 提取 trending topics - 匹配 <a ...>话题</a> 格式
-    const matches = res.data.matchAll(/<a[^>]*href="\/united-states\/trend\/[^"]*"[^>]*>([^<]+)<\/a>/gi);
-    const seen = new Set();
-    for (const m of matches) {
-      let topic = m[1].trim();
-      if (!topic || topic.length < 2 || seen.has(topic.toLowerCase())) continue;
-      // 跳过通用词
-      if (['twitter', 'trending', 'trends'].includes(topic.toLowerCase())) continue;
-      seen.add(topic.toLowerCase());
-      trends.push({
-        keyword: topic,
-        traffic: '🔥',
-        source: 'X',
-      });
-      if (trends.length >= 12) break;
-    }
-    console.log(`   ✅ Got ${trends.length} items`);
-  } catch (e) {
-    console.log(`   ❌ Error: ${e.message}`);
-  }
-  return trends;
-}
-
-// Reddit TikTok 相关
-async function fetchRedditTikTok() {
-  console.log('📱 Fetching Reddit TikTok...');
-  const trends = [];
-  try {
-    const res = await safeFetch('https://www.reddit.com/r/TikTokCringe/hot.json?limit=15', 10000);
-    if (!res.ok) {
-      console.log('   ⚠️ Reddit failed');
-      return trends;
-    }
-
-    const json = safeJSON(res.data);
-    if (!json?.data?.children) {
-      console.log('   ⚠️ Reddit no data');
-      return trends;
-    }
-
-    for (const post of json.data.children) {
-      const title = post.data?.title;
-      if (!title) continue;
-
-      // 提取关键词（去掉常见前缀）
-      let kw = title
-        .replace(/^\[.*?\]\s*/, '')
-        .replace(/^(POV|When|This|My|The)\s+/i, '');
-      if (kw.length > 50) kw = kw.slice(0, 47) + '...';
-
-      trends.push({
-        keyword: kw,
-        traffic: `${post.data.score} pts`,
-        source: 'TT/Reddit',
-      });
-      if (trends.length >= 8) break;
-    }
-    console.log(`   ✅ Got ${trends.length} items`);
-  } catch (e) {
-    console.log(`   ❌ Error: ${e.message}`);
-  }
-  return trends;
-}
-
-// 去重
+// ============ 去重 ============
 function dedupe(arr) {
   const seen = new Set();
   return arr.filter(t => {
     const k = t.keyword.toLowerCase().replace(/[^a-z0-9]/g, '');
+    if (!k || k.length < 2) return false;
     if (seen.has(k)) return false;
     seen.add(k);
     return true;
   });
 }
 
-// 生成 HTML
+// ============ 生成 HTML ============
 function makeHTML(trends, date) {
-  const colors = { X: '#000', TikTok: '#fe2c55', Wiki: '#1da1f2', HN: '#f60' };
+  const colors = {
+    X: '#000',
+    Reddit: '#ff4500',
+    HN: '#f60',
+    Wiki: '#1da1f2'
+  };
 
-  const items = trends.slice(0, 30).map((t, i) => `
+  const items = trends.map((t, i) => `
     <div class="item">
       <span class="num">${i + 1}</span>
       <div class="info">
@@ -285,17 +251,18 @@ function makeHTML(trends, date) {
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:system-ui;background:#111;color:#eee;padding:20px}
-    .box{max-width:600px;margin:0 auto}
-    h1{font-size:18px;color:#0f8;margin-bottom:20px;text-align:center}
-    .item{display:flex;align-items:center;gap:10px;padding:10px;background:#1a1a1a;margin-bottom:6px;border-radius:4px}
+    .box{max-width:700px;margin:0 auto}
+    h1{font-size:18px;color:#0f8;margin-bottom:10px;text-align:center}
+    .stats{text-align:center;color:#666;font-size:12px;margin-bottom:20px}
+    .item{display:flex;align-items:center;gap:10px;padding:8px 10px;background:#1a1a1a;margin-bottom:4px;border-radius:4px}
     .item:hover{background:#222}
-    .num{color:#f80;font-weight:bold;min-width:24px}
-    .info{flex:1}
-    .kw{font-weight:600}
-    .src{font-size:11px;padding:1px 4px;border-radius:2px;color:#fff;margin-left:6px}
-    .tr{font-size:12px;color:#888;margin-left:6px}
+    .num{color:#f80;font-weight:bold;min-width:28px;font-size:12px}
+    .info{flex:1;overflow:hidden}
+    .kw{font-weight:600;font-size:14px}
+    .src{font-size:10px;padding:1px 4px;border-radius:2px;color:#fff;margin-left:6px}
+    .tr{font-size:11px;color:#888;margin-left:6px}
     .links{display:flex;gap:4px}
-    .links a{color:#08f;text-decoration:none;padding:2px 6px;border:1px solid #333;border-radius:3px;font-size:12px}
+    .links a{color:#08f;text-decoration:none;padding:2px 6px;border:1px solid #333;border-radius:3px;font-size:11px}
     .links a:hover{background:#222}
     .nav{margin-top:20px;text-align:center}
     .nav a{color:#08f;text-decoration:none;margin:0 10px}
@@ -304,6 +271,7 @@ function makeHTML(trends, date) {
 <body>
   <div class="box">
     <h1>TRENDS ${date}</h1>
+    <div class="stats">${trends.length} keywords | X + Reddit + HN + Wiki</div>
     ${items}
     <div class="nav">
       <a href="./">Archive</a>
@@ -314,9 +282,9 @@ function makeHTML(trends, date) {
 </html>`;
 }
 
-// 索引页
+// ============ 索引页 ============
 function makeIndex(files) {
-  const list = files.sort((a,b) => b.localeCompare(a)).slice(0, 30)
+  const list = files.sort((a,b) => b.localeCompare(a)).slice(0, 60)
     .map(f => `<a href="./${f}">${f.replace('.html','')}</a>`).join('');
 
   return `<!DOCTYPE html>
@@ -335,27 +303,29 @@ function makeIndex(files) {
   </style>
 </head>
 <body>
-  <h1>ARCHIVE</h1>
+  <h1>TRENDS ARCHIVE</h1>
   ${list}
   <a href="../" class="back">← Home</a>
 </body>
 </html>`;
 }
 
-// 主函数
+// ============ 主函数 ============
 async function main() {
   const today = getToday();
   console.log(`\n📅 ${today}\n`);
 
-  // 获取数据
-  const xtrends = await fetchXTrends();
-  const tiktok = await fetchTokChart();
-  const wiki = await fetchWikipedia();
-  const hn = await fetchHN();
+  // 并行获取数据
+  const [xtrends, reddit, hn, wiki] = await Promise.all([
+    fetchXTrends(),
+    fetchReddit(),
+    fetchHN(),
+    fetchWikipedia(),
+  ]);
 
-  // 合并 (X优先, 然后TikTok)
-  let all = dedupe([...xtrends, ...tiktok, ...wiki, ...hn]);
-  console.log(`\n✅ Total: ${all.length} keywords\n`);
+  // 合并去重
+  let all = dedupe([...xtrends, ...reddit, ...hn, ...wiki]);
+  console.log(`\n✅ Total: ${all.length} unique keywords\n`);
 
   // 确保目录存在
   if (!fs.existsSync(CONFIG.outputDir)) {
