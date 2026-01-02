@@ -2,9 +2,11 @@ name: Generate Daily Trends
 
 on:
   schedule:
-    # 每天 UTC 6:00 运行 (北京时间 14:00)
     - cron: '0 6 * * *'
-  workflow_dispatch: # 允许手动触发
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/**']
 
 permissions:
   contents: write
@@ -13,8 +15,11 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout latest
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
