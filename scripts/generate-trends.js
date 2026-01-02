@@ -137,6 +137,41 @@ async function fetchHN() {
 }
 
 
+// TokChart - TikTok 热门 Hashtags
+async function fetchTokChart() {
+  console.log('🎵 Fetching TokChart Hashtags...');
+  const trends = [];
+  try {
+    const res = await safeFetch('https://tokchart.com/dashboard/hashtags/most-views', 15000);
+    if (!res.ok) {
+      console.log('   ⚠️ TokChart failed');
+      return trends;
+    }
+
+    // 提取 hashtag - 匹配 #xxx 格式 (排除颜色代码)
+    const matches = res.data.matchAll(/#([a-zA-Z][a-zA-Z0-9_]{2,})/g);
+    const seen = new Set();
+    for (const m of matches) {
+      const tag = m[1].trim().toLowerCase();
+      if (!tag || seen.has(tag)) continue;
+      // 跳过通用词和颜色代码
+      if (['fyp', 'foryou', 'foryoupage', 'viral', 'trending', 'ffffff', 'fff'].includes(tag)) continue;
+      if (/^[a-f0-9]{3,6}$/i.test(tag)) continue;
+      seen.add(tag);
+      trends.push({
+        keyword: '#' + tag,
+        traffic: '🔥',
+        source: 'TikTok',
+      });
+      if (trends.length >= 8) break;
+    }
+    console.log(`   ✅ Got ${trends.length} items`);
+  } catch (e) {
+    console.log(`   ❌ Error: ${e.message}`);
+  }
+  return trends;
+}
+
 // X/Twitter Trending via getdaytrends
 async function fetchXTrends() {
   console.log('🐦 Fetching X Trends...');
@@ -225,7 +260,7 @@ function dedupe(arr) {
 
 // 生成 HTML
 function makeHTML(trends, date) {
-  const colors = { X: '#000', Wiki: '#1da1f2', HN: '#f60' };
+  const colors = { X: '#000', TikTok: '#fe2c55', Wiki: '#1da1f2', HN: '#f60' };
 
   const items = trends.slice(0, 30).map((t, i) => `
     <div class="item">
@@ -314,11 +349,12 @@ async function main() {
 
   // 获取数据
   const xtrends = await fetchXTrends();
+  const tiktok = await fetchTokChart();
   const wiki = await fetchWikipedia();
   const hn = await fetchHN();
 
-  // 合并 (X优先)
-  let all = dedupe([...xtrends, ...wiki, ...hn]);
+  // 合并 (X优先, 然后TikTok)
+  let all = dedupe([...xtrends, ...tiktok, ...wiki, ...hn]);
   console.log(`\n✅ Total: ${all.length} keywords\n`);
 
   // 确保目录存在
