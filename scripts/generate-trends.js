@@ -137,33 +137,32 @@ async function fetchHN() {
 }
 
 
-// TokChart - TikTok 热门 Hashtags
-async function fetchTokChart() {
-  console.log('🎵 Fetching TokChart Hashtags...');
+// X/Twitter Trending via getdaytrends
+async function fetchXTrends() {
+  console.log('🐦 Fetching X Trends...');
   const trends = [];
   try {
-    const res = await safeFetch('https://tokchart.com/dashboard/hashtags/most-views', 15000);
+    const res = await safeFetch('https://getdaytrends.com/united-states/', 15000);
     if (!res.ok) {
-      console.log('   ⚠️ TokChart failed');
+      console.log('   ⚠️ X Trends failed');
       return trends;
     }
 
-    // 提取 hashtag - 匹配 #xxx 格式 (排除颜色代码)
-    const matches = res.data.matchAll(/#([a-zA-Z][a-zA-Z0-9_]{2,})/g);
+    // 提取 trending topics - 匹配 <a ...>话题</a> 格式
+    const matches = res.data.matchAll(/<a[^>]*href="\/united-states\/trend\/[^"]*"[^>]*>([^<]+)<\/a>/gi);
     const seen = new Set();
     for (const m of matches) {
-      const tag = m[1].trim().toLowerCase();
-      if (!tag || seen.has(tag)) continue;
-      // 跳过通用词和颜色代码
-      if (['fyp', 'foryou', 'foryoupage', 'viral', 'trending', 'ffffff', 'fff'].includes(tag)) continue;
-      if (/^[a-f0-9]{3,6}$/i.test(tag)) continue; // 颜色代码
-      seen.add(tag);
+      let topic = m[1].trim();
+      if (!topic || topic.length < 2 || seen.has(topic.toLowerCase())) continue;
+      // 跳过通用词
+      if (['twitter', 'trending', 'trends'].includes(topic.toLowerCase())) continue;
+      seen.add(topic.toLowerCase());
       trends.push({
-        keyword: '#' + tag,
+        keyword: topic,
         traffic: '🔥',
-        source: 'TikTok',
+        source: 'X',
       });
-      if (trends.length >= 10) break;
+      if (trends.length >= 12) break;
     }
     console.log(`   ✅ Got ${trends.length} items`);
   } catch (e) {
@@ -226,7 +225,7 @@ function dedupe(arr) {
 
 // 生成 HTML
 function makeHTML(trends, date) {
-  const colors = { TikTok: '#fe2c55', 'TT/Reddit': '#ff4500', Wiki: '#000', HN: '#f60' };
+  const colors = { X: '#000', Wiki: '#1da1f2', HN: '#f60' };
 
   const items = trends.slice(0, 30).map((t, i) => `
     <div class="item">
@@ -314,13 +313,12 @@ async function main() {
   console.log(`\n📅 ${today}\n`);
 
   // 获取数据
-  const tiktok = await fetchTokChart();
-  const reddit = await fetchRedditTikTok();
+  const xtrends = await fetchXTrends();
   const wiki = await fetchWikipedia();
   const hn = await fetchHN();
 
-  // 合并 (TikTok优先)
-  let all = dedupe([...tiktok, ...reddit, ...wiki, ...hn]);
+  // 合并 (X优先)
+  let all = dedupe([...xtrends, ...wiki, ...hn]);
   console.log(`\n✅ Total: ${all.length} keywords\n`);
 
   // 确保目录存在
