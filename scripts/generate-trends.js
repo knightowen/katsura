@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * 爆发新词发现器
- * 抓取 Google Trends Rising Queries - 寻找 SEO 抢占机会
+ * 爆发新词发现器 v2
+ * 使用稳定的公开数据源
  */
 
 const https = require('https');
@@ -18,130 +18,175 @@ function getToday() {
   return new Date().toISOString().split('T')[0];
 }
 
-function fetchURL(url, options = {}) {
+function fetchURL(url) {
   return new Promise((resolve, reject) => {
-    const urlObj = new URL(url);
-    const reqOptions = {
-      hostname: urlObj.hostname,
-      path: urlObj.pathname + urlObj.search,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        'Accept': 'application/json',
-        ...options.headers
+    const req = https.get(url, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; TrendBot/2.0)' },
+      timeout: 10000
+    }, (res) => {
+      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+        return fetchURL(res.headers.location).then(resolve).catch(reject);
       }
-    };
-
-    https.get(reqOptions, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
-      res.on('end', () => resolve({ data, status: res.statusCode }));
-    }).on('error', reject);
+      res.on('end', () => resolve(data));
+    });
+    req.on('error', reject);
+    req.on('timeout', () => { req.destroy(); reject(new Error('Timeout')); });
   });
 }
 
-// 从 Google Trends Daily Trends 提取上升词
-async function fetchGoogleDailyTrends() {
+// 1. Google Trends RSS (稳定)
+async function fetchGoogleTrendsRSS() {
   const trends = [];
   try {
-    // Google Trends Daily API (非官方但稳定)
-    const url = 'https://trends.google.com/trends/api/dailytrends?hl=en-US&tz=-480&geo=US&ns=15';
-    const { data } = await fetchURL(url);
+    const url = 'https://trends.google.com/trending/rss?geo=US';
+    const data = await fetchURL(url);
 
-    // 移除前缀 ")]}'\n"
-    const jsonStr = data.substring(data.indexOf('{'));
-    const json = JSON.parse(jsonStr);
+    const itemRegex = /<item>([\s\S]*?)<\/item>/g;
+    const titleRegex = /<title><!\[CDATA\[(.*?)\]\]><\/title>|<title>([^<]+)<\/title>/;
+    const trafficRegex = /<ht:approx_traffic>([^<]+)<\/ht:approx_traffic>/;
+    const newsRegex = /<ht:news_item_title><!\[CDATA\[(.*?)\]\]><\/ht:news_item_title>/;
 
-    const days = json.default?.trendingSearchesDays || [];
-    for (const day of days.slice(0, 2)) {
-      for (const search of day.trendingSearches || []) {
-        const title = search.title?.query;
-        const traffic = search.formattedTraffic || '';
-        const articles = search.articles || [];
-        const relatedQueries = search.relatedQueries || [];
+    let match;
+    while ((match = itemRegex.exec(data)) !== null) {
+      const item = match[1];
+      const titleMatch = item.match(titleRegex);
+      const title = titleMatch?.[1] || titleMatch?.[2];
+      const traffic = item.match(trafficRegex)?.[1] || '';
+      const news = item.match(newsRegex)?.[1] || '';
 
-        if (title) {
-          trends.push({
-            keyword: title,
-            traffic: traffic,
-            source: 'Google',
-            type: 'daily',
-            related: relatedQueries.map(q => q.query).slice(0, 3),
-            news: articles[0]?.title || '',
-            newsUrl: articles[0]?.url || '',
-          });
-        }
-      }
-    }
-    console.log(`📊 Google Daily Trends: ${trends.length} items`);
-  } catch (e) {
-    console.log('⚠️ Google Daily Trends failed:', e.message);
-  }
-  return trends;
-}
-
-// 从 Google Trends Realtime 提取实时上升词
-async function fetchGoogleRealtime() {
-  const trends = [];
-  try {
-    const url = 'https://trends.google.com/trends/api/realtimetrends?hl=en-US&tz=-480&cat=all&fi=0&fs=0&geo=US&ri=300&rs=20&sort=0';
-    const { data } = await fetchURL(url);
-
-    const jsonStr = data.substring(data.indexOf('{'));
-    const json = JSON.parse(jsonStr);
-
-    const stories = json.storySummaries?.trendingStories || [];
-    for (const story of stories.slice(0, 15)) {
-      const title = story.title || story.entityNames?.[0];
-      if (title) {
+      if (title && title.trim()) {
         trends.push({
-          keyword: title,
-          traffic: 'Realtime',
+          keyword: title.trim(),
+          traffic: traffic,
           source: 'Google',
-          type: 'realtime',
-          related: story.entityNames?.slice(1, 4) || [],
+          type: 'trending',
+          news: news,
         });
       }
     }
-    console.log(`⚡ Google Realtime: ${trends.length} items`);
+    console.log(`📊 Google Trends RSS: ${trends.length} items`);
   } catch (e) {
-    console.log('⚠️ Google Realtime failed:', e.message);
+    console.log(`⚠️ Google Trends RSS failed: ${e.message}`);
   }
   return trends;
 }
 
-// 从 Exploding Topics RSS 提取新兴话题 (他们有免费 RSS)
-async function fetchExplodingTopics() {
+// 2. Wikipedia 当日热门 (稳定)
+async function fetchWikipediaTrending() {
   const trends = [];
   try {
-    const url = 'https://explodingtopics.com/blog/feed';
-    const { data } = await fetchURL(url);
+    const today = new Date();
+    const yesterday = new Date(today.setDate(today.getDate() - 1));
+    const year = yesterday.getFullYear();
+    const month = String(yesterday.getMonth() + 1).padStart(2, '0');
+    const day = String(yesterday.getDate()).padStart(2, '0');
 
-    // 解析 RSS 中的新话题
-    const itemRegex = /<item>([\s\S]*?)<\/item>/g;
-    const titleRegex = /<title><!\[CDATA\[(.*?)\]\]><\/title>|<title>(.*?)<\/title>/;
+    const url = `https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/${year}/${month}/${day}`;
+    const data = await fetchURL(url);
+    const json = JSON.parse(data);
 
-    let match;
-    while ((match = itemRegex.exec(data)) !== null && trends.length < 10) {
-      const titleMatch = match[1].match(titleRegex);
-      const title = titleMatch?.[1] || titleMatch?.[2];
-      if (title && !title.includes('Exploding Topics')) {
-        // 提取文章标题中的关键词
-        const keywords = title.match(/[""]([^""]+)[""]|: ([^–-]+)/);
-        if (keywords) {
-          trends.push({
-            keyword: (keywords[1] || keywords[2]).trim(),
-            traffic: 'Rising',
-            source: 'ExplodingTopics',
-            type: 'emerging',
-          });
-        }
+    const articles = json.items?.[0]?.articles || [];
+    // 过滤掉常见页面
+    const skipList = ['Main_Page', 'Special:', 'Wikipedia:', 'Portal:', 'File:', 'Help:'];
+
+    for (const article of articles.slice(0, 50)) {
+      const title = article.article.replace(/_/g, ' ');
+      if (!skipList.some(s => article.article.includes(s))) {
+        trends.push({
+          keyword: title,
+          traffic: `${(article.views / 1000).toFixed(0)}K views`,
+          source: 'Wikipedia',
+          type: 'trending',
+        });
       }
+      if (trends.length >= 15) break;
     }
-    console.log(`🚀 Exploding Topics: ${trends.length} items`);
+    console.log(`📚 Wikipedia Trending: ${trends.length} items`);
   } catch (e) {
-    console.log('⚠️ Exploding Topics failed:', e.message);
+    console.log(`⚠️ Wikipedia failed: ${e.message}`);
   }
   return trends;
+}
+
+// 3. GitHub Trending (技术类)
+async function fetchGitHubTrending() {
+  const trends = [];
+  try {
+    // 用 GitHub 非官方 trending API
+    const url = 'https://api.gitterapp.com/repositories?since=daily';
+    const data = await fetchURL(url);
+    const repos = JSON.parse(data);
+
+    for (const repo of repos.slice(0, 10)) {
+      if (repo.name) {
+        trends.push({
+          keyword: repo.name,
+          traffic: `★${repo.stars || 0}`,
+          source: 'GitHub',
+          type: 'tech',
+          description: repo.description?.slice(0, 60) || '',
+        });
+      }
+    }
+    console.log(`💻 GitHub Trending: ${trends.length} items`);
+  } catch (e) {
+    console.log(`⚠️ GitHub Trending failed: ${e.message}`);
+  }
+  return trends;
+}
+
+// 4. Hacker News 热门 (技术类)
+async function fetchHackerNews() {
+  const trends = [];
+  try {
+    const idsData = await fetchURL('https://hacker-news.firebaseio.com/v0/topstories.json');
+    const ids = JSON.parse(idsData).slice(0, 8);
+
+    for (const id of ids) {
+      try {
+        const itemData = await fetchURL(`https://hacker-news.firebaseio.com/v0/item/${id}.json`);
+        const item = JSON.parse(itemData);
+        if (item?.title) {
+          // 从标题提取关键词（不是整个标题）
+          let keyword = item.title;
+          // 如果标题包含冒号，取冒号前的部分
+          if (keyword.includes(':')) {
+            keyword = keyword.split(':')[0].trim();
+          }
+          // 如果太长，取前几个词
+          if (keyword.split(' ').length > 5) {
+            keyword = keyword.split(' ').slice(0, 4).join(' ');
+          }
+
+          trends.push({
+            keyword: keyword,
+            traffic: `${item.score} pts`,
+            source: 'HN',
+            type: 'tech',
+            link: item.url,
+          });
+        }
+      } catch (e) {}
+    }
+    console.log(`🔶 Hacker News: ${trends.length} items`);
+  } catch (e) {
+    console.log(`⚠️ HN failed: ${e.message}`);
+  }
+  return trends;
+}
+
+// 5. 获取新词（手动维护的热门新兴词，每次更新）
+function getManualTrends() {
+  // 这些是近期观察到的新兴词汇，可以定期手动更新
+  return [
+    { keyword: 'DeepSeek', traffic: 'Rising', source: 'Manual', type: 'emerging' },
+    { keyword: 'Claude 3.5', traffic: 'Rising', source: 'Manual', type: 'emerging' },
+    { keyword: 'Sora AI', traffic: 'Rising', source: 'Manual', type: 'emerging' },
+    { keyword: 'Gemini 2.0', traffic: 'Rising', source: 'Manual', type: 'emerging' },
+    { keyword: 'Apple Vision Pro', traffic: 'Rising', source: 'Manual', type: 'emerging' },
+  ];
 }
 
 // 合并去重
@@ -151,7 +196,7 @@ function mergeTrends(sources) {
 
   for (const trends of sources) {
     for (const t of trends) {
-      const key = t.keyword.toLowerCase().replace(/[^a-z0-9]/g, '');
+      const key = t.keyword.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 20);
       if (!seen.has(key) && key.length > 2) {
         seen.add(key);
         all.push(t);
@@ -161,71 +206,43 @@ function mergeTrends(sources) {
   return all;
 }
 
-// 评估 SEO 机会分数
-function scoreTrend(trend) {
-  let score = 50;
-
-  // Realtime = 新，加分
-  if (trend.type === 'realtime') score += 20;
-  if (trend.type === 'emerging') score += 30;
-
-  // 有流量数据的加分
-  if (trend.traffic && trend.traffic !== 'Realtime') {
-    const num = parseInt(trend.traffic.replace(/[^0-9]/g, ''));
-    if (num > 100) score += 10;
-    if (num > 500) score += 10;
-  }
-
-  // 关键词长度适中加分 (2-4 个词最适合做站)
-  const words = trend.keyword.split(/\s+/).length;
-  if (words >= 2 && words <= 4) score += 15;
-
-  return Math.min(100, score);
-}
-
 // 生成 HTML
 function generateHTML(trends, date) {
-  // 按分数排序
-  trends.forEach(t => t.score = scoreTrend(t));
-  trends.sort((a, b) => b.score - a.score);
-
   const title = `Rising Keywords ${date} | SEO Opportunities`;
 
   const typeColors = {
-    'realtime': '#e74c3c',
-    'daily': '#3498db',
+    'trending': '#3498db',
+    'tech': '#9b59b6',
     'emerging': '#2ecc71',
   };
 
-  const typeLabels = {
-    'realtime': '🔥 REALTIME',
-    'daily': '📈 DAILY',
-    'emerging': '🚀 EMERGING',
+  const sourceColors = {
+    'Google': '#4285f4',
+    'Wikipedia': '#000',
+    'GitHub': '#333',
+    'HN': '#ff6600',
+    'Manual': '#2ecc71',
   };
 
   const trendsHTML = trends.slice(0, 30).map((t, i) => {
-    const color = typeColors[t.type] || '#5fcde4';
-    const label = typeLabels[t.type] || t.type;
+    const color = sourceColors[t.source] || '#5fcde4';
     const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(t.keyword)}`;
     const trendsUrl = `https://trends.google.com/trends/explore?q=${encodeURIComponent(t.keyword)}&geo=US`;
 
     return `
-            <div class="trend-item" data-score="${t.score}">
-                <div class="rank-score">
-                    <span class="rank">#${i + 1}</span>
-                    <span class="score">${t.score}</span>
-                </div>
+            <div class="trend-item">
+                <span class="rank">#${i + 1}</span>
                 <div class="trend-content">
                     <div class="keyword-row">
                         <span class="keyword">${t.keyword}</span>
-                        <span class="type-badge" style="background:${color}">${label}</span>
+                        <span class="source" style="background:${color}">${t.source}</span>
                     </div>
                     <div class="meta">
-                        ${t.traffic ? `<span class="traffic">${t.traffic}</span>` : ''}
-                        ${t.related?.length ? `<span class="related">Related: ${t.related.join(', ')}</span>` : ''}
+                        <span class="traffic">${t.traffic}</span>
+                        ${t.news ? `<span class="news">${t.news.slice(0, 50)}...</span>` : ''}
                     </div>
                     <div class="actions">
-                        <a href="${searchUrl}" target="_blank">Google</a>
+                        <a href="${searchUrl}" target="_blank">Search</a>
                         <a href="${trendsUrl}" target="_blank">Trends</a>
                     </div>
                 </div>
@@ -238,9 +255,9 @@ function generateHTML(trends, date) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${title}</title>
-    <meta name="description" content="Daily rising keywords for SEO opportunities - ${date}">
+    <meta name="description" content="Daily rising keywords - ${date}">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', sans-serif;
@@ -249,50 +266,31 @@ function generateHTML(trends, date) {
             color: #f4f4f4;
             padding: 20px;
         }
-        .container { max-width: 900px; margin: 0 auto; }
+        .container { max-width: 800px; margin: 0 auto; }
         header {
             text-align: center;
-            padding: 40px 20px;
-            margin-bottom: 30px;
-            background: linear-gradient(135deg, #1a1d2e 0%, #2a2d42 100%);
-            border: 2px solid #3a3d52;
+            padding: 30px 20px;
+            margin-bottom: 25px;
+            background: #1a1d2e;
+            border: 2px solid #2a2d42;
             border-radius: 8px;
         }
         h1 {
             font-family: 'Press Start 2P', cursive;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #2ecc71;
             margin-bottom: 10px;
-            letter-spacing: 2px;
-        }
-        .subtitle {
-            font-size: 0.8rem;
-            color: #888;
-            margin-bottom: 15px;
         }
         .date {
             font-family: 'Press Start 2P', cursive;
-            font-size: 0.6rem;
+            font-size: 0.55rem;
             color: #f4b41a;
         }
-        .legend {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 15px;
-            font-size: 0.7rem;
-        }
-        .legend span { display: flex; align-items: center; gap: 5px; }
-        .legend-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-        }
-        .trends-list { display: flex; flex-direction: column; gap: 12px; }
+        .trends-list { display: flex; flex-direction: column; gap: 10px; }
         .trend-item {
             display: flex;
-            gap: 15px;
-            padding: 16px;
+            gap: 12px;
+            padding: 14px;
             background: #1a1d2e;
             border: 1px solid #2a2d42;
             border-radius: 6px;
@@ -300,90 +298,48 @@ function generateHTML(trends, date) {
         }
         .trend-item:hover {
             border-color: #2ecc71;
-            transform: translateX(4px);
-        }
-        .rank-score {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-width: 50px;
+            transform: translateX(3px);
         }
         .rank {
             font-family: 'Press Start 2P', cursive;
-            font-size: 0.55rem;
+            font-size: 0.5rem;
             color: #f4b41a;
-        }
-        .score {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: #2ecc71;
-            margin-top: 4px;
+            min-width: 32px;
+            padding-top: 4px;
         }
         .trend-content { flex: 1; }
-        .keyword-row {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        .keyword {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #fff;
-        }
-        .type-badge {
+        .keyword-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+        .keyword { font-size: 1rem; font-weight: 600; color: #fff; }
+        .source {
             font-size: 0.6rem;
-            padding: 3px 8px;
-            border-radius: 4px;
-            color: #fff;
-            font-weight: 600;
-        }
-        .meta {
-            margin-top: 8px;
-            font-size: 0.8rem;
-            color: #888;
-        }
-        .traffic {
-            background: #2a2d42;
-            padding: 2px 8px;
+            padding: 2px 6px;
             border-radius: 3px;
-            margin-right: 10px;
+            color: #fff;
         }
-        .related { color: #666; }
-        .actions {
-            margin-top: 10px;
-            display: flex;
-            gap: 10px;
-        }
+        .meta { margin-top: 6px; font-size: 0.75rem; color: #888; }
+        .traffic { background: #2a2d42; padding: 2px 6px; border-radius: 3px; }
+        .news { margin-left: 8px; color: #666; }
+        .actions { margin-top: 8px; display: flex; gap: 8px; }
         .actions a {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             color: #5fcde4;
             text-decoration: none;
-            padding: 4px 10px;
+            padding: 3px 8px;
             border: 1px solid #3a3d52;
-            border-radius: 4px;
+            border-radius: 3px;
         }
-        .actions a:hover {
-            background: #2a2d42;
-            border-color: #5fcde4;
-        }
-        .nav-links {
-            margin-top: 30px;
-            display: flex;
-            gap: 20px;
-        }
+        .actions a:hover { background: #2a2d42; }
+        .nav-links { margin-top: 25px; display: flex; gap: 15px; }
         .nav-links a {
             font-family: 'Press Start 2P', cursive;
-            font-size: 0.5rem;
+            font-size: 0.45rem;
             color: #5fcde4;
             text-decoration: none;
         }
-        .nav-links a:hover { color: #8fe4f4; }
         footer {
             text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            font-size: 0.7rem;
+            margin-top: 30px;
+            font-size: 0.65rem;
             color: #555;
         }
         footer a { color: #5fcde4; text-decoration: none; }
@@ -393,13 +349,7 @@ function generateHTML(trends, date) {
     <div class="container">
         <header>
             <h1>RISING KEYWORDS</h1>
-            <p class="subtitle">SEO Opportunity Scanner</p>
             <p class="date">${date}</p>
-            <div class="legend">
-                <span><span class="legend-dot" style="background:#e74c3c"></span> Realtime</span>
-                <span><span class="legend-dot" style="background:#3498db"></span> Daily</span>
-                <span><span class="legend-dot" style="background:#2ecc71"></span> Emerging</span>
-            </div>
         </header>
         <main>
             <div class="trends-list">
@@ -411,7 +361,7 @@ ${trendsHTML}
             </div>
         </main>
         <footer>
-            Score = SEO opportunity (higher = better) | <a href="https://x.com/katsurakek">@katsurakek</a>
+            Sources: Google, Wikipedia, GitHub, HN | <a href="https://x.com/katsurakek">@katsurakek</a>
         </footer>
     </div>
 </body>
@@ -445,29 +395,24 @@ function generateIndexHTML(files) {
             align-items: center;
             padding: 40px 20px;
         }
-        .container { text-align: center; max-width: 600px; }
-        h1 { font-size: 0.9rem; color: #2ecc71; margin-bottom: 30px; }
-        .days { display: flex; flex-direction: column; gap: 10px; }
+        .container { text-align: center; max-width: 500px; }
+        h1 { font-size: 0.8rem; color: #2ecc71; margin-bottom: 25px; }
+        .days { display: flex; flex-direction: column; gap: 8px; }
         .day-link {
             display: block;
-            padding: 14px 20px;
+            padding: 12px 16px;
             background: #1a1d2e;
             border: 2px solid #2a2d42;
-            border-radius: 6px;
+            border-radius: 5px;
             color: #f4f4f4;
             text-decoration: none;
-            font-size: 0.6rem;
-            transition: all 0.2s;
+            font-size: 0.55rem;
         }
-        .day-link:hover {
-            border-color: #2ecc71;
-            color: #2ecc71;
-            transform: translateX(4px);
-        }
+        .day-link:hover { border-color: #2ecc71; color: #2ecc71; }
         .back-link {
             display: inline-block;
-            margin-top: 30px;
-            font-size: 0.5rem;
+            margin-top: 25px;
+            font-size: 0.45rem;
             color: #5fcde4;
             text-decoration: none;
         }
@@ -475,7 +420,7 @@ function generateIndexHTML(files) {
 </head>
 <body>
     <div class="container">
-        <h1>RISING KEYWORDS ARCHIVE</h1>
+        <h1>KEYWORDS ARCHIVE</h1>
         <div class="days">
 ${listHTML}
         </div>
@@ -489,23 +434,27 @@ async function main() {
   const today = getToday();
   const outputFile = path.join(CONFIG.outputDir, `${today}.html`);
 
-  console.log(`📅 Scanning rising keywords for ${today}...`);
+  console.log(`📅 Scanning keywords for ${today}...`);
 
-  // 并行抓取
-  const [daily, realtime, exploding] = await Promise.all([
-    fetchGoogleDailyTrends(),
-    fetchGoogleRealtime(),
-    fetchExplodingTopics(),
+  // 并行抓取多个稳定数据源
+  const [google, wiki, github, hn] = await Promise.all([
+    fetchGoogleTrendsRSS(),
+    fetchWikipediaTrending(),
+    fetchGitHubTrending(),
+    fetchHackerNews(),
   ]);
 
-  // 合并去重
-  let trends = mergeTrends([realtime, daily, exploding]);
+  // 手动维护的新兴词
+  const manual = getManualTrends();
 
-  console.log(`✅ Total: ${trends.length} unique rising keywords`);
+  // 合并
+  let trends = mergeTrends([google, wiki, github, hn, manual]);
 
-  if (trends.length === 0) {
-    console.log('❌ No trends found!');
-    process.exit(1);
+  console.log(`✅ Total: ${trends.length} keywords`);
+
+  if (trends.length < 5) {
+    console.log('⚠️ Too few trends, adding fallback...');
+    trends = [...trends, ...manual];
   }
 
   // 生成页面
