@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Trends Archive</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Press Start 2P', cursive;
+            min-height: 100vh;
+            background: #1a1c2c;
+            color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 1rem;
+            color: #5fcde4;
+            margin-bottom: 30px;
+        }
+        .days {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .day-link {
+            display: block;
+            padding: 16px 24px;
+            background: #2a2d42;
+            border: 3px solid #5a5d7a;
+            color: #f4f4f4;
+            text-decoration: none;
+            font-size: 0.65rem;
+            transition: all 0.1s;
+        }
+        .day-link:hover {
+            border-color: #f4b41a;
+            color: #f4b41a;
+            transform: translateX(4px);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 0.5rem;
+            color: #5fcde4;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TRENDS ARCHIVE</h1>
+        <div class="days">
+            <a href="./2026-01-02.html" class="day-link">2026-01-02</a>
+        </div>
+        <a href="../" class="back-link">← BACK HOME</a>
+    </div>
+</body>
+</html>

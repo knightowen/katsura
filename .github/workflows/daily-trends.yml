@@ -1,0 +1,33 @@
+name: Generate Daily Trends
+
+on:
+  schedule:
+    # 每天 UTC 6:00 运行 (北京时间 14:00)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # 允许手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate trends page
+        run: node scripts/generate-trends.js
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add trends/
+          git diff --staged --quiet || git commit -m "trends: $(date +%Y-%m-%d) daily update"
+          git push
