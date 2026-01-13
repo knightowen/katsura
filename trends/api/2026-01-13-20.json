@@ -1,0 +1,969 @@
+{
+  "timestamp": "2026-01-13-20",
+  "date": "2026-01-13",
+  "slot": "20",
+  "generated": "2026-01-13T20:18:36.757Z",
+  "count": 159,
+  "sources": [
+    "X",
+    "Wiki",
+    "TikTok",
+    "HN"
+  ],
+  "trends": [
+    {
+      "keyword": "Mike Tomlin",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mike%20Tomlin"
+    },
+    {
+      "keyword": "Scott Adams",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Scott%20Adams"
+    },
+    {
+      "keyword": "$PIKZ",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%24PIKZ"
+    },
+    {
+      "keyword": "Zac Taylor",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Zac%20Taylor"
+    },
+    {
+      "keyword": "AFC North",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=AFC%20North"
+    },
+    {
+      "keyword": "Dilbert",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Dilbert"
+    },
+    {
+      "keyword": "The Jupiter",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=The%20Jupiter"
+    },
+    {
+      "keyword": "FINALLY DID IT",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=FINALLY%20DID%20IT"
+    },
+    {
+      "keyword": "Pittsburgh",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Pittsburgh"
+    },
+    {
+      "keyword": "#TicTacToe2026",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23TicTacToe2026"
+    },
+    {
+      "keyword": "Clintons",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Clintons"
+    },
+    {
+      "keyword": "Arenado",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Arenado"
+    },
+    {
+      "keyword": "Deadpool",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Deadpool"
+    },
+    {
+      "keyword": "Jim Jordan",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jim%20Jordan"
+    },
+    {
+      "keyword": "#IranMassacre",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23IranMassacre"
+    },
+    {
+      "keyword": "Steve Bisciotti",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Steve%20Bisciotti"
+    },
+    {
+      "keyword": "People Magazine",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=People%20Magazine"
+    },
+    {
+      "keyword": "Disgraced",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Disgraced"
+    },
+    {
+      "keyword": "Victoria Edel",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Victoria%20Edel"
+    },
+    {
+      "keyword": "Dbacks",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Dbacks"
+    },
+    {
+      "keyword": "Cowher",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Cowher"
+    },
+    {
+      "keyword": "#ErfanSoltani",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23ErfanSoltani"
+    },
+    {
+      "keyword": "Detroit Economic Club",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Detroit%20Economic%20Club"
+    },
+    {
+      "keyword": "Supreme Court",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Supreme%20Court"
+    },
+    {
+      "keyword": "Jordan Addison",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jordan%20Addison"
+    },
+    {
+      "keyword": "Shams",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Shams"
+    },
+    {
+      "keyword": "Gym Jordan",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Gym%20Jordan"
+    },
+    {
+      "keyword": "Steelers HC",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Steelers%20HC"
+    },
+    {
+      "keyword": "Ravens and Steelers",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Ravens%20and%20Steelers"
+    },
+    {
+      "keyword": "Jack Martinez",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jack%20Martinez"
+    },
+    {
+      "keyword": "Harbaugh to the Steelers",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Harbaugh%20to%20the%20Steelers"
+    },
+    {
+      "keyword": "Arlington",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Arlington"
+    },
+    {
+      "keyword": "NL West",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=NL%20West"
+    },
+    {
+      "keyword": "Joe Thompson",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Joe%20Thompson"
+    },
+    {
+      "keyword": "Navarro",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Navarro"
+    },
+    {
+      "keyword": "#BTS_WORLDTOUR",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23BTS_WORLDTOUR"
+    },
+    {
+      "keyword": "#BTScomeback2026",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23BTScomeback2026"
+    },
+    {
+      "keyword": "$ASST",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%24ASST"
+    },
+    {
+      "keyword": "Marcus Freeman",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Marcus%20Freeman"
+    },
+    {
+      "keyword": "After 19",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=After%2019"
+    },
+    {
+      "keyword": "Title IX",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Title%20IX"
+    },
+    {
+      "keyword": "Mr. Adams",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mr.%20Adams"
+    },
+    {
+      "keyword": "Donovan",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Donovan"
+    },
+    {
+      "keyword": "Chuck Noll",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Chuck%20Noll"
+    },
+    {
+      "keyword": "Bannon",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Bannon"
+    },
+    {
+      "keyword": "Weverse",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Weverse"
+    },
+    {
+      "keyword": "Steelers and Ravens",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Steelers%20and%20Ravens"
+    },
+    {
+      "keyword": "kyle tucker",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=kyle%20tucker"
+    },
+    {
+      "keyword": "Devlin",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Devlin"
+    },
+    {
+      "keyword": "Rich Paul",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Rich%20Paul"
+    },
+    {
+      "keyword": "Álvaro Arbeloa",
+      "traffic": "300K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Álvaro_Arbeloa"
+    },
+    {
+      "keyword": "Jessie Buckley",
+      "traffic": "265K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Jessie_Buckley"
+    },
+    {
+      "keyword": "Teyana Taylor",
+      "traffic": "262K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Teyana_Taylor"
+    },
+    {
+      "keyword": "Rose Byrne",
+      "traffic": "229K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Rose_Byrne"
+    },
+    {
+      "keyword": ".xxx",
+      "traffic": "215K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/.xxx"
+    },
+    {
+      "keyword": "Timothée Chalamet",
+      "traffic": "214K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Timothée_Chalamet"
+    },
+    {
+      "keyword": "Drake Maye",
+      "traffic": "195K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Drake_Maye"
+    },
+    {
+      "keyword": "Nikki Glaser",
+      "traffic": "192K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Nikki_Glaser"
+    },
+    {
+      "keyword": "The RajaSaab",
+      "traffic": "190K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/The_RajaSaab"
+    },
+    {
+      "keyword": "Venezuela",
+      "traffic": "184K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Venezuela"
+    },
+    {
+      "keyword": "Heated Rivalry",
+      "traffic": "167K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Heated_Rivalry"
+    },
+    {
+      "keyword": "Hudson Williams",
+      "traffic": "167K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Hudson_Williams"
+    },
+    {
+      "keyword": "Marty Supreme",
+      "traffic": "165K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Marty_Supreme"
+    },
+    {
+      "keyword": "Paul Thomas Anderson",
+      "traffic": "161K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Paul_Thomas_Anderson"
+    },
+    {
+      "keyword": "Hailee Steinfeld",
+      "traffic": "157K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Hailee_Steinfeld"
+    },
+    {
+      "keyword": "Golden Globe Awards",
+      "traffic": "151K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Golden_Globe_Awards"
+    },
+    {
+      "keyword": "Bob Weir",
+      "traffic": "149K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Bob_Weir"
+    },
+    {
+      "keyword": "Dhurandhar",
+      "traffic": "148K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Dhurandhar"
+    },
+    {
+      "keyword": "Stellan Skarsgård",
+      "traffic": "147K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Stellan_Skarsgård"
+    },
+    {
+      "keyword": "2025–2026 Iranian protests",
+      "traffic": "137K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/2025–2026_Iranian_protests"
+    },
+    {
+      "keyword": "His & Hers (2026 TV series)",
+      "traffic": "137K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/His_&_Hers_(2026_TV_series)"
+    },
+    {
+      "keyword": "President of Venezuela",
+      "traffic": "136K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/President_of_Venezuela"
+    },
+    {
+      "keyword": "Deaths in 2026",
+      "traffic": "132K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Deaths_in_2026"
+    },
+    {
+      "keyword": "Owen Cooper",
+      "traffic": "132K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Owen_Cooper"
+    },
+    {
+      "keyword": "Noah Wyle",
+      "traffic": "132K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Noah_Wyle"
+    },
+    {
+      "keyword": "Greenland",
+      "traffic": "131K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Greenland"
+    },
+    {
+      "keyword": "Killing of Renee Good",
+      "traffic": "131K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Killing_of_Renee_Good"
+    },
+    {
+      "keyword": "Anna's Archive",
+      "traffic": "130K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Anna's_Archive"
+    },
+    {
+      "keyword": "Connor Storrie",
+      "traffic": "130K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Connor_Storrie"
+    },
+    {
+      "keyword": "Stephen Graham",
+      "traffic": "129K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Stephen_Graham"
+    },
+    {
+      "keyword": "Avatar: Fire and Ash",
+      "traffic": "129K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Avatar:_Fire_and_Ash"
+    },
+    {
+      "keyword": "Adolescence (TV series)",
+      "traffic": "126K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Adolescence_(TV_series)"
+    },
+    {
+      "keyword": "Jerome Powell",
+      "traffic": "125K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Jerome_Powell"
+    },
+    {
+      "keyword": "Nadhim Zahawi",
+      "traffic": "122K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Nadhim_Zahawi"
+    },
+    {
+      "keyword": "Bobby Cannavale",
+      "traffic": "121K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Bobby_Cannavale"
+    },
+    {
+      "keyword": "If I Had Legs I'd Kick You",
+      "traffic": "120K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/If_I_Had_Legs_I'd_Kick_You"
+    },
+    {
+      "keyword": "Chloé Zhao",
+      "traffic": "120K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Chloé_Zhao"
+    },
+    {
+      "keyword": "Sinners (2025 film)",
+      "traffic": "120K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Sinners_(2025_film)"
+    },
+    {
+      "keyword": "Mike Vrabel",
+      "traffic": "115K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Mike_Vrabel"
+    },
+    {
+      "keyword": "Bruce Lee",
+      "traffic": "115K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Bruce_Lee"
+    },
+    {
+      "keyword": "The Secret Agent (2025 film)",
+      "traffic": "113K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/The_Secret_Agent_(2025_film)"
+    },
+    {
+      "keyword": "ChatGPT",
+      "traffic": "110K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT"
+    },
+    {
+      "keyword": "Reza Pahlavi, Crown Prince of Iran",
+      "traffic": "108K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Reza_Pahlavi,_Crown_Prince_of_Iran"
+    },
+    {
+      "keyword": "Ricardo López (stalker)",
+      "traffic": "107K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Ricardo_López_(stalker)"
+    },
+    {
+      "keyword": "Pluribus (TV series)",
+      "traffic": "106K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Pluribus_(TV_series)"
+    },
+    {
+      "keyword": "Michael Carrick",
+      "traffic": "103K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Michael_Carrick"
+    },
+    {
+      "keyword": "Xabi Alonso",
+      "traffic": "102K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Xabi_Alonso"
+    },
+    {
+      "keyword": "The Pitt",
+      "traffic": "102K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/The_Pitt"
+    },
+    {
+      "keyword": "The Night Manager (British TV series)",
+      "traffic": "99K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/The_Night_Manager_(British_TV_series)"
+    },
+    {
+      "keyword": "Parasakthi (2026 film)",
+      "traffic": "96K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Parasakthi_(2026_film)"
+    },
+    {
+      "keyword": "anime",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/anime"
+    },
+    {
+      "keyword": "longervideos",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/longervideos"
+    },
+    {
+      "keyword": "filmtok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/filmtok"
+    },
+    {
+      "keyword": "blacktiktok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/blacktiktok"
+    },
+    {
+      "keyword": "winteroutfit",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/winteroutfit"
+    },
+    {
+      "keyword": "backintheday",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/backintheday"
+    },
+    {
+      "keyword": "holi",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/holi"
+    },
+    {
+      "keyword": "materialgirl",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/materialgirl"
+    },
+    {
+      "keyword": "whenwomenwin",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/whenwomenwin"
+    },
+    {
+      "keyword": "Signal leaders warn agentic AI is an insecure, unreliable...",
+      "traffic": "221 pts",
+      "source": "HN",
+      "url": "https://coywolf.com/news/productivity/signal-president-and-vp-warn-agentic-ai-is-insecure-unreliable-and-a-surveillance-nightmare/"
+    },
+    {
+      "keyword": "The Tulip Creative Computer",
+      "traffic": "105 pts",
+      "source": "HN",
+      "url": "https://github.com/shorepine/tulipcc"
+    },
+    {
+      "keyword": "AI Generated Music Barred from Bandcamp",
+      "traffic": "231 pts",
+      "source": "HN",
+      "url": "https://old.reddit.com/r/BandCamp/comments/1qbw8ba/ai_generated_music_on_bandcamp/"
+    },
+    {
+      "keyword": "Confer – End to end encrypted AI chat",
+      "traffic": "40 pts",
+      "source": "HN",
+      "url": "https://confer.to/"
+    },
+    {
+      "keyword": "Instagram AI Influencers Are Defaming Celebrities with Se...",
+      "traffic": "36 pts",
+      "source": "HN",
+      "url": "https://www.404media.co/instagram-ai-influencers-are-defaming-celebrities-with-sex-scandals/"
+    },
+    {
+      "keyword": "Influencers and OnlyFans models are dominating U.S. O-1 v...",
+      "traffic": "229 pts",
+      "source": "HN",
+      "url": "https://www.theguardian.com/us-news/2026/jan/11/onlyfans-influencers-us-o-1-visa"
+    },
+    {
+      "keyword": "Show HN: Ayder – HTTP-native durable event log written in...",
+      "traffic": "25 pts",
+      "source": "HN",
+      "url": "https://github.com/A1darbek/ayder"
+    },
+    {
+      "keyword": "Scott Adams has died",
+      "traffic": "401 pts",
+      "source": "HN",
+      "url": "https://www.youtube.com/watch?v=Rs_JrOIo3SE"
+    },
+    {
+      "keyword": "Apple Creator Studio",
+      "traffic": "403 pts",
+      "source": "HN",
+      "url": "https://www.apple.com/newsroom/2026/01/introducing-apple-creator-studio-an-inspiring-collection-of-creative-apps/"
+    },
+    {
+      "keyword": "How to make a damn website (2024)",
+      "traffic": "26 pts",
+      "source": "HN",
+      "url": "https://lmnt.me/blog/how-to-make-a-damn-website.html"
+    },
+    {
+      "keyword": "Text-based web browsers",
+      "traffic": "254 pts",
+      "source": "HN",
+      "url": "https://cssence.com/2026/text-based-web-browsers/"
+    },
+    {
+      "keyword": "What a year of solar and batteries saved us in 2025",
+      "traffic": "205 pts",
+      "source": "HN",
+      "url": "https://scotthelme.co.uk/what-a-year-of-solar-and-batteries-really-saved-us-in-2025/"
+    },
+    {
+      "keyword": "Legion Health (YC S21) Hiring Cracked Founding Eng for AI...",
+      "traffic": "1 pts",
+      "source": "HN",
+      "url": "https://jobs.ashbyhq.com/legionhealth/ffdd2b52-eb21-489e-b124-3c0804231424"
+    },
+    {
+      "keyword": "Git Rebase for the Terrified",
+      "traffic": "191 pts",
+      "source": "HN",
+      "url": "https://www.brethorsting.com/blog/2026/01/git-rebase-for-the-terrified/"
+    },
+    {
+      "keyword": "Show HN: An iOS budget app I've been maintaining since 2011",
+      "traffic": "115 pts",
+      "source": "HN",
+      "url": "https://primoco.me/en/"
+    },
+    {
+      "keyword": "We rolled our own documentation site",
+      "traffic": "13 pts",
+      "source": "HN",
+      "url": "https://blog.tangled.org/docs"
+    },
+    {
+      "keyword": "Everything you never wanted to know about file locking (2...",
+      "traffic": "35 pts",
+      "source": "HN",
+      "url": "https://apenwarr.ca/log/20101213"
+    },
+    {
+      "keyword": "A university got itself banned from the Linux kernel (2021)",
+      "traffic": "19 pts",
+      "source": "HN",
+      "url": "https://www.theverge.com/2021/4/30/22410164/linux-kernel-university-of-minnesota-banned-open-source"
+    },
+    {
+      "keyword": "Show HN: Ever wanted to look at yourself in Braille?",
+      "traffic": "14 pts",
+      "source": "HN",
+      "url": "https://github.com/NishantJoshi00/dith"
+    },
+    {
+      "keyword": "Local Journalism Is How Democracy Shows Up Close to Home",
+      "traffic": "337 pts",
+      "source": "HN",
+      "url": "https://buckscountybeacon.com/2026/01/opinion-local-journalism-is-how-democracy-shows-up-close-to-home/"
+    },
+    {
+      "keyword": "Show HN: Self-host Reddit – 2.38B posts, works offline, y...",
+      "traffic": "83 pts",
+      "source": "HN",
+      "url": "https://github.com/19-84/redd-archiver"
+    },
+    {
+      "keyword": "Cowork: Claude Code for the rest of your work",
+      "traffic": "1214 pts",
+      "source": "HN",
+      "url": "https://claude.com/blog/cowork-research-preview"
+    },
+    {
+      "keyword": "The Case for Blogging in the Ruins",
+      "traffic": "41 pts",
+      "source": "HN",
+      "url": "https://www.joanwestenberg.com/the-case-for-blogging-in-the-ruins/"
+    },
+    {
+      "keyword": "Show HN: FastScheduler – Decorator-first Python task sche...",
+      "traffic": "21 pts",
+      "source": "HN",
+      "url": "https://github.com/MichielMe/fastscheduler"
+    },
+    {
+      "keyword": "Inlining – The Ultimate Optimisation",
+      "traffic": "7 pts",
+      "source": "HN",
+      "url": "https://xania.org/202512/17-inlining-the-ultimate-optimisation"
+    },
+    {
+      "keyword": "Anthropic invests $1.5M in the Python Software Foundation",
+      "traffic": "303 pts",
+      "source": "HN",
+      "url": "https://discuss.python.org/t/anthropic-has-made-a-large-contribution-to-the-python-software-foundation-and-open-source-security/105694"
+    },
+    {
+      "keyword": "Show HN: SnackBase – Open-source, GxP-compliant back end ...",
+      "traffic": "47 pts",
+      "source": "HN",
+      "url": "https://snackbase.dev"
+    },
+    {
+      "keyword": "Mozilla's open source AI strategy",
+      "traffic": "156 pts",
+      "source": "HN",
+      "url": "https://blog.mozilla.org/en/mozilla/mozilla-open-source-ai-strategy/"
+    },
+    {
+      "keyword": "Robotopia: A 3D, first-person, talking simulator",
+      "traffic": "97 pts",
+      "source": "HN",
+      "url": "https://elbowgreasegames.substack.com/p/introducing-robotopia-a-3d-first"
+    },
+    {
+      "keyword": "The Cray-1 Computer System (1977) [pdf]",
+      "traffic": "142 pts",
+      "source": "HN",
+      "url": "https://s3data.computerhistory.org/brochures/cray.cray1.1977.102638650.pdf"
+    },
+    {
+      "keyword": "Chromium Has Merged JpegXL",
+      "traffic": "371 pts",
+      "source": "HN",
+      "url": "https://chromium-review.googlesource.com/c/chromium/src/+/7184969"
+    },
+    {
+      "keyword": "Indifference is a power",
+      "traffic": "188 pts",
+      "source": "HN",
+      "url": "https://aeon.co/essays/why-stoicism-is-one-of-the-best-mind-hacks-ever-devised"
+    },
+    {
+      "keyword": "The UK is shaping a future of precrime and dissent manage...",
+      "traffic": "196 pts",
+      "source": "HN",
+      "url": "https://freedomnews.org.uk/2025/04/11/how-the-uk-is-shaping-a-future-of-precrime-and-dissent-management/"
+    },
+    {
+      "keyword": "HP Reveals Keyboard Computer with Ryzen AI Chip",
+      "traffic": "75 pts",
+      "source": "HN",
+      "url": "https://www.hp.com/us-en/desktops/business/eliteboard.html"
+    },
+    {
+      "keyword": "Implementing a web server in a single printf() call (2014)",
+      "traffic": "77 pts",
+      "source": "HN",
+      "url": "https://tinyhack.com/2014/03/12/implementing-a-web-server-in-a-single-printf-call/"
+    },
+    {
+      "keyword": "TimeCapsuleLLM: LLM trained only on data from 1800-1875",
+      "traffic": "708 pts",
+      "source": "HN",
+      "url": "https://github.com/haykgrigo3/TimeCapsuleLLM"
+    },
+    {
+      "keyword": "The struggle of resizing windows on macOS Tahoe",
+      "traffic": "2702 pts",
+      "source": "HN",
+      "url": "https://noheger.at/blog/2026/01/11/the-struggle-of-resizing-windows-on-macos-tahoe/"
+    },
+    {
+      "keyword": "Beating the House for the Love of Math",
+      "traffic": "8 pts",
+      "source": "HN",
+      "url": "https://advantage-player.com/blog/from-excel-to-web-blackjack-calculator"
+    },
+    {
+      "keyword": "Postal Arbitrage",
+      "traffic": "525 pts",
+      "source": "HN",
+      "url": "https://walzr.com/postal-arbitrage"
+    },
+    {
+      "keyword": "Floppy disks turn out to be the greatest TV remote for kids",
+      "traffic": "711 pts",
+      "source": "HN",
+      "url": "https://blog.smartere.dk/2026/01/floppy-disks-the-best-tv-remote-for-kids/"
+    },
+    {
+      "keyword": "FOSS in times of war, scarcity and (adversarial) AI [video]",
+      "traffic": "133 pts",
+      "source": "HN",
+      "url": "https://fosdem.org/2026/schedule/event/FE7ULY-foss-in-times-of-war-scarcity-and-ai/"
+    },
+    {
+      "keyword": "Private Equity explained in 132 seconds [video]",
+      "traffic": "14 pts",
+      "source": "HN",
+      "url": "https://www.youtube.com/watch?v=SVDIJTPMzt8"
+    },
+    {
+      "keyword": "NASA topples towers used to test Saturn rockets, space sh...",
+      "traffic": "48 pts",
+      "source": "HN",
+      "url": "https://arstechnica.com/space/2026/01/nasa-topples-towers-used-to-test-saturn-rockets-space-shuttle/"
+    },
+    {
+      "keyword": "Why have death rates from accidental falls tripled?",
+      "traffic": "56 pts",
+      "source": "HN",
+      "url": "https://usafacts.org/articles/why-have-death-rates-from-accidental-falls-tripled/"
+    },
+    {
+      "keyword": "Ozempic is changing the foods Americans buy",
+      "traffic": "444 pts",
+      "source": "HN",
+      "url": "https://news.cornell.edu/stories/2025/12/ozempic-changing-foods-americans-buy"
+    },
+    {
+      "keyword": "Show HN: Agent-of-empires: OpenCode and Claude Code sessi...",
+      "traffic": "109 pts",
+      "source": "HN",
+      "url": "https://github.com/njbrake/agent-of-empires"
+    },
+    {
+      "keyword": "The U.S. Government Just Followed Through on Its Ban of D...",
+      "traffic": "184 pts",
+      "source": "HN",
+      "url": "https://www.popularmechanics.com/technology/robots/a69937082/us-bans-new-foreign-made-drones/"
+    },
+    {
+      "keyword": "Why BM25 queries with more terms can be faster (and other...",
+      "traffic": "48 pts",
+      "source": "HN",
+      "url": "https://turbopuffer.com/blog/bm25-latency-musings"
+    },
+    {
+      "keyword": "The chess bot on Delta Air Lines will destroy you (2024) ...",
+      "traffic": "320 pts",
+      "source": "HN",
+      "url": "https://www.youtube.com/watch?v=c0mLhHDcY3I"
+    },
+    {
+      "keyword": "Unauthenticated remote code execution in OpenCode",
+      "traffic": "412 pts",
+      "source": "HN",
+      "url": "https://cy.md/opencode-rce/"
+    }
+  ]
+}
