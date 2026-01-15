@@ -1,0 +1,969 @@
+{
+  "timestamp": "2026-01-15-08",
+  "date": "2026-01-15",
+  "slot": "08",
+  "generated": "2026-01-15T08:23:51.110Z",
+  "count": 159,
+  "sources": [
+    "X",
+    "Wiki",
+    "TikTok",
+    "HN"
+  ],
+  "trends": [
+    {
+      "keyword": "Hobbs",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Hobbs"
+    },
+    {
+      "keyword": "#AEWDynamite",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23AEWDynamite"
+    },
+    {
+      "keyword": "Verizon",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Verizon"
+    },
+    {
+      "keyword": "Hubert",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Hubert"
+    },
+    {
+      "keyword": "#NYGiants",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23NYGiants"
+    },
+    {
+      "keyword": "Stanford",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Stanford"
+    },
+    {
+      "keyword": "Precious Achiuwa",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Precious%20Achiuwa"
+    },
+    {
+      "keyword": "Jalen Brunson",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jalen%20Brunson"
+    },
+    {
+      "keyword": "Koa Peat",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Koa%20Peat"
+    },
+    {
+      "keyword": "#VegasBorn",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23VegasBorn"
+    },
+    {
+      "keyword": "Mike Brown",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mike%20Brown"
+    },
+    {
+      "keyword": "AJ Dybantsa",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=AJ%20Dybantsa"
+    },
+    {
+      "keyword": "Boopie Miller",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Boopie%20Miller"
+    },
+    {
+      "keyword": "Walt",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Walt"
+    },
+    {
+      "keyword": "NFC East",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=NFC%20East"
+    },
+    {
+      "keyword": "Isaiah Evans",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Isaiah%20Evans"
+    },
+    {
+      "keyword": "Yanic",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Yanic"
+    },
+    {
+      "keyword": "Mark Stone",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mark%20Stone"
+    },
+    {
+      "keyword": "Eichel",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Eichel"
+    },
+    {
+      "keyword": "Hiller",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Hiller"
+    },
+    {
+      "keyword": "Doughty",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Doughty"
+    },
+    {
+      "keyword": "Caleb Martin",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Caleb%20Martin"
+    },
+    {
+      "keyword": "Okorie",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Okorie"
+    },
+    {
+      "keyword": "Karl Anthony Towns",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Karl%20Anthony%20Towns"
+    },
+    {
+      "keyword": "Caleb Wilson",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Caleb%20Wilson"
+    },
+    {
+      "keyword": "Tobe Awaka",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Tobe%20Awaka"
+    },
+    {
+      "keyword": "Diop",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Diop"
+    },
+    {
+      "keyword": "Status Coup",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Status%20Coup"
+    },
+    {
+      "keyword": "Bobby Hurley",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Bobby%20Hurley"
+    },
+    {
+      "keyword": "Brice Sensabaugh",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Brice%20Sensabaugh"
+    },
+    {
+      "keyword": "Mission Country",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mission%20Country"
+    },
+    {
+      "keyword": "North Minneapolis",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=North%20Minneapolis"
+    },
+    {
+      "keyword": "Cameron Boozer",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Cameron%20Boozer"
+    },
+    {
+      "keyword": "Bandido",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Bandido"
+    },
+    {
+      "keyword": "Brandt Clarke",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Brandt%20Clarke"
+    },
+    {
+      "keyword": "Mission Language",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mission%20Language"
+    },
+    {
+      "keyword": "Deadpool",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Deadpool"
+    },
+    {
+      "keyword": "#RHUGT",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23RHUGT"
+    },
+    {
+      "keyword": "Sean Miller",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sean%20Miller"
+    },
+    {
+      "keyword": "#SistasOnBET",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23SistasOnBET"
+    },
+    {
+      "keyword": "Skattebo",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Skattebo"
+    },
+    {
+      "keyword": "Kyan Evans",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Kyan%20Evans"
+    },
+    {
+      "keyword": "Jamal Murray",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jamal%20Murray"
+    },
+    {
+      "keyword": "Darby",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Darby"
+    },
+    {
+      "keyword": "The Rascalz",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=The%20Rascalz"
+    },
+    {
+      "keyword": "The Kings",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=The%20Kings"
+    },
+    {
+      "keyword": "Marner",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Marner"
+    },
+    {
+      "keyword": "Malachi Moreno",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Malachi%20Moreno"
+    },
+    {
+      "keyword": "Mercado",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mercado"
+    },
+    {
+      "keyword": "T-Mobile",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=T-Mobile"
+    },
+    {
+      "keyword": "Mike Tomlin",
+      "traffic": "162K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Mike_Tomlin"
+    },
+    {
+      "keyword": "Greenland",
+      "traffic": "162K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Greenland"
+    },
+    {
+      "keyword": "Dhurandhar",
+      "traffic": "133K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Dhurandhar"
+    },
+    {
+      "keyword": "2025–2026 Iranian protests",
+      "traffic": "132K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/2025–2026_Iranian_protests"
+    },
+    {
+      "keyword": "Deaths in 2026",
+      "traffic": "131K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Deaths_in_2026"
+    },
+    {
+      "keyword": "Melissa Gilbert",
+      "traffic": "123K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Melissa_Gilbert"
+    },
+    {
+      "keyword": "Heated Rivalry",
+      "traffic": "122K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Heated_Rivalry"
+    },
+    {
+      "keyword": "Killing of Renee Good",
+      "traffic": "122K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Killing_of_Renee_Good"
+    },
+    {
+      "keyword": "Anna's Archive",
+      "traffic": "117K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Anna's_Archive"
+    },
+    {
+      "keyword": "His & Hers (2026 TV series)",
+      "traffic": "113K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/His_&_Hers_(2026_TV_series)"
+    },
+    {
+      "keyword": "ChatGPT",
+      "traffic": "113K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT"
+    },
+    {
+      "keyword": "Bruce Lee",
+      "traffic": "112K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Bruce_Lee"
+    },
+    {
+      "keyword": "Makar Sankranti",
+      "traffic": "111K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Makar_Sankranti"
+    },
+    {
+      "keyword": "The RajaSaab",
+      "traffic": "108K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/The_RajaSaab"
+    },
+    {
+      "keyword": "Connor Storrie",
+      "traffic": "106K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Connor_Storrie"
+    },
+    {
+      "keyword": "Avatar: Fire and Ash",
+      "traffic": "105K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Avatar:_Fire_and_Ash"
+    },
+    {
+      "keyword": "List of highest-grossing Indian films",
+      "traffic": "96K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/List_of_highest-grossing_Indian_films"
+    },
+    {
+      "keyword": "Hudson Williams",
+      "traffic": "95K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Hudson_Williams"
+    },
+    {
+      "keyword": "Venezuela",
+      "traffic": "93K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Venezuela"
+    },
+    {
+      "keyword": "Neatsville, Kentucky",
+      "traffic": "90K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Neatsville,_Kentucky"
+    },
+    {
+      "keyword": "Iran",
+      "traffic": "86K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Iran"
+    },
+    {
+      "keyword": "Marty Supreme",
+      "traffic": "86K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Marty_Supreme"
+    },
+    {
+      "keyword": "One Battle After Another",
+      "traffic": "85K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/One_Battle_After_Another"
+    },
+    {
+      "keyword": ".xxx",
+      "traffic": "83K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/.xxx"
+    },
+    {
+      "keyword": "Steve Bisciotti",
+      "traffic": "80K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Steve_Bisciotti"
+    },
+    {
+      "keyword": "Liam Rosenior",
+      "traffic": "79K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Liam_Rosenior"
+    },
+    {
+      "keyword": "1000 Blank White Cards",
+      "traffic": "76K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/1000_Blank_White_Cards"
+    },
+    {
+      "keyword": "John Forté",
+      "traffic": "76K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/John_Forté"
+    },
+    {
+      "keyword": "category:redirects from moves",
+      "traffic": "72K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/category:redirects_from_moves"
+    },
+    {
+      "keyword": "Ali Khamenei",
+      "traffic": "72K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Ali_Khamenei"
+    },
+    {
+      "keyword": "Matt Damon",
+      "traffic": "72K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Matt_Damon"
+    },
+    {
+      "keyword": "XXX (Kendrick Lamar song)",
+      "traffic": "71K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/XXX_(Kendrick_Lamar_song)"
+    },
+    {
+      "keyword": "Reza Pahlavi, Crown Prince of Iran",
+      "traffic": "71K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Reza_Pahlavi,_Crown_Prince_of_Iran"
+    },
+    {
+      "keyword": "Africa Cup of Nations",
+      "traffic": "71K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Africa_Cup_of_Nations"
+    },
+    {
+      "keyword": "Alan Rickman",
+      "traffic": "71K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Alan_Rickman"
+    },
+    {
+      "keyword": "Álvaro Arbeloa",
+      "traffic": "70K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Álvaro_Arbeloa"
+    },
+    {
+      "keyword": "Harriet Tyce",
+      "traffic": "70K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Harriet_Tyce"
+    },
+    {
+      "keyword": "Parasakthi (2026 film)",
+      "traffic": "70K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Parasakthi_(2026_film)"
+    },
+    {
+      "keyword": "28 Years Later",
+      "traffic": "69K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/28_Years_Later"
+    },
+    {
+      "keyword": "President of Venezuela",
+      "traffic": "69K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/President_of_Venezuela"
+    },
+    {
+      "keyword": "Stranger Things",
+      "traffic": "68K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Stranger_Things"
+    },
+    {
+      "keyword": "Taskaree: The Smuggler's Web",
+      "traffic": "68K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Taskaree:_The_Smuggler's_Web"
+    },
+    {
+      "keyword": "Michael Carrick",
+      "traffic": "67K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Michael_Carrick"
+    },
+    {
+      "keyword": "Hamnet (film)",
+      "traffic": "67K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Hamnet_(film)"
+    },
+    {
+      "keyword": "Mohammad Reza Pahlavi",
+      "traffic": "66K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Mohammad_Reza_Pahlavi"
+    },
+    {
+      "keyword": "The Night Manager (British TV series)",
+      "traffic": "66K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/The_Night_Manager_(British_TV_series)"
+    },
+    {
+      "keyword": "Teyana Taylor",
+      "traffic": "65K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Teyana_Taylor"
+    },
+    {
+      "keyword": "Timothée Chalamet",
+      "traffic": "59K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Timothée_Chalamet"
+    },
+    {
+      "keyword": "The Housemaid (2025 film)",
+      "traffic": "59K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/The_Housemaid_(2025_film)"
+    },
+    {
+      "keyword": "John Alford (actor)",
+      "traffic": "59K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/John_Alford_(actor)"
+    },
+    {
+      "keyword": "anime",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/anime"
+    },
+    {
+      "keyword": "longervideos",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/longervideos"
+    },
+    {
+      "keyword": "filmtok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/filmtok"
+    },
+    {
+      "keyword": "blacktiktok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/blacktiktok"
+    },
+    {
+      "keyword": "winteroutfit",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/winteroutfit"
+    },
+    {
+      "keyword": "backintheday",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/backintheday"
+    },
+    {
+      "keyword": "holi",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/holi"
+    },
+    {
+      "keyword": "materialgirl",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/materialgirl"
+    },
+    {
+      "keyword": "whenwomenwin",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/whenwomenwin"
+    },
+    {
+      "keyword": "The URL shortener that makes your links look as suspiciou...",
+      "traffic": "285 pts",
+      "source": "HN",
+      "url": "https://creepylink.com/"
+    },
+    {
+      "keyword": "Claude Cowork exfiltrates files",
+      "traffic": "630 pts",
+      "source": "HN",
+      "url": "https://www.promptarmor.com/resources/claude-cowork-exfiltrates-files"
+    },
+    {
+      "keyword": "Handy – free open source speech-to-text app",
+      "traffic": "45 pts",
+      "source": "HN",
+      "url": "https://github.com/cjpais/Handy"
+    },
+    {
+      "keyword": "Furiosa: 3.5x efficiency over H100s",
+      "traffic": "155 pts",
+      "source": "HN",
+      "url": "https://furiosa.ai/blog/introducing-rngd-server-efficient-ai-inference-at-data-center-scale"
+    },
+    {
+      "keyword": "New Safari developer tools provide insight into CSS Grid ...",
+      "traffic": "51 pts",
+      "source": "HN",
+      "url": "https://webkit.org/blog/17746/new-safari-developer-tools-provide-insight-into-css-grid-lanes/"
+    },
+    {
+      "keyword": "Show HN: Sparrow-1 – Audio-native model for human-level t...",
+      "traffic": "62 pts",
+      "source": "HN",
+      "url": "https://www.tavus.io/post/sparrow-1-human-level-conversational-timing-in-real-time-voice"
+    },
+    {
+      "keyword": "Ask HN: How are you doing RAG locally?",
+      "traffic": "116 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=46616529"
+    },
+    {
+      "keyword": "Ask HN: Share your personal website",
+      "traffic": "576 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=46618714"
+    },
+    {
+      "keyword": "Project SkyWatch (a.k.a. Wescam at Home)",
+      "traffic": "35 pts",
+      "source": "HN",
+      "url": "https://ianservin.com/2026/01/13/project-skywatch-aka-wescam-at-home/"
+    },
+    {
+      "keyword": "Scaling long-running autonomous coding",
+      "traffic": "190 pts",
+      "source": "HN",
+      "url": "https://cursor.com/blog/scaling-agents"
+    },
+    {
+      "keyword": "Bubblewrap: A nimble way to prevent agents from accessing...",
+      "traffic": "85 pts",
+      "source": "HN",
+      "url": "https://patrickmccanna.net/a-better-way-to-limit-claude-code-and-other-coding-agents-access-to-secrets/"
+    },
+    {
+      "keyword": "Ask HN: What did you find out or explore today?",
+      "traffic": "67 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=46619464"
+    },
+    {
+      "keyword": "The <Geolocation> HTML Element",
+      "traffic": "10 pts",
+      "source": "HN",
+      "url": "https://developer.chrome.com/blog/geolocation-html-element"
+    },
+    {
+      "keyword": "The State of OpenSSL for pyca/cryptography",
+      "traffic": "132 pts",
+      "source": "HN",
+      "url": "https://cryptography.io/en/latest/statements/state-of-openssl/"
+    },
+    {
+      "keyword": "Bare metal programming with RISC-V guide (2023)",
+      "traffic": "13 pts",
+      "source": "HN",
+      "url": "https://popovicu.com/posts/bare-metal-programming-risc-v/"
+    },
+    {
+      "keyword": "Ask HN: Weird archive.today behavior?",
+      "traffic": "103 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=46624740"
+    },
+    {
+      "keyword": "Show HN: WebTiles – create a tiny 250x250 website with ne...",
+      "traffic": "173 pts",
+      "source": "HN",
+      "url": "https://webtiles.kicya.net/"
+    },
+    {
+      "keyword": "Sun Position Calculator",
+      "traffic": "106 pts",
+      "source": "HN",
+      "url": "https://drajmarsh.bitbucket.io/earthsun.html"
+    },
+    {
+      "keyword": "SparkFun Officially Dropping AdaFruit due to CoC Violation",
+      "traffic": "447 pts",
+      "source": "HN",
+      "url": "https://www.sparkfun.com/official-response"
+    },
+    {
+      "keyword": "Show HN: Webctl – Browser automation for agents based on ...",
+      "traffic": "90 pts",
+      "source": "HN",
+      "url": "https://github.com/cosinusalpha/webctl"
+    },
+    {
+      "keyword": "Find a pub that needs you",
+      "traffic": "274 pts",
+      "source": "HN",
+      "url": "https://www.ismypubfucked.com/"
+    },
+    {
+      "keyword": "Crafting Interpreters",
+      "traffic": "83 pts",
+      "source": "HN",
+      "url": "https://craftinginterpreters.com/"
+    },
+    {
+      "keyword": "Ask HN: What is the best way to provide continuous contex...",
+      "traffic": "43 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=46626639"
+    },
+    {
+      "keyword": "Generate QR Codes with Pure SQL in PostgreSQL",
+      "traffic": "79 pts",
+      "source": "HN",
+      "url": "https://tanelpoder.com/posts/generate-qr-code-with-pure-sql-in-postgres/"
+    },
+    {
+      "keyword": "ChromaDB Explorer",
+      "traffic": "52 pts",
+      "source": "HN",
+      "url": "https://www.chroma-explorer.com/"
+    },
+    {
+      "keyword": "Roam 50GB is now Roam 100GB",
+      "traffic": "274 pts",
+      "source": "HN",
+      "url": "https://starlink.com/support/article/58c9c8b7-474e-246f-7e3c-06db3221d34d"
+    },
+    {
+      "keyword": "How can I build a simple pulse generator to demonstrate t...",
+      "traffic": "41 pts",
+      "source": "HN",
+      "url": "https://electronics.stackexchange.com/questions/764155/how-can-i-build-a-simple-pulse-generator-to-demonstrate-transmission-lines"
+    },
+    {
+      "keyword": "Show HN: Ever wanted to look at yourself in Braille?",
+      "traffic": "24 pts",
+      "source": "HN",
+      "url": "https://github.com/NishantJoshi00/dith"
+    },
+    {
+      "keyword": "Is Rust faster than C?",
+      "traffic": "271 pts",
+      "source": "HN",
+      "url": "https://steveklabnik.com/writing/is-rust-faster-than-c/"
+    },
+    {
+      "keyword": "Ford F-150 Lightning outsold the Cybertruck and was then ...",
+      "traffic": "578 pts",
+      "source": "HN",
+      "url": "https://electrek.co/2026/01/13/ford-f150-lightning-outsold-tesla-cybertruck-canceled-not-selling-enough/"
+    },
+    {
+      "keyword": "Rubik's Cube in Prolog – Order",
+      "traffic": "35 pts",
+      "source": "HN",
+      "url": "https://medium.com/@kenichisasagawa/i-am-preparing-material-for-a-prolog-book-af7580acfee7"
+    },
+    {
+      "keyword": "Eigent: An open source Claude Cowork alternative",
+      "traffic": "16 pts",
+      "source": "HN",
+      "url": "https://github.com/eigent-ai/eigent"
+    },
+    {
+      "keyword": "Native ZFS VDEV for Object Storage (OpenZFS Summit)",
+      "traffic": "106 pts",
+      "source": "HN",
+      "url": "https://www.zettalane.com/blog/openzfs-summit-2025-mayanas-objbacker.html"
+    },
+    {
+      "keyword": "GitHub should charge everyone $1 more per month to fund o...",
+      "traffic": "271 pts",
+      "source": "HN",
+      "url": "https://blog.greg.technology/2025/11/27/github-should-charge-1-dollar-more-per-month.html"
+    },
+    {
+      "keyword": "The Influentists: AI hype without proof",
+      "traffic": "213 pts",
+      "source": "HN",
+      "url": "https://carette.xyz/posts/influentists/"
+    },
+    {
+      "keyword": "Why some clothes shrink in the wash and how to unshrink them",
+      "traffic": "493 pts",
+      "source": "HN",
+      "url": "https://www.swinburne.edu.au/news/2025/08/why-some-clothes-shrink-in-the-wash-and-how-to-unshrink-them/"
+    },
+    {
+      "keyword": "Every country should set 16 as the minimum age for social...",
+      "traffic": "205 pts",
+      "source": "HN",
+      "url": "https://www.afterbabel.com/p/why-every-country-should-set-16"
+    },
+    {
+      "keyword": "Ski map artist James Niehues, the 'Monet of the mountains...",
+      "traffic": "142 pts",
+      "source": "HN",
+      "url": "https://adventure.com/ski-map-artist-james-niehues/"
+    },
+    {
+      "keyword": "Edge of Emulation: Game Boy Sewing Machines (2020)",
+      "traffic": "112 pts",
+      "source": "HN",
+      "url": "https://shonumi.github.io/articles/art22.html"
+    },
+    {
+      "keyword": "Upgrading DrizzleORM logging with AsyncLocalStorage",
+      "traffic": "8 pts",
+      "source": "HN",
+      "url": "https://numeric.substack.com/p/upgrading-drizzleorm-logging-with"
+    },
+    {
+      "keyword": "The hunt for a stolen Jackson Pollock",
+      "traffic": "23 pts",
+      "source": "HN",
+      "url": "https://www.washingtonpost.com/entertainment/art/interactive/2026/jackson-pollock-theft-isaacs-family/"
+    },
+    {
+      "keyword": "System Programming in Linux: A Hands-On Introduction \"Dem...",
+      "traffic": "113 pts",
+      "source": "HN",
+      "url": "https://github.com/stewartweiss/intro-linux-sys-prog"
+    },
+    {
+      "keyword": "So, you’ve hit an age gate. What now?",
+      "traffic": "330 pts",
+      "source": "HN",
+      "url": "https://www.eff.org/deeplinks/2026/01/so-youve-hit-age-gate-what-now"
+    },
+    {
+      "keyword": "Lago (Open-Source Billing) is hiring across teams and geos",
+      "traffic": "1 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=46615235"
+    },
+    {
+      "keyword": "Ask HN: How do you safely give LLMs SSH/DB access?",
+      "traffic": "75 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=46620990"
+    },
+    {
+      "keyword": "You Can Just Buy Far-UVC",
+      "traffic": "71 pts",
+      "source": "HN",
+      "url": "https://www.jefftk.com/p/you-can-just-buy-far-uvc"
+    },
+    {
+      "keyword": "I hate GitHub Actions with passion",
+      "traffic": "449 pts",
+      "source": "HN",
+      "url": "https://xlii.space/eng/i-hate-github-actions-with-passion/"
+    },
+    {
+      "keyword": "The Gleam Programming Language",
+      "traffic": "256 pts",
+      "source": "HN",
+      "url": "https://gleam.run/"
+    },
+    {
+      "keyword": "There's a ridiculous amount of tech in a disposable vape",
+      "traffic": "727 pts",
+      "source": "HN",
+      "url": "https://blog.jgc.org/2026/01/theres-ridiculous-amount-of-tech-in.html"
+    },
+    {
+      "keyword": "Ask HN: Distributed SQL engine for ultra-wide tables",
+      "traffic": "11 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=46624190"
+    }
+  ]
+}
