@@ -1,0 +1,669 @@
+{
+  "timestamp": "2026-02-02-00",
+  "date": "2026-02-02",
+  "slot": "00",
+  "generated": "2026-02-02T01:29:13.637Z",
+  "count": 109,
+  "sources": [
+    "X",
+    "Wiki",
+    "TikTok",
+    "HN"
+  ],
+  "trends": [
+    {
+      "keyword": "#GRAMMYs",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23GRAMMYs"
+    },
+    {
+      "keyword": "Kawhi",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Kawhi"
+    },
+    {
+      "keyword": "Kennedy Center",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Kennedy%20Center"
+    },
+    {
+      "keyword": "#StadiumSeries",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23StadiumSeries"
+    },
+    {
+      "keyword": "CHET",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=CHET"
+    },
+    {
+      "keyword": "All-Star",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=All-Star"
+    },
+    {
+      "keyword": "chappell",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=chappell"
+    },
+    {
+      "keyword": "Kehlani",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Kehlani"
+    },
+    {
+      "keyword": "Norman Powell",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Norman%20Powell"
+    },
+    {
+      "keyword": "Tim McGraw",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Tim%20McGraw"
+    },
+    {
+      "keyword": "Jon Cooper",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jon%20Cooper"
+    },
+    {
+      "keyword": "Bruins",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Bruins"
+    },
+    {
+      "keyword": "Tyla",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Tyla"
+    },
+    {
+      "keyword": "#GoBolts",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23GoBolts"
+    },
+    {
+      "keyword": "Reds",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Reds"
+    },
+    {
+      "keyword": "Suarez",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Suarez"
+    },
+    {
+      "keyword": "Durand",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Durand"
+    },
+    {
+      "keyword": "Gaga",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Gaga"
+    },
+    {
+      "keyword": "Sabrina",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sabrina"
+    },
+    {
+      "keyword": "Siakam",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Siakam"
+    },
+    {
+      "keyword": "Jesús Ochoa",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jes%C3%BAs%20Ochoa"
+    },
+    {
+      "keyword": "Billie",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Billie"
+    },
+    {
+      "keyword": "Davido",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Davido"
+    },
+    {
+      "keyword": "Hagel",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Hagel"
+    },
+    {
+      "keyword": "Black History Month",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Black%20History%20Month"
+    },
+    {
+      "keyword": "#SuperpowerSlam",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23SuperpowerSlam"
+    },
+    {
+      "keyword": "Harden",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Harden"
+    },
+    {
+      "keyword": "Deni",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Deni"
+    },
+    {
+      "keyword": "Keaton Wagler",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Keaton%20Wagler"
+    },
+    {
+      "keyword": "Geno",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Geno"
+    },
+    {
+      "keyword": "Reggie Miller",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Reggie%20Miller"
+    },
+    {
+      "keyword": "Jamal Murray",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jamal%20Murray"
+    },
+    {
+      "keyword": "olivia dean",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=olivia%20dean"
+    },
+    {
+      "keyword": "Raymundo Gutierrez",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Raymundo%20Gutierrez"
+    },
+    {
+      "keyword": "Caitlin Clark",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Caitlin%20Clark"
+    },
+    {
+      "keyword": "Leon Thomas",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Leon%20Thomas"
+    },
+    {
+      "keyword": "Sengun",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sengun"
+    },
+    {
+      "keyword": "#LightningStrikes",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23LightningStrikes"
+    },
+    {
+      "keyword": "Clipse",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Clipse"
+    },
+    {
+      "keyword": "Illini",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Illini"
+    },
+    {
+      "keyword": "kendrick",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=kendrick"
+    },
+    {
+      "keyword": "Morgan Geekie",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Morgan%20Geekie"
+    },
+    {
+      "keyword": "Jalen Duren",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jalen%20Duren"
+    },
+    {
+      "keyword": "Neptune",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Neptune"
+    },
+    {
+      "keyword": "Brandon Ingram",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Brandon%20Ingram"
+    },
+    {
+      "keyword": "EGOT",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=EGOT"
+    },
+    {
+      "keyword": "Mast",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mast"
+    },
+    {
+      "keyword": "Tracy Morgan",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Tracy%20Morgan"
+    },
+    {
+      "keyword": "Benito",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Benito"
+    },
+    {
+      "keyword": "Doechii",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Doechii"
+    },
+    {
+      "keyword": "anime",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/anime"
+    },
+    {
+      "keyword": "longervideos",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/longervideos"
+    },
+    {
+      "keyword": "filmtok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/filmtok"
+    },
+    {
+      "keyword": "blacktiktok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/blacktiktok"
+    },
+    {
+      "keyword": "winteroutfit",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/winteroutfit"
+    },
+    {
+      "keyword": "backintheday",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/backintheday"
+    },
+    {
+      "keyword": "holi",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/holi"
+    },
+    {
+      "keyword": "materialgirl",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/materialgirl"
+    },
+    {
+      "keyword": "whenwomenwin",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/whenwomenwin"
+    },
+    {
+      "keyword": "Defeating a 40-year-old copy protection dongle",
+      "traffic": "216 pts",
+      "source": "HN",
+      "url": "https://dmitrybrant.com/2026/02/01/defeating-a-40-year-old-copy-protection-dongle"
+    },
+    {
+      "keyword": "Show HN: NanoClaw – “Clawdbot” in 500 lines of TS with Ap...",
+      "traffic": "145 pts",
+      "source": "HN",
+      "url": "https://github.com/gavrielc/nanoclaw"
+    },
+    {
+      "keyword": "Treasures found on HS2 route stored in secret warehouse",
+      "traffic": "14 pts",
+      "source": "HN",
+      "url": "https://www.bbc.com/news/articles/c93v21q5xdvo"
+    },
+    {
+      "keyword": "Apple I Advertisement (1976)",
+      "traffic": "173 pts",
+      "source": "HN",
+      "url": "http://apple1.chez.com/Apple1project/Gallery/Gallery.htm"
+    },
+    {
+      "keyword": "My thousand dollar iPhone can't do math",
+      "traffic": "129 pts",
+      "source": "HN",
+      "url": "https://journal.rafaelcosta.me/my-thousand-dollar-iphone-cant-do-math/"
+    },
+    {
+      "keyword": "Two kinds of AI users are emerging. The gap between them ...",
+      "traffic": "17 pts",
+      "source": "HN",
+      "url": "https://martinalderson.com/posts/two-kinds-of-ai-users-are-emerging/"
+    },
+    {
+      "keyword": "Netbird – Open Source Zero Trust Networking",
+      "traffic": "641 pts",
+      "source": "HN",
+      "url": "https://netbird.io/"
+    },
+    {
+      "keyword": "Adventure Game Studio: OSS software for creating adventur...",
+      "traffic": "264 pts",
+      "source": "HN",
+      "url": "https://www.adventuregamestudio.co.uk/"
+    },
+    {
+      "keyword": "Time Machine-style Backups with rsync (2018)",
+      "traffic": "13 pts",
+      "source": "HN",
+      "url": "https://samuelhewitt.com/blog/2018-06-05-time-machine-style-backups-with-rsync"
+    },
+    {
+      "keyword": "Efficient String Compression for Modern Database Systems",
+      "traffic": "81 pts",
+      "source": "HN",
+      "url": "https://cedardb.com/blog/string_compression/"
+    },
+    {
+      "keyword": "Founding is a snowball",
+      "traffic": "31 pts",
+      "source": "HN",
+      "url": "https://blog.bawolf.com/p/founding-is-a-snowball"
+    },
+    {
+      "keyword": "I taught my neighbor to keep the volume down",
+      "traffic": "512 pts",
+      "source": "HN",
+      "url": "https://idiallo.com/blog/teaching-my-neighbor-to-keep-the-volume-down"
+    },
+    {
+      "keyword": "Typechecking is undecidable when 'type' is a type (1989) ...",
+      "traffic": "54 pts",
+      "source": "HN",
+      "url": "https://dspace.mit.edu/bitstream/handle/1721.1/149366/MIT-LCS-TR-458.pdf?sequence=6"
+    },
+    {
+      "keyword": "Show HN: Wikipedia as a doomscrollable social media feed",
+      "traffic": "5 pts",
+      "source": "HN",
+      "url": "https://xikipedia.org"
+    },
+    {
+      "keyword": "What I learned building an opinionated and minimal coding...",
+      "traffic": "347 pts",
+      "source": "HN",
+      "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/"
+    },
+    {
+      "keyword": "Building Your Own Efficient uint128 in C++",
+      "traffic": "17 pts",
+      "source": "HN",
+      "url": "https://solidean.com/blog/2026/building-your-own-u128/"
+    },
+    {
+      "keyword": "MicroPythonOS graphical operating system delivers Android...",
+      "traffic": "174 pts",
+      "source": "HN",
+      "url": "https://www.cnx-software.com/2026/01/29/micropythonos-graphical-operating-system-delivers-android-like-user-experience-on-microcontrollers/"
+    },
+    {
+      "keyword": "Troublemaker: The fierce, unruly life of Jessica Mitford",
+      "traffic": "7 pts",
+      "source": "HN",
+      "url": "https://www.lrb.co.uk/the-paper/v48/n02/rosemary-hill/one-of-the-worst-things"
+    },
+    {
+      "keyword": "Clearspace (YC W23) Is Hiring an Applied Researcher (ML)",
+      "traffic": "1 pts",
+      "source": "HN",
+      "url": "https://www.ycombinator.com/companies/clearspace/jobs/GOWiDwp-research-engineer-at-clearspace"
+    },
+    {
+      "keyword": "History and Timeline of the Proco Rat Pedal (2021)",
+      "traffic": "3 pts",
+      "source": "HN",
+      "url": "https://web.archive.org/web/20211030011207/https://thejhsshow.com/articles/history-and-timeline-of-the-proco-rat-pedal"
+    },
+    {
+      "keyword": "A Crisis comes to Wordle: Reusing old words",
+      "traffic": "45 pts",
+      "source": "HN",
+      "url": "https://forkingmad.blog/wordle-crisis/"
+    },
+    {
+      "keyword": "Reliable 25 Gigabit Ethernet via Thunderbolt",
+      "traffic": "205 pts",
+      "source": "HN",
+      "url": "https://kohlschuetter.github.io/blog/posts/2026/01/27/tb25/"
+    },
+    {
+      "keyword": "TIL: Apple Broke Time Machine Again on Tahoe",
+      "traffic": "176 pts",
+      "source": "HN",
+      "url": "https://taoofmac.com/space/til/2026/02/01/1630"
+    },
+    {
+      "keyword": "Amiga Unix (Amix)",
+      "traffic": "109 pts",
+      "source": "HN",
+      "url": "https://www.amigaunix.com/doku.php/home"
+    },
+    {
+      "keyword": "FOSDEM 2026 – Open-Source Conference in Brussels – Day#1 ...",
+      "traffic": "179 pts",
+      "source": "HN",
+      "url": "https://gyptazy.com/blog/fosdem-2026-opensource-conference-brussels/"
+    },
+    {
+      "keyword": "Towards a science of scaling agent systems: When and why ...",
+      "traffic": "40 pts",
+      "source": "HN",
+      "url": "https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/"
+    },
+    {
+      "keyword": "Show HN: ÆTHRA – Writing Music as Code",
+      "traffic": "60 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=46820691"
+    },
+    {
+      "keyword": "MRI scans show exercise can make the brain look younger",
+      "traffic": "61 pts",
+      "source": "HN",
+      "url": "https://www.sciencedaily.com/releases/2026/01/260121034130.htm"
+    },
+    {
+      "keyword": "The Book of PF, 4th edition",
+      "traffic": "199 pts",
+      "source": "HN",
+      "url": "https://nostarch.com/book-of-pf-4th-edition"
+    },
+    {
+      "keyword": "English professors double down on requiring printed copie...",
+      "traffic": "113 pts",
+      "source": "HN",
+      "url": "https://yaledailynews.com/articles/english-professors-double-down-on-requiring-printed-copies-of-readings"
+    },
+    {
+      "keyword": "VisualJJ – Jujutsu in Visual Studio Code",
+      "traffic": "149 pts",
+      "source": "HN",
+      "url": "https://www.visualjj.com/"
+    },
+    {
+      "keyword": "Jack Kerouac's 37 metre-long, first draft scroll of On th...",
+      "traffic": "64 pts",
+      "source": "HN",
+      "url": "https://www.theguardian.com/books/2026/jan/30/jack-kerouac-on-the-road-first-draft-scroll-to-be-auctioned"
+    },
+    {
+      "keyword": "1-Click RCE to steal your Moltbot data and keys",
+      "traffic": "149 pts",
+      "source": "HN",
+      "url": "https://depthfirst.com/post/1-click-rce-to-steal-your-moltbot-data-and-keys"
+    },
+    {
+      "keyword": "Margin Call",
+      "traffic": "130 pts",
+      "source": "HN",
+      "url": "https://asymco.com/2026/02/01/margin-call-3/"
+    },
+    {
+      "keyword": "Ian's Shoelace Site",
+      "traffic": "19 pts",
+      "source": "HN",
+      "url": "https://www.fieggen.com/shoelace/"
+    },
+    {
+      "keyword": "The history of C# and TypeScript with Anders Hejlsberg [v...",
+      "traffic": "185 pts",
+      "source": "HN",
+      "url": "https://www.youtube.com/watch?v=uMqx8NNT4xY"
+    },
+    {
+      "keyword": "A web server on a single floppy disk",
+      "traffic": "93 pts",
+      "source": "HN",
+      "url": "http://floppy.ddns.net/"
+    },
+    {
+      "keyword": "Pretty soon, heat pumps will be able to store and distrib...",
+      "traffic": "15 pts",
+      "source": "HN",
+      "url": "https://www.sintef.no/en/latest-news/2026/pretty-soon-heat-pumps-will-be-able-to-store-and-distribute-heat-as-needed/"
+    },
+    {
+      "keyword": "Good if make prior after data instead of before",
+      "traffic": "10 pts",
+      "source": "HN",
+      "url": "https://www.lesswrong.com/posts/JAA2cLFH7rLGNCeCo/good-if-make-prior-after-data-instead-of-before"
+    },
+    {
+      "keyword": "Cells use 'bioelectricity' to coordinate and make group d...",
+      "traffic": "169 pts",
+      "source": "HN",
+      "url": "https://www.quantamagazine.org/cells-use-bioelectricity-to-coordinate-and-make-group-decisions-20260112/"
+    },
+    {
+      "keyword": "Once Thought to Support Neurons, Astrocytes Turn Out to B...",
+      "traffic": "8 pts",
+      "source": "HN",
+      "url": "https://www.quantamagazine.org/once-thought-to-support-neurons-astrocytes-turn-out-to-be-in-charge-20260130/"
+    },
+    {
+      "keyword": "FOSDEM: Open-Source Is Political – Resist Organize Protect",
+      "traffic": "9 pts",
+      "source": "HN",
+      "url": "https://ftp.belnet.be/mirror/FOSDEM/video/2026/janson/SFKNTZ-welcome_to_fosdem_2026.mp4"
+    },
+    {
+      "keyword": "Aging muscle stem cells shift from rapid repair to long-t...",
+      "traffic": "72 pts",
+      "source": "HN",
+      "url": "https://phys.org/news/2026-01-sprint-marathon-aging-muscle-stem.html"
+    },
+    {
+      "keyword": "Generative AI and Wikipedia editing: What we learned in 2025",
+      "traffic": "230 pts",
+      "source": "HN",
+      "url": "https://wikiedu.org/blog/2026/01/29/generative-ai-and-wikipedia-editing-what-we-learned-in-2025/"
+    },
+    {
+      "keyword": "Anciente map of Fairyland. Places from nursery rhymes, fa...",
+      "traffic": "46 pts",
+      "source": "HN",
+      "url": "https://collections.leventhalmap.org/search/commonwealth:3f463773q"
+    },
+    {
+      "keyword": "Show HN: Voiden – an offline, Git-native API tool built a...",
+      "traffic": "39 pts",
+      "source": "HN",
+      "url": "https://github.com/VoidenHQ/voiden"
+    },
+    {
+      "keyword": "Mobile carriers can get your GPS location",
+      "traffic": "833 pts",
+      "source": "HN",
+      "url": "https://an.dywa.ng/carrier-gnss.html"
+    },
+    {
+      "keyword": "Pg_tracing: Distributed Tracing for PostgreSQL",
+      "traffic": "125 pts",
+      "source": "HN",
+      "url": "https://github.com/DataDog/pg_tracing"
+    },
+    {
+      "keyword": "Show HN: Zuckerman – minimalist personal AI agent that se...",
+      "traffic": "64 pts",
+      "source": "HN",
+      "url": "https://github.com/zuckermanai/zuckerman"
+    },
+    {
+      "keyword": "Opentrees.org (2024)",
+      "traffic": "144 pts",
+      "source": "HN",
+      "url": "https://opentrees.org/#pos=1/-37.8/145"
+    }
+  ]
+}
