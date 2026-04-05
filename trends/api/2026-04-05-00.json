@@ -1,0 +1,669 @@
+{
+  "timestamp": "2026-04-05-00",
+  "date": "2026-04-05",
+  "slot": "00",
+  "generated": "2026-04-05T01:54:00.400Z",
+  "count": 109,
+  "sources": [
+    "X",
+    "Wiki",
+    "TikTok",
+    "HN"
+  ],
+  "trends": [
+    {
+      "keyword": "#StandAndDeliver",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23StandAndDeliver"
+    },
+    {
+      "keyword": "Dan Hurley",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Dan%20Hurley"
+    },
+    {
+      "keyword": "UConn",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=UConn"
+    },
+    {
+      "keyword": "#UFCVegas115",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23UFCVegas115"
+    },
+    {
+      "keyword": "Chainsmokers",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Chainsmokers"
+    },
+    {
+      "keyword": "#FinalFour",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23FinalFour"
+    },
+    {
+      "keyword": "Zaria",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Zaria"
+    },
+    {
+      "keyword": "#WWENXT",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23WWENXT"
+    },
+    {
+      "keyword": "Happy Easter",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Happy%20Easter"
+    },
+    {
+      "keyword": "Illini",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Illini"
+    },
+    {
+      "keyword": "Wilder",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Wilder"
+    },
+    {
+      "keyword": "Walter Reed",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Walter%20Reed"
+    },
+    {
+      "keyword": "Braylon Mullins",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Braylon%20Mullins"
+    },
+    {
+      "keyword": "Lola Vice",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Lola%20Vice"
+    },
+    {
+      "keyword": "Wagler",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Wagler"
+    },
+    {
+      "keyword": "Jokic",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jokic"
+    },
+    {
+      "keyword": "Sol Ruca",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sol%20Ruca"
+    },
+    {
+      "keyword": "Jacy",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jacy"
+    },
+    {
+      "keyword": "#Svengoolie",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23Svengoolie"
+    },
+    {
+      "keyword": "Weathers",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Weathers"
+    },
+    {
+      "keyword": "Wemby",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Wemby"
+    },
+    {
+      "keyword": "Myles Borne",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Myles%20Borne"
+    },
+    {
+      "keyword": "Solo Ball",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Solo%20Ball"
+    },
+    {
+      "keyword": "Vanity Project",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Vanity%20Project"
+    },
+    {
+      "keyword": "Phil Jackson",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Phil%20Jackson"
+    },
+    {
+      "keyword": "Johnny Wrestling",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Johnny%20Wrestling"
+    },
+    {
+      "keyword": "Tarris Reed",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Tarris%20Reed"
+    },
+    {
+      "keyword": "Arsenal",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Arsenal"
+    },
+    {
+      "keyword": "Cam Appenzeller",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Cam%20Appenzeller"
+    },
+    {
+      "keyword": "Dion Lennox",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Dion%20Lennox"
+    },
+    {
+      "keyword": "Huskies",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Huskies"
+    },
+    {
+      "keyword": "Delano",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Delano"
+    },
+    {
+      "keyword": "Nuggets",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Nuggets"
+    },
+    {
+      "keyword": "Kendal",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Kendal"
+    },
+    {
+      "keyword": "Sol Snatcher",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sol%20Snatcher"
+    },
+    {
+      "keyword": "johnny gargano",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=johnny%20gargano"
+    },
+    {
+      "keyword": "Go Blue",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Go%20Blue"
+    },
+    {
+      "keyword": "Steve Perry",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Steve%20Perry"
+    },
+    {
+      "keyword": "Brad Underwood",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Brad%20Underwood"
+    },
+    {
+      "keyword": "Los Americanos",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Los%20Americanos"
+    },
+    {
+      "keyword": "Further Ado",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Further%20Ado"
+    },
+    {
+      "keyword": "spurs",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=spurs"
+    },
+    {
+      "keyword": "Illinois 62",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Illinois%2062"
+    },
+    {
+      "keyword": "Nu Stadium",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Nu%20Stadium"
+    },
+    {
+      "keyword": "Lebron",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Lebron"
+    },
+    {
+      "keyword": "Bill Murray",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Bill%20Murray"
+    },
+    {
+      "keyword": "Sabres",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sabres"
+    },
+    {
+      "keyword": "Karaban",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Karaban"
+    },
+    {
+      "keyword": "Ruchala",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Ruchala"
+    },
+    {
+      "keyword": "Paul Blackburn",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Paul%20Blackburn"
+    },
+    {
+      "keyword": "anime",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/anime"
+    },
+    {
+      "keyword": "longervideos",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/longervideos"
+    },
+    {
+      "keyword": "filmtok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/filmtok"
+    },
+    {
+      "keyword": "blacktiktok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/blacktiktok"
+    },
+    {
+      "keyword": "winteroutfit",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/winteroutfit"
+    },
+    {
+      "keyword": "backintheday",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/backintheday"
+    },
+    {
+      "keyword": "holi",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/holi"
+    },
+    {
+      "keyword": "materialgirl",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/materialgirl"
+    },
+    {
+      "keyword": "whenwomenwin",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/whenwomenwin"
+    },
+    {
+      "keyword": "Show HN: A game where you build a GPU",
+      "traffic": "507 pts",
+      "source": "HN",
+      "url": "https://jaso1024.com/mvidia/"
+    },
+    {
+      "keyword": "OpenScreen is an open-source alternative to Screen Studio",
+      "traffic": "92 pts",
+      "source": "HN",
+      "url": "https://github.com/siddharthvaddem/openscreen"
+    },
+    {
+      "keyword": "LLM Wiki – example of an \"idea file\"",
+      "traffic": "65 pts",
+      "source": "HN",
+      "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
+    },
+    {
+      "keyword": "How many products does Microsoft have named 'Copilot'?",
+      "traffic": "415 pts",
+      "source": "HN",
+      "url": "https://teybannerman.com/strategy/2026/03/31/how-many-microsoft-copilot-are-there.html"
+    },
+    {
+      "keyword": "AWS Engineer Reports PostgreSQL Perf Halved by Linux 7.0,...",
+      "traffic": "88 pts",
+      "source": "HN",
+      "url": "https://www.phoronix.com/news/Linux-7.0-AWS-PostgreSQL-Drop"
+    },
+    {
+      "keyword": "Embarrassingly simple self-distillation improves code gen...",
+      "traffic": "550 pts",
+      "source": "HN",
+      "url": "https://arxiv.org/abs/2604.01193"
+    },
+    {
+      "keyword": "Advice to Young People, the Lies I Tell Myself (2024)",
+      "traffic": "21 pts",
+      "source": "HN",
+      "url": "https://jxnl.co/writing/2024/06/01/advice-to-young-people/"
+    },
+    {
+      "keyword": "Shooting down ideas is not a skill",
+      "traffic": "69 pts",
+      "source": "HN",
+      "url": "https://scottlawsonbc.com/post/shooting-down-ideas"
+    },
+    {
+      "keyword": "Show HN: Contrapunk – Real-time counterpoint harmony from...",
+      "traffic": "4 pts",
+      "source": "HN",
+      "url": "https://contrapunk.com/"
+    },
+    {
+      "keyword": "Ruckus: Racket for iOS",
+      "traffic": "77 pts",
+      "source": "HN",
+      "url": "https://ruckus.defn.io/"
+    },
+    {
+      "keyword": "Show HN: I made open source, zero power PCB hackathon badges",
+      "traffic": "49 pts",
+      "source": "HN",
+      "url": "https://github.com/KaiPereira/Overglade-Badges"
+    },
+    {
+      "keyword": "Show HN: sllm – Split a GPU node with other developers, u...",
+      "traffic": "127 pts",
+      "source": "HN",
+      "url": "https://sllm.cloud"
+    },
+    {
+      "keyword": "Show HN: TurboQuant-WASM – Google's vector quantization i...",
+      "traffic": "141 pts",
+      "source": "HN",
+      "url": "https://github.com/teamchong/turboquant-wasm"
+    },
+    {
+      "keyword": "The Indie Internet Index – submit your favorite sites",
+      "traffic": "103 pts",
+      "source": "HN",
+      "url": "https://iii.social"
+    },
+    {
+      "keyword": "Apple approves driver that lets Nvidia eGPUs work with Ar...",
+      "traffic": "363 pts",
+      "source": "HN",
+      "url": "https://www.theverge.com/tech/907003/apple-approves-driver-that-lets-nvidia-egpus-work-with-arm-macs"
+    },
+    {
+      "keyword": "Components of a Coding Agent",
+      "traffic": "165 pts",
+      "source": "HN",
+      "url": "https://magazine.sebastianraschka.com/p/components-of-a-coding-agent"
+    },
+    {
+      "keyword": "Some Unusual Trees",
+      "traffic": "254 pts",
+      "source": "HN",
+      "url": "https://thoughts.wyounas.com/p/some-unusual-trees"
+    },
+    {
+      "keyword": "Emotion concepts and their function in a large language m...",
+      "traffic": "141 pts",
+      "source": "HN",
+      "url": "https://www.anthropic.com/research/emotion-concepts-function"
+    },
+    {
+      "keyword": "The CMS is dead, long live the CMS",
+      "traffic": "121 pts",
+      "source": "HN",
+      "url": "https://next.jazzsequence.com/posts/the-cms-is-dead-long-live-the-cms"
+    },
+    {
+      "keyword": "Breaking Enigma with Index of Coincidence on a Commodore 64",
+      "traffic": "22 pts",
+      "source": "HN",
+      "url": "https://imapenguin.com/2026/03/breaking-enigma-with-index-of-coincidence-on-a-commodore-64/"
+    },
+    {
+      "keyword": "Training mRNA Language Models Across 25 Species for $165",
+      "traffic": "119 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=47606244"
+    },
+    {
+      "keyword": "IBM 3270 Information Display System: Color and Programmed...",
+      "traffic": "38 pts",
+      "source": "HN",
+      "url": "https://bitsavers.org/pdf/ibm/3278/GA33-3056-0_3270_Information_Display_System_Color_and_Programmed_Symbols_3278_3279_3287_Sep1979.pdf"
+    },
+    {
+      "keyword": "The Cathedral, the Bazaar, and the Winchester Mystery House",
+      "traffic": "165 pts",
+      "source": "HN",
+      "url": "https://www.dbreunig.com/2026/03/26/winchester-mystery-house.html"
+    },
+    {
+      "keyword": "Plague Ships (2020)",
+      "traffic": "41 pts",
+      "source": "HN",
+      "url": "https://www.afloat.com.au/feature/plague-ships/"
+    },
+    {
+      "keyword": "Show HN: M. C. Escher spiral in WebGL inspired by 3Blue1B...",
+      "traffic": "20 pts",
+      "source": "HN",
+      "url": "https://static.laszlokorte.de/escher/"
+    },
+    {
+      "keyword": "Tell HN: Anthropic no longer allowing Claude Code subscri...",
+      "traffic": "1034 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=47633396"
+    },
+    {
+      "keyword": "Scientists observe an immune signaling complex forming in...",
+      "traffic": "100 pts",
+      "source": "HN",
+      "url": "https://news.stanford.edu/stories/2026/03/immune-response-inside-cells-inflammation-research"
+    },
+    {
+      "keyword": "Sopwith – 1984 Game (2000)",
+      "traffic": "83 pts",
+      "source": "HN",
+      "url": "http://www.sopwith.org/"
+    },
+    {
+      "keyword": "Author of \"Careless People\" banned from saying anything n...",
+      "traffic": "737 pts",
+      "source": "HN",
+      "url": "https://www.thetimes.com/uk/technology-uk/article/sarah-wynn-williams-careless-people-meta-nrffdfpmf"
+    },
+    {
+      "keyword": "Mbodi AI (YC P25) Is Hiring",
+      "traffic": "1 pts",
+      "source": "HN",
+      "url": "https://www.ycombinator.com/companies/mbodi-ai/jobs/mf9L3sy-senior-robotics-engineer-systems-controls"
+    },
+    {
+      "keyword": "Artemis II crew take “spectacular” image of Earth",
+      "traffic": "1018 pts",
+      "source": "HN",
+      "url": "https://www.bbc.com/news/articles/ce8jzr423p9o"
+    },
+    {
+      "keyword": "Evacuation of U.S. troops from Mideast base sends communi...",
+      "traffic": "13 pts",
+      "source": "HN",
+      "url": "https://www.npr.org/2026/04/03/nx-s1-5770491/evacuation-bahrain-norfolk-troops"
+    },
+    {
+      "keyword": "When legal sports betting surges, so do Americans' financ...",
+      "traffic": "164 pts",
+      "source": "HN",
+      "url": "https://www.npr.org/2026/04/04/nx-s1-5773354/legal-sports-betting-research-credit-bankruptcy"
+    },
+    {
+      "keyword": "Why the most valuable things you know are things you cann...",
+      "traffic": "132 pts",
+      "source": "HN",
+      "url": "https://deadneurons.substack.com/p/why-the-most-valuable-things-you"
+    },
+    {
+      "keyword": "Legibility Is Ruining You",
+      "traffic": "12 pts",
+      "source": "HN",
+      "url": "https://jimmyhmiller.com/legibility-is-ruining-you"
+    },
+    {
+      "keyword": "Electrical Transformer Manufacturing Is Throttling the El...",
+      "traffic": "61 pts",
+      "source": "HN",
+      "url": "https://www.bloomberg.com/features/2025-bottlenecks-transformers/"
+    },
+    {
+      "keyword": "Improving my focus by giving up my big monitor",
+      "traffic": "180 pts",
+      "source": "HN",
+      "url": "https://ounapuu.ee/posts/2026/04/01/focus/"
+    },
+    {
+      "keyword": "The most-disliked people in the publishing industry",
+      "traffic": "89 pts",
+      "source": "HN",
+      "url": "https://www.woman-of-letters.com/p/the-most-disliked-people-in-the-publishing"
+    },
+    {
+      "keyword": "German implementation of eIDAS will require an Apple/Goog...",
+      "traffic": "50 pts",
+      "source": "HN",
+      "url": "https://bmi.usercontent.opencode.de/eudi-wallet/wallet-development-documentation-public/latest/architecture-concept/06-mobile-devices/02-mdvm/"
+    },
+    {
+      "keyword": "Write Your Own Copy",
+      "traffic": "6 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=47644774"
+    },
+    {
+      "keyword": "Csp-toolkit – Python library to parse, analyze, and find ...",
+      "traffic": "12 pts",
+      "source": "HN",
+      "url": "https://chs.us/2026/03/csp-toolkit/"
+    },
+    {
+      "keyword": "Claude Code Found a Linux Vulnerability Hidden for 23 Years",
+      "traffic": "363 pts",
+      "source": "HN",
+      "url": "https://mtlynch.io/claude-code-found-linux-vulnerability/"
+    },
+    {
+      "keyword": "Notes from from Butterick's Practical Typography",
+      "traffic": "33 pts",
+      "source": "HN",
+      "url": "https://adamadam.blog/2026/04/01/my-notes-from-buttericks-practical-typography/"
+    },
+    {
+      "keyword": "Why samurai are cooler than klingons",
+      "traffic": "6 pts",
+      "source": "HN",
+      "url": "https://docseuss.medium.com/why-samurai-are-cooler-than-klingons-2b296cd0dc25"
+    },
+    {
+      "keyword": "German men 18-45 need military permit for extended stays ...",
+      "traffic": "346 pts",
+      "source": "HN",
+      "url": "https://www.dw.com/en/german-men-need-military-permit-for-extended-stays-abroad/a-76662677"
+    },
+    {
+      "keyword": "Microsoft to force updates to Windows 11 25H2 for PCs wit...",
+      "traffic": "44 pts",
+      "source": "HN",
+      "url": "https://www.tomshardware.com/software/windows/microsoft-forces-updates-to-windows-11-25h2-update-for-pcs-running-on-24h2"
+    },
+    {
+      "keyword": "What changes when you turn a Linux box into a router",
+      "traffic": "223 pts",
+      "source": "HN",
+      "url": "https://patrickmccanna.net/7-configuration-changes-that-turn-a-multi-homed-host-into-a-switch-router/"
+    },
+    {
+      "keyword": "Netflix must refund customers for years of price hikes, I...",
+      "traffic": "36 pts",
+      "source": "HN",
+      "url": "https://arstechnica.com/gadgets/2026/04/netflix-ordered-to-refund-subscribers-up-to-e500-for-unlawful-price-hikes/"
+    },
+    {
+      "keyword": "A new gene therapy is giving people born deaf the chance ...",
+      "traffic": "44 pts",
+      "source": "HN",
+      "url": "https://www.sciencedaily.com/releases/2026/04/260403044651.htm"
+    },
+    {
+      "keyword": "How to make a sliding, self-locking, and predator-proof c...",
+      "traffic": "131 pts",
+      "source": "HN",
+      "url": "https://www.backyardchickens.com/articles/how-to-make-a-sliding-self-locking-and-predator-proof-chicken-coop-door.75906/"
+    }
+  ]
+}
