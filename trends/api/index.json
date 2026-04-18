@@ -1,6 +1,7 @@
 {
   "description": "Trends API - Updated every 4 hours",
   "endpoints": [
+    "/trends/api/2026-04-18-00.json",
     "/trends/api/2026-04-17-20.json",
     "/trends/api/2026-04-17-16.json",
     "/trends/api/2026-04-17-12.json",
@@ -635,6 +636,6 @@
     "/trends/api/2026-01-02-08.json",
     "/trends/api/2026-01-02-04.json"
   ],
-  "latest": "/trends/api/2026-04-17-20.json",
-  "count": 633
+  "latest": "/trends/api/2026-04-18-00.json",
+  "count": 634
 }
