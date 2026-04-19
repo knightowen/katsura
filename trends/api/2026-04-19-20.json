@@ -1,0 +1,669 @@
+{
+  "timestamp": "2026-04-19-20",
+  "date": "2026-04-19",
+  "slot": "20",
+  "generated": "2026-04-19T20:29:56.505Z",
+  "count": 109,
+  "sources": [
+    "X",
+    "Wiki",
+    "TikTok",
+    "HN"
+  ],
+  "trends": [
+    {
+      "keyword": "Arsenal",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Arsenal"
+    },
+    {
+      "keyword": "Sixers",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sixers"
+    },
+    {
+      "keyword": "Celtics",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Celtics"
+    },
+    {
+      "keyword": "$RISE",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%24RISE"
+    },
+    {
+      "keyword": "Jayson Tatum",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jayson%20Tatum"
+    },
+    {
+      "keyword": "Arteta",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Arteta"
+    },
+    {
+      "keyword": "WE WANT BOSTON",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=WE%20WANT%20BOSTON"
+    },
+    {
+      "keyword": "#DifferentHere",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23DifferentHere"
+    },
+    {
+      "keyword": "Maxey",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Maxey"
+    },
+    {
+      "keyword": "Shreveport",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Shreveport"
+    },
+    {
+      "keyword": "#HBDRizzlerGiveaway",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23HBDRizzlerGiveaway"
+    },
+    {
+      "keyword": "Haaland",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Haaland"
+    },
+    {
+      "keyword": "Nick Nurse",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Nick%20Nurse"
+    },
+    {
+      "keyword": "Dillon Brooks",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Dillon%20Brooks"
+    },
+    {
+      "keyword": "#BuschAllFor1",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23BuschAllFor1"
+    },
+    {
+      "keyword": "Opie",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Opie"
+    },
+    {
+      "keyword": "Jaylen Brown",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jaylen%20Brown"
+    },
+    {
+      "keyword": "Gabriel",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Gabriel"
+    },
+    {
+      "keyword": "Havertz",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Havertz"
+    },
+    {
+      "keyword": "Iranian-flagged",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Iranian-flagged"
+    },
+    {
+      "keyword": "#ThunderUp",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23ThunderUp"
+    },
+    {
+      "keyword": "#GoAvsGo",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23GoAvsGo"
+    },
+    {
+      "keyword": "TOUSKA",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=TOUSKA"
+    },
+    {
+      "keyword": "Drummond",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Drummond"
+    },
+    {
+      "keyword": "Josh Harris",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Josh%20Harris"
+    },
+    {
+      "keyword": "Doris Burke",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Doris%20Burke"
+    },
+    {
+      "keyword": "Juan Brito",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Juan%20Brito"
+    },
+    {
+      "keyword": "Man City",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Man%20City"
+    },
+    {
+      "keyword": "MJ Melendez",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=MJ%20Melendez"
+    },
+    {
+      "keyword": "Athens PD",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Athens%20PD"
+    },
+    {
+      "keyword": "Blue Origin",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Blue%20Origin"
+    },
+    {
+      "keyword": "Odegaard",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Odegaard"
+    },
+    {
+      "keyword": "Ron Howard",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Ron%20Howard"
+    },
+    {
+      "keyword": "Cherki",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Cherki"
+    },
+    {
+      "keyword": "Traveller",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Traveller"
+    },
+    {
+      "keyword": "Jose Ramirez",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jose%20Ramirez"
+    },
+    {
+      "keyword": "Vercel",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Vercel"
+    },
+    {
+      "keyword": "Scott Foster",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Scott%20Foster"
+    },
+    {
+      "keyword": "Bernardo Silva",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Bernardo%20Silva"
+    },
+    {
+      "keyword": "Queta",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Queta"
+    },
+    {
+      "keyword": "FUEL OF HAPPINESS WITH JAY",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=FUEL%20OF%20HAPPINESS%20WITH%20JAY"
+    },
+    {
+      "keyword": "Van Hammer",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Van%20Hammer"
+    },
+    {
+      "keyword": "Denny Hamlin",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Denny%20Hamlin"
+    },
+    {
+      "keyword": "Vucevic",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Vucevic"
+    },
+    {
+      "keyword": "Luis Torrens",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Luis%20Torrens"
+    },
+    {
+      "keyword": "Garza",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Garza"
+    },
+    {
+      "keyword": "Kelly Oubre",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Kelly%20Oubre"
+    },
+    {
+      "keyword": "Anthony Taylor",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Anthony%20Taylor"
+    },
+    {
+      "keyword": "Palantir",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Palantir"
+    },
+    {
+      "keyword": "Jordan Walsh",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jordan%20Walsh"
+    },
+    {
+      "keyword": "anime",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/anime"
+    },
+    {
+      "keyword": "longervideos",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/longervideos"
+    },
+    {
+      "keyword": "filmtok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/filmtok"
+    },
+    {
+      "keyword": "blacktiktok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/blacktiktok"
+    },
+    {
+      "keyword": "winteroutfit",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/winteroutfit"
+    },
+    {
+      "keyword": "backintheday",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/backintheday"
+    },
+    {
+      "keyword": "holi",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/holi"
+    },
+    {
+      "keyword": "materialgirl",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/materialgirl"
+    },
+    {
+      "keyword": "whenwomenwin",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/whenwomenwin"
+    },
+    {
+      "keyword": "The Bromine Chokepoint: How Strife Could Halt Production ...",
+      "traffic": "53 pts",
+      "source": "HN",
+      "url": "https://warontherocks.com/cogs-of-war/the-bromine-chokepoint-how-strife-in-the-middle-east-could-halt-production-of-the-worlds-memory-chips/"
+    },
+    {
+      "keyword": "Vercel April 2026 security incident",
+      "traffic": "306 pts",
+      "source": "HN",
+      "url": "https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/"
+    },
+    {
+      "keyword": "A. J. Ayer – ‘What I Saw When I Was Dead’ (1988)",
+      "traffic": "12 pts",
+      "source": "HN",
+      "url": "https://www.philosopher.eu/others-writings/a-j-ayer-what-i-saw-when-i-was-dead/"
+    },
+    {
+      "keyword": "Show HN: Faceoff – A terminal UI for following NHL games",
+      "traffic": "51 pts",
+      "source": "HN",
+      "url": "https://www.vincentgregoire.com/faceoff/"
+    },
+    {
+      "keyword": "I wrote a CHIP-8 emulator in my own programming language",
+      "traffic": "17 pts",
+      "source": "HN",
+      "url": "https://github.com/navid-m/chip8emu"
+    },
+    {
+      "keyword": "I learned Unity the wrong way",
+      "traffic": "28 pts",
+      "source": "HN",
+      "url": "https://darkounity.com/blog/how-i-learned-unity-the-wrong-way"
+    },
+    {
+      "keyword": "Archive of BYTE magazine, starting with issue #1 in 1975",
+      "traffic": "480 pts",
+      "source": "HN",
+      "url": "https://archive.org/details/byte-magazine-1975-09"
+    },
+    {
+      "keyword": "The seven programming ur-languages (2022)",
+      "traffic": "227 pts",
+      "source": "HN",
+      "url": "https://madhadron.com/programming/seven_ur_languages.html"
+    },
+    {
+      "keyword": "Notion leaks email addresses of all editors of any public...",
+      "traffic": "241 pts",
+      "source": "HN",
+      "url": "https://twitter.com/weezerOSINT/status/2045849358462222720"
+    },
+    {
+      "keyword": "Changes in the system prompt between Claude Opus 4.6 and 4.7",
+      "traffic": "85 pts",
+      "source": "HN",
+      "url": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/"
+    },
+    {
+      "keyword": "Game devs explain the tricks involved with letting you pa...",
+      "traffic": "369 pts",
+      "source": "HN",
+      "url": "https://kotaku.com/video-game-devs-explain-how-pausing-works-and-sometimes-it-gets-weird-2000686339"
+    },
+    {
+      "keyword": "Nanopass Framework: Clean Compiler Creation Language",
+      "traffic": "97 pts",
+      "source": "HN",
+      "url": "https://nanopass.org/"
+    },
+    {
+      "keyword": "KTaO3-Based Supercurrent Diode",
+      "traffic": "20 pts",
+      "source": "HN",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.nanolett.5c05590"
+    },
+    {
+      "keyword": "SPEAKE(a)R: Turn Speakers to Microphones for Fun and Prof...",
+      "traffic": "142 pts",
+      "source": "HN",
+      "url": "https://www.usenix.org/system/files/conference/woot17/woot17-paper-guri.pdf"
+    },
+    {
+      "keyword": "Show HN: Shader Lab, like Photoshop but for shaders",
+      "traffic": "116 pts",
+      "source": "HN",
+      "url": "https://eng.basement.studio/tools/shader-lab"
+    },
+    {
+      "keyword": "What are skiplists good for?",
+      "traffic": "235 pts",
+      "source": "HN",
+      "url": "https://antithesis.com/blog/2026/skiptrees/"
+    },
+    {
+      "keyword": "College instructor turns to typewriters to curb AI-writte...",
+      "traffic": "439 pts",
+      "source": "HN",
+      "url": "https://sentinelcolorado.com/uncategorized/a-college-instructor-turns-to-typewriters-to-curb-ai-written-work-and-teach-life-lessons/"
+    },
+    {
+      "keyword": "Reverse Engineering ME2's USB with a Heat Gun and a Knife",
+      "traffic": "32 pts",
+      "source": "HN",
+      "url": "https://github.com/coremaze/ME2-Writeup"
+    },
+    {
+      "keyword": "The RAM shortage could last years",
+      "traffic": "73 pts",
+      "source": "HN",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/914672/the-ram-shortage-could-last-years"
+    },
+    {
+      "keyword": "NIST scientists create 'any wavelength' lasers",
+      "traffic": "401 pts",
+      "source": "HN",
+      "url": "https://www.nist.gov/news-events/news/2026/04/any-color-you-nist-scientists-create-any-wavelength-lasers-tiny-circuits"
+    },
+    {
+      "keyword": "Show HN: Prompt-to-Excalidraw demo with Gemma 4 E2B in th...",
+      "traffic": "70 pts",
+      "source": "HN",
+      "url": "https://teamchong.github.io/turboquant-wasm/draw.html"
+    },
+    {
+      "keyword": "Reading Input from an USB RFID Card Reader",
+      "traffic": "23 pts",
+      "source": "HN",
+      "url": "https://kevwe.com/blog/usb-rfid-reader"
+    },
+    {
+      "keyword": "Blue Origin's rocket reuse achievement marred by upper st...",
+      "traffic": "10 pts",
+      "source": "HN",
+      "url": "https://arstechnica.com/space/2026/04/errant-upper-stage-spoils-blue-origins-success-in-reusing-new-glenn-booster/"
+    },
+    {
+      "keyword": "Anonymous request-token comparisons from Opus 4.6 and Opu...",
+      "traffic": "594 pts",
+      "source": "HN",
+      "url": "https://tokens.billchambers.me/leaderboard"
+    },
+    {
+      "keyword": "The electromechanical angle computer inside the B-52 bomb...",
+      "traffic": "403 pts",
+      "source": "HN",
+      "url": "https://www.righto.com/2026/04/B-52-star-tracker-angle-computer.html"
+    },
+    {
+      "keyword": "4-bit floating point FP4",
+      "traffic": "56 pts",
+      "source": "HN",
+      "url": "https://www.johndcook.com/blog/2026/04/17/fp4/"
+    },
+    {
+      "keyword": "Why Japan has such good railways",
+      "traffic": "529 pts",
+      "source": "HN",
+      "url": "https://worksinprogress.co/issue/why-japan-has-such-good-railways/"
+    },
+    {
+      "keyword": "The world in which IPv6 was a good design (2017)",
+      "traffic": "184 pts",
+      "source": "HN",
+      "url": "https://apenwarr.ca/log/20170810"
+    },
+    {
+      "keyword": "Notes from the SF peptide scene",
+      "traffic": "106 pts",
+      "source": "HN",
+      "url": "https://12gramsofcarbon.com/p/notes-from-the-sf-peptide-scene"
+    },
+    {
+      "keyword": "Airline worker arrested after sharing photos of bomb dama...",
+      "traffic": "211 pts",
+      "source": "HN",
+      "url": "https://www.lbc.co.uk/article/dubai-police-spied-private-whatsapp-5HjdXwr_2/"
+    },
+    {
+      "keyword": "Binary GCD",
+      "traffic": "74 pts",
+      "source": "HN",
+      "url": "https://en.algorithmica.org/hpc/algorithms/gcd/#binary-gcd"
+    },
+    {
+      "keyword": "Ask HN: How did you land your first projects as a solo en...",
+      "traffic": "227 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=47822940"
+    },
+    {
+      "keyword": "It's cool to care (2025)",
+      "traffic": "81 pts",
+      "source": "HN",
+      "url": "https://alexwlchan.net/2025/cool-to-care/"
+    },
+    {
+      "keyword": "State of Kdenlive",
+      "traffic": "452 pts",
+      "source": "HN",
+      "url": "https://kdenlive.org/news/2026/state-2026/"
+    },
+    {
+      "keyword": "Updating Gun Rocket through 10 years of Unity Engine",
+      "traffic": "108 pts",
+      "source": "HN",
+      "url": "https://jackpritz.com/blog/updating-gun-rocket-through-10-years-of-unity-engine"
+    },
+    {
+      "keyword": "When moving fast, talking is the first thing to break",
+      "traffic": "89 pts",
+      "source": "HN",
+      "url": "https://daverupert.com/2026/04/more-talk-less-grok/"
+    },
+    {
+      "keyword": "Minimal Viable Programs (2014)",
+      "traffic": "34 pts",
+      "source": "HN",
+      "url": "https://joearms.github.io/published/2014-06-25-minimal-viable-program.html"
+    },
+    {
+      "keyword": "Turtle WoW classic server announces shutdown after Blizza...",
+      "traffic": "101 pts",
+      "source": "HN",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/turtle-wow-classic-server-announces-shutdown-after-blizzard-wins-injunction/"
+    },
+    {
+      "keyword": "Migrating from DigitalOcean to Hetzner",
+      "traffic": "852 pts",
+      "source": "HN",
+      "url": "https://isayeter.com/posts/digitalocean-to-hetzner-migration/"
+    },
+    {
+      "keyword": "Optimizing Ruby Path Methods",
+      "traffic": "126 pts",
+      "source": "HN",
+      "url": "https://byroot.github.io/ruby/performance/2026/04/18/faster-paths.html"
+    },
+    {
+      "keyword": "SI Units for Request Rate (2024)",
+      "traffic": "80 pts",
+      "source": "HN",
+      "url": "https://entropicthoughts.com/si-units-for-request-rate"
+    },
+    {
+      "keyword": "Pairwise Order of a Sequence of Elements",
+      "traffic": "22 pts",
+      "source": "HN",
+      "url": "https://morwenn.github.io//presortedness/2026/04/11/TSB010-pairwise-order-of-a-sequence-of-elements.html"
+    },
+    {
+      "keyword": "Uber's AI Push Hits a Wall–CTO Says Budget Struggles Desp...",
+      "traffic": "39 pts",
+      "source": "HN",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/ubers-anthropic-ai-push-hits-223109852.html"
+    },
+    {
+      "keyword": "Binary Dependencies: Identifying the Hidden Packages We A...",
+      "traffic": "49 pts",
+      "source": "HN",
+      "url": "https://vlad.website/binary-dependencies-identifying-the-hidden-packages-we-all-depend-on/"
+    },
+    {
+      "keyword": "Modern Common Lisp with FSet",
+      "traffic": "179 pts",
+      "source": "HN",
+      "url": "https://fset.common-lisp.dev/Modern-CL/Top_html/index.html"
+    },
+    {
+      "keyword": "Sumida Aquarium Posts 2026 Penguin Relationship Chart, wi...",
+      "traffic": "235 pts",
+      "source": "HN",
+      "url": "https://www.sumida-aquarium.com/special/sokanzu/en/2026/"
+    },
+    {
+      "keyword": "The creative software industry has declared war on Adobe",
+      "traffic": "141 pts",
+      "source": "HN",
+      "url": "https://www.theverge.com/tech/913765/adobe-rivals-free-creative-software-app-updates"
+    },
+    {
+      "keyword": "Zero-Copy GPU Inference from WebAssembly on Apple Silicon",
+      "traffic": "110 pts",
+      "source": "HN",
+      "url": "https://abacusnoir.com/2026/04/18/zero-copy-gpu-inference-from-webassembly-on-apple-silicon/"
+    },
+    {
+      "keyword": "Critical flaw in Protobuf library enables JavaScript code...",
+      "traffic": "22 pts",
+      "source": "HN",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-flaw-in-protobuf-library-enables-javascript-code-execution/"
+    },
+    {
+      "keyword": "Spiral staircase with a single guardrail once led to the ...",
+      "traffic": "44 pts",
+      "source": "HN",
+      "url": "https://www.smithsonianmag.com/smart-news/a-dizzying-spiral-staircase-with-a-single-guardrail-once-led-to-the-top-of-the-eiffel-tower-now-you-can-buy-14-of-the-original-steps-180988535/"
+    }
+  ]
+}
