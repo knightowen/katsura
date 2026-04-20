@@ -1,0 +1,369 @@
+{
+  "timestamp": "2026-04-20-08",
+  "date": "2026-04-20",
+  "slot": "08",
+  "generated": "2026-04-20T09:52:37.195Z",
+  "count": 59,
+  "sources": [
+    "X",
+    "Wiki",
+    "TikTok",
+    "HN"
+  ],
+  "trends": [
+    {
+      "keyword": "anime",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/anime"
+    },
+    {
+      "keyword": "longervideos",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/longervideos"
+    },
+    {
+      "keyword": "filmtok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/filmtok"
+    },
+    {
+      "keyword": "blacktiktok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/blacktiktok"
+    },
+    {
+      "keyword": "winteroutfit",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/winteroutfit"
+    },
+    {
+      "keyword": "backintheday",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/backintheday"
+    },
+    {
+      "keyword": "holi",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/holi"
+    },
+    {
+      "keyword": "materialgirl",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/materialgirl"
+    },
+    {
+      "keyword": "whenwomenwin",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/whenwomenwin"
+    },
+    {
+      "keyword": "OpenClaw isn't fooling me. I remember MS-DOS",
+      "traffic": "70 pts",
+      "source": "HN",
+      "url": "https://www.flyingpenguin.com/build-an-openclaw-free-secure-always-on-local-ai-agent/"
+    },
+    {
+      "keyword": "GitHub's Fake Star Economy",
+      "traffic": "71 pts",
+      "source": "HN",
+      "url": "https://awesomeagents.ai/news/github-fake-stars-investigation/"
+    },
+    {
+      "keyword": "SDF Public Access Unix System",
+      "traffic": "65 pts",
+      "source": "HN",
+      "url": "https://sdf.org/?ssh"
+    },
+    {
+      "keyword": "Up to 8M Bees Are Living in an Underground Network Beneat...",
+      "traffic": "48 pts",
+      "source": "HN",
+      "url": "https://www.discovermagazine.com/up-to-8-million-bees-are-living-in-an-underground-network-beneath-this-cemetery-48977"
+    },
+    {
+      "keyword": "Vercel April 2026 security incident",
+      "traffic": "743 pts",
+      "source": "HN",
+      "url": "https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/"
+    },
+    {
+      "keyword": "Ben Lerner's Big Feelings",
+      "traffic": "28 pts",
+      "source": "HN",
+      "url": "https://www.vulture.com/article/ben-lerner-transcription-interview.html"
+    },
+    {
+      "keyword": "Claude Token Counter, now with model comparisons",
+      "traffic": "110 pts",
+      "source": "HN",
+      "url": "https://simonwillison.net/2026/Apr/20/claude-token-counts/"
+    },
+    {
+      "keyword": "Stripe's Payment APIs: the first 10 years (2020)",
+      "traffic": "45 pts",
+      "source": "HN",
+      "url": "https://stripe.dev/blog/payment-api-design"
+    },
+    {
+      "keyword": "Zero-copy protobuf and ConnectRPC for Rust",
+      "traffic": "54 pts",
+      "source": "HN",
+      "url": "https://medium.com/@iainmcgin/zero-copy-protobuf-and-connectrpc-for-rust-69bda8ac0f02"
+    },
+    {
+      "keyword": "Stop trying to engineer your way out of listening to people",
+      "traffic": "216 pts",
+      "source": "HN",
+      "url": "https://ashley.rolfmore.com/stop-trying-to-engineer-your-way-out-of-listening-to-people/"
+    },
+    {
+      "keyword": "A Brief History of Fish Sauce",
+      "traffic": "179 pts",
+      "source": "HN",
+      "url": "https://www.legalnomads.com/fish-sauce/"
+    },
+    {
+      "keyword": "Monumental ship burial beneath ancient Norwegian mound pr...",
+      "traffic": "58 pts",
+      "source": "HN",
+      "url": "https://phys.org/news/2026-04-monumental-ship-burial-beneath-ancient.html"
+    },
+    {
+      "keyword": "The Bromine Chokepoint",
+      "traffic": "199 pts",
+      "source": "HN",
+      "url": "https://warontherocks.com/cogs-of-war/the-bromine-chokepoint-how-strife-in-the-middle-east-could-halt-production-of-the-worlds-memory-chips/"
+    },
+    {
+      "keyword": "I Made the \"Next-Level\" Camera and I love it",
+      "traffic": "35 pts",
+      "source": "HN",
+      "url": "https://thelibre.news/i-made-the-next-level-camera-and-i-love-it/"
+    },
+    {
+      "keyword": "Brussels launched an age checking app. Hackers took 2 min...",
+      "traffic": "26 pts",
+      "source": "HN",
+      "url": "https://www.politico.eu/article/eu-brussels-launched-age-checking-app-hackers-say-took-them-2-minutes-break-it/"
+    },
+    {
+      "keyword": "Turtle WoW classic server announces shutdown after Blizza...",
+      "traffic": "235 pts",
+      "source": "HN",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/turtle-wow-classic-server-announces-shutdown-after-blizzard-wins-injunction/"
+    },
+    {
+      "keyword": "Changes in the system prompt between Claude Opus 4.6 and 4.7",
+      "traffic": "320 pts",
+      "source": "HN",
+      "url": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/"
+    },
+    {
+      "keyword": "Mechanical Keyboard Sounds – A listening Museum",
+      "traffic": "123 pts",
+      "source": "HN",
+      "url": "https://sheets.works/data-viz/keyboard-sounds"
+    },
+    {
+      "keyword": "IEA: Solar overtakes all energy sources in a major global...",
+      "traffic": "36 pts",
+      "source": "HN",
+      "url": "https://electrek.co/2026/04/19/iea-solar-overtakes-all-energy-sources-in-a-major-global-first/"
+    },
+    {
+      "keyword": "A cache-friendly IPv6 LPM with AVX-512 (linearized B+-tre...",
+      "traffic": "34 pts",
+      "source": "HN",
+      "url": "https://github.com/esutcu/planb-lpm"
+    },
+    {
+      "keyword": "How Long Poop Stays in Your Body May Impact Your Health, ...",
+      "traffic": "56 pts",
+      "source": "HN",
+      "url": "https://www.sciencealert.com/how-long-poop-stays-in-your-body-may-impact-your-health-study-finds"
+    },
+    {
+      "keyword": "Tracking when Trump chickens out",
+      "traffic": "31 pts",
+      "source": "HN",
+      "url": "https://www.thetacotracker.com/"
+    },
+    {
+      "keyword": "Swiss AI Initiative (2023)",
+      "traffic": "69 pts",
+      "source": "HN",
+      "url": "https://www.swiss-ai.org"
+    },
+    {
+      "keyword": "Knitout and Kniterate 3",
+      "traffic": "24 pts",
+      "source": "HN",
+      "url": "https://soup.agnescameron.info//2026/04/01/transfers.html"
+    },
+    {
+      "keyword": "Two Motorola Transistors Became the Default NPNs",
+      "traffic": "27 pts",
+      "source": "HN",
+      "url": "https://www.allaboutcircuits.com/news/how-two-motorola-transistors-became-the-worlds-default-npns/"
+    },
+    {
+      "keyword": "The RAM shortage could last years",
+      "traffic": "303 pts",
+      "source": "HN",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/914672/the-ram-shortage-could-last-years"
+    },
+    {
+      "keyword": "Show HN: Run TRELLIS.2 Image-to-3D generation natively on...",
+      "traffic": "160 pts",
+      "source": "HN",
+      "url": "https://github.com/shivampkumar/trellis-mac"
+    },
+    {
+      "keyword": "Scientific datasets are riddled with copy-paste errors",
+      "traffic": "103 pts",
+      "source": "HN",
+      "url": "https://www.sciencedetective.org/scientific-datasets-are-riddled-with-copy-paste-errors/"
+    },
+    {
+      "keyword": "2,100 Swiss municipalities showing which provider handles...",
+      "traffic": "185 pts",
+      "source": "HN",
+      "url": "https://mxmap.ch/"
+    },
+    {
+      "keyword": "Six Levels of Dark Mode (2024)",
+      "traffic": "89 pts",
+      "source": "HN",
+      "url": "https://cssence.com/2024/six-levels-of-dark-mode/"
+    },
+    {
+      "keyword": "I wrote a CHIP-8 emulator in my own programming language",
+      "traffic": "74 pts",
+      "source": "HN",
+      "url": "https://github.com/navid-m/chip8emu"
+    },
+    {
+      "keyword": "Nanopass Framework: Clean Compiler Creation Language",
+      "traffic": "135 pts",
+      "source": "HN",
+      "url": "https://nanopass.org/"
+    },
+    {
+      "keyword": "Show HN: Prompt-to-Excalidraw demo with Gemma 4 E2B in th...",
+      "traffic": "132 pts",
+      "source": "HN",
+      "url": "https://teamchong.github.io/turboquant-wasm/draw.html"
+    },
+    {
+      "keyword": "SPEAKE(a)R: Turn Speakers to Microphones for Fun and Prof...",
+      "traffic": "179 pts",
+      "source": "HN",
+      "url": "https://www.usenix.org/system/files/conference/woot17/woot17-paper-guri.pdf"
+    },
+    {
+      "keyword": "Interesting Map Geometry and Mathematics",
+      "traffic": "25 pts",
+      "source": "HN",
+      "url": "https://www.markrjohnsongames.com/2026/04/11/ultima-ratio-regum-0-11-update-57-interesting-map-geometry-and-mathematics/"
+    },
+    {
+      "keyword": "Show HN: A lightweight way to make agents talk without pa...",
+      "traffic": "37 pts",
+      "source": "HN",
+      "url": "https://juanpabloaj.com/2026/04/16/a-lightweight-way-to-make-agents-talk-without-paying-for-api-usage/"
+    },
+    {
+      "keyword": "4-bit floating point FP4",
+      "traffic": "84 pts",
+      "source": "HN",
+      "url": "https://www.johndcook.com/blog/2026/04/17/fp4/"
+    },
+    {
+      "keyword": "Show HN: Faceoff – A terminal UI for following NHL games",
+      "traffic": "115 pts",
+      "source": "HN",
+      "url": "https://www.vincentgregoire.com/faceoff/"
+    },
+    {
+      "keyword": "Notion leaks email addresses of all editors of any public...",
+      "traffic": "371 pts",
+      "source": "HN",
+      "url": "https://twitter.com/weezerOSINT/status/2045849358462222720"
+    },
+    {
+      "keyword": "Hot-wiring the Lisp machine",
+      "traffic": "40 pts",
+      "source": "HN",
+      "url": "https://scheatkode.com/blog/019d463d-38b3-7e63-80fd-6ed97bd8815e/hot-wiring-the-lisp-machine/"
+    },
+    {
+      "keyword": "The creative software industry has declared war on Adobe",
+      "traffic": "225 pts",
+      "source": "HN",
+      "url": "https://www.theverge.com/tech/913765/adobe-rivals-free-creative-software-app-updates"
+    },
+    {
+      "keyword": "Prove you are a robot: CAPTCHAs for agents",
+      "traffic": "101 pts",
+      "source": "HN",
+      "url": "https://browser-use.com/posts/prove-you-are-a-robot"
+    },
+    {
+      "keyword": "A Common MVP Evolution: Service to System Integration to ...",
+      "traffic": "12 pts",
+      "source": "HN",
+      "url": "https://www.skmurphy.com/blog/2017/08/07/a-common-evolution-service-to-system-integration-to-product/"
+    },
+    {
+      "keyword": "Show HN: Shader Lab, like Photoshop but for shaders",
+      "traffic": "146 pts",
+      "source": "HN",
+      "url": "https://eng.basement.studio/tools/shader-lab"
+    },
+    {
+      "keyword": "PopOS Linux: Creating a Bootable Backup USB With Encryption",
+      "traffic": "21 pts",
+      "source": "HN",
+      "url": "https://hajo.me/blog/2026/02/16/popos-linux-creating-bootable-backup-USB-with-encryption/"
+    },
+    {
+      "keyword": "Sudo for Windows (2024)",
+      "traffic": "70 pts",
+      "source": "HN",
+      "url": "https://github.com/microsoft/sudo"
+    },
+    {
+      "keyword": "The seven programming ur-languages (2022)",
+      "traffic": "329 pts",
+      "source": "HN",
+      "url": "https://madhadron.com/programming/seven_ur_languages.html"
+    },
+    {
+      "keyword": "NASA working on 'Big Bang' upgrade to keep the Voyagers a...",
+      "traffic": "12 pts",
+      "source": "HN",
+      "url": "https://www.theregister.com/2026/04/20/voyager_big_bang_upgrades/"
+    },
+    {
+      "keyword": "Reverse Engineering ME2's USB with a Heat Gun and a Knife",
+      "traffic": "64 pts",
+      "source": "HN",
+      "url": "https://github.com/coremaze/ME2-Writeup"
+    },
+    {
+      "keyword": "Game devs explain the tricks involved with letting you pa...",
+      "traffic": "428 pts",
+      "source": "HN",
+      "url": "https://kotaku.com/video-game-devs-explain-how-pausing-works-and-sometimes-it-gets-weird-2000686339"
+    }
+  ]
+}
