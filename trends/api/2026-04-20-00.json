@@ -1,0 +1,669 @@
+{
+  "timestamp": "2026-04-20-00",
+  "date": "2026-04-20",
+  "slot": "00",
+  "generated": "2026-04-20T02:03:57.668Z",
+  "count": 109,
+  "sources": [
+    "X",
+    "Wiki",
+    "TikTok",
+    "HN"
+  ],
+  "trends": [
+    {
+      "keyword": "#WrestleMania",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23WrestleMania"
+    },
+    {
+      "keyword": "#Euphoria",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23Euphoria"
+    },
+    {
+      "keyword": "Román",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Rom%C3%A1n"
+    },
+    {
+      "keyword": "Night 2",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Night%202"
+    },
+    {
+      "keyword": "Pistons",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Pistons"
+    },
+    {
+      "keyword": "Brock",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Brock"
+    },
+    {
+      "keyword": "Rhea",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Rhea"
+    },
+    {
+      "keyword": "#bucciovertimechallenge",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23bucciovertimechallenge"
+    },
+    {
+      "keyword": "Cadê",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Cad%C3%AA"
+    },
+    {
+      "keyword": "Duren",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Duren"
+    },
+    {
+      "keyword": "SummerSlam",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=SummerSlam"
+    },
+    {
+      "keyword": "Magic",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Magic"
+    },
+    {
+      "keyword": "Miseria Cantare",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Miseria%20Cantare"
+    },
+    {
+      "keyword": "#BaddiesUSAReunion",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23BaddiesUSAReunion"
+    },
+    {
+      "keyword": "Tobias Harris",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Tobias%20Harris"
+    },
+    {
+      "keyword": "Danhausen",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Danhausen"
+    },
+    {
+      "keyword": "Oba Femi",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Oba%20Femi"
+    },
+    {
+      "keyword": "Tribal Chief",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Tribal%20Chief"
+    },
+    {
+      "keyword": "Swayman",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Swayman"
+    },
+    {
+      "keyword": "#90DayFiance",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%2390DayFiance"
+    },
+    {
+      "keyword": "Jade Cargill",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jade%20Cargill"
+    },
+    {
+      "keyword": "Trick Williams",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Trick%20Williams"
+    },
+    {
+      "keyword": "Sabres",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sabres"
+    },
+    {
+      "keyword": "Head of the Table",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Head%20of%20the%20Table"
+    },
+    {
+      "keyword": "Günther",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=G%C3%BCnther"
+    },
+    {
+      "keyword": "ACKNOWLEDGE HIM",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=ACKNOWLEDGE%20HIM"
+    },
+    {
+      "keyword": "The Demon",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=The%20Demon"
+    },
+    {
+      "keyword": "Buffalo",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Buffalo"
+    },
+    {
+      "keyword": "Loomer",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Loomer"
+    },
+    {
+      "keyword": "The Spurs",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=The%20Spurs"
+    },
+    {
+      "keyword": "Franz",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Franz"
+    },
+    {
+      "keyword": "Ausar",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Ausar"
+    },
+    {
+      "keyword": "Maddy",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Maddy"
+    },
+    {
+      "keyword": "Main Event",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Main%20Event"
+    },
+    {
+      "keyword": "One Winged Angel",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=One%20Winged%20Angel"
+    },
+    {
+      "keyword": "World Heavyweight Champion",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=World%20Heavyweight%20Champion"
+    },
+    {
+      "keyword": "Penta",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Penta"
+    },
+    {
+      "keyword": "The OTC",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=The%20OTC"
+    },
+    {
+      "keyword": "Seth Appert",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Seth%20Appert"
+    },
+    {
+      "keyword": "Finn Balor",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Finn%20Balor"
+    },
+    {
+      "keyword": "Xenoverse 3",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Xenoverse%203"
+    },
+    {
+      "keyword": "Sami",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sami"
+    },
+    {
+      "keyword": "JB Bickerstaff",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=JB%20Bickerstaff"
+    },
+    {
+      "keyword": "michael cole",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=michael%20cole"
+    },
+    {
+      "keyword": "No DQ",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=No%20DQ"
+    },
+    {
+      "keyword": "Mets",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mets"
+    },
+    {
+      "keyword": "Jalen Suggs",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jalen%20Suggs"
+    },
+    {
+      "keyword": "San Antonio",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=San%20Antonio"
+    },
+    {
+      "keyword": "Geekie",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Geekie"
+    },
+    {
+      "keyword": "Elias Lindholm",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Elias%20Lindholm"
+    },
+    {
+      "keyword": "anime",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/anime"
+    },
+    {
+      "keyword": "longervideos",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/longervideos"
+    },
+    {
+      "keyword": "filmtok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/filmtok"
+    },
+    {
+      "keyword": "blacktiktok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/blacktiktok"
+    },
+    {
+      "keyword": "winteroutfit",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/winteroutfit"
+    },
+    {
+      "keyword": "backintheday",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/backintheday"
+    },
+    {
+      "keyword": "holi",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/holi"
+    },
+    {
+      "keyword": "materialgirl",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/materialgirl"
+    },
+    {
+      "keyword": "whenwomenwin",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/whenwomenwin"
+    },
+    {
+      "keyword": "Show HN: TRELLIS.2 image-to-3D running on Mac Silicon – n...",
+      "traffic": "37 pts",
+      "source": "HN",
+      "url": "https://github.com/shivampkumar/trellis-mac"
+    },
+    {
+      "keyword": "A Brief History of Fish Sauce",
+      "traffic": "77 pts",
+      "source": "HN",
+      "url": "https://www.legalnomads.com/fish-sauce/"
+    },
+    {
+      "keyword": "Vercel April 2026 security incident",
+      "traffic": "537 pts",
+      "source": "HN",
+      "url": "https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/"
+    },
+    {
+      "keyword": "The Bromine Chokepoint",
+      "traffic": "157 pts",
+      "source": "HN",
+      "url": "https://warontherocks.com/cogs-of-war/the-bromine-chokepoint-how-strife-in-the-middle-east-could-halt-production-of-the-worlds-memory-chips/"
+    },
+    {
+      "keyword": "The Uncanny Valley and the Rising Power of Anti-AI Sentiment",
+      "traffic": "6 pts",
+      "source": "HN",
+      "url": "https://localscribe.co/posts/uncanny-valley-and-rising-power-of-anti-ai-sentiment/"
+    },
+    {
+      "keyword": "2,100 Swiss municipalities showing which provider handles...",
+      "traffic": "67 pts",
+      "source": "HN",
+      "url": "https://mxmap.ch/"
+    },
+    {
+      "keyword": "Ex-CEO, ex-CFO of bankrupt AI company charged with fraud",
+      "traffic": "101 pts",
+      "source": "HN",
+      "url": "https://www.reuters.com/legal/government/ex-ceo-ex-cfo-bankrupt-ai-company-charged-with-fraud-2026-04-17/"
+    },
+    {
+      "keyword": "Mechanical Keyboard Sounds - A listening Museum",
+      "traffic": "18 pts",
+      "source": "HN",
+      "url": "https://sheets.works/data-viz/keyboard-sounds"
+    },
+    {
+      "keyword": "Turtle WoW classic server announces shutdown after Blizza...",
+      "traffic": "125 pts",
+      "source": "HN",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/turtle-wow-classic-server-announces-shutdown-after-blizzard-wins-injunction/"
+    },
+    {
+      "keyword": "Swiss AI Initiative (2023)",
+      "traffic": "16 pts",
+      "source": "HN",
+      "url": "https://www.swiss-ai.org"
+    },
+    {
+      "keyword": "Changes in the system prompt between Claude Opus 4.6 and 4.7",
+      "traffic": "212 pts",
+      "source": "HN",
+      "url": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/"
+    },
+    {
+      "keyword": "Show HN: A lightweight way to make agents talk without pa...",
+      "traffic": "4 pts",
+      "source": "HN",
+      "url": "https://juanpabloaj.com/2026/04/16/a-lightweight-way-to-make-agents-talk-without-paying-for-api-usage/"
+    },
+    {
+      "keyword": "Six Levels of Dark Mode (2024)",
+      "traffic": "51 pts",
+      "source": "HN",
+      "url": "https://cssence.com/2024/six-levels-of-dark-mode/"
+    },
+    {
+      "keyword": "Scientific datasets are riddled with copy-paste errors",
+      "traffic": "36 pts",
+      "source": "HN",
+      "url": "https://www.sciencedetective.org/scientific-datasets-are-riddled-with-copy-paste-errors/"
+    },
+    {
+      "keyword": "Uber’s Anthropic AI push hits a wall",
+      "traffic": "71 pts",
+      "source": "HN",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/ubers-anthropic-ai-push-hits-223109852.html"
+    },
+    {
+      "keyword": "Prove you are a robot: CAPTCHAs for agents",
+      "traffic": "47 pts",
+      "source": "HN",
+      "url": "https://browser-use.com/posts/prove-you-are-a-robot"
+    },
+    {
+      "keyword": "Archive of BYTE magazine, starting with issue #1 in 1975",
+      "traffic": "534 pts",
+      "source": "HN",
+      "url": "https://archive.org/details/byte-magazine-1975-09"
+    },
+    {
+      "keyword": "The RAM shortage could last years",
+      "traffic": "197 pts",
+      "source": "HN",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/914672/the-ram-shortage-could-last-years"
+    },
+    {
+      "keyword": "Stop trying to engineer your way out of listening to people",
+      "traffic": "19 pts",
+      "source": "HN",
+      "url": "https://ashley.rolfmore.com/stop-trying-to-engineer-your-way-out-of-listening-to-people/"
+    },
+    {
+      "keyword": "Show HN: Faceoff – A terminal UI for following NHL games",
+      "traffic": "101 pts",
+      "source": "HN",
+      "url": "https://www.vincentgregoire.com/faceoff/"
+    },
+    {
+      "keyword": "The seven programming ur-languages (2022)",
+      "traffic": "290 pts",
+      "source": "HN",
+      "url": "https://madhadron.com/programming/seven_ur_languages.html"
+    },
+    {
+      "keyword": "Got an Old Kindle? It Might Not Work Anymore",
+      "traffic": "48 pts",
+      "source": "HN",
+      "url": "https://www.nytimes.com/wirecutter/reviews/older-kindle-support-ending/"
+    },
+    {
+      "keyword": "Nanopass Framework: Clean Compiler Creation Language",
+      "traffic": "120 pts",
+      "source": "HN",
+      "url": "https://nanopass.org/"
+    },
+    {
+      "keyword": "I wrote a CHIP-8 emulator in my own programming language",
+      "traffic": "42 pts",
+      "source": "HN",
+      "url": "https://github.com/navid-m/chip8emu"
+    },
+    {
+      "keyword": "Show HN: A working reference implementation of context en...",
+      "traffic": "26 pts",
+      "source": "HN",
+      "url": "https://github.com/outcomeops/context-engineering"
+    },
+    {
+      "keyword": "Recovering Windows Live Writer Files",
+      "traffic": "6 pts",
+      "source": "HN",
+      "url": "https://benovermyer.com/blog/2026/04/recovering-windows-live-writer-files/"
+    },
+    {
+      "keyword": "Interesting Map Geometry and Mathematics",
+      "traffic": "7 pts",
+      "source": "HN",
+      "url": "https://www.markrjohnsongames.com/2026/04/11/ultima-ratio-regum-0-11-update-57-interesting-map-geometry-and-mathematics/"
+    },
+    {
+      "keyword": "SPEAKE(a)R: Turn Speakers to Microphones for Fun and Prof...",
+      "traffic": "162 pts",
+      "source": "HN",
+      "url": "https://www.usenix.org/system/files/conference/woot17/woot17-paper-guri.pdf"
+    },
+    {
+      "keyword": "What are skiplists good for?",
+      "traffic": "266 pts",
+      "source": "HN",
+      "url": "https://antithesis.com/blog/2026/skiptrees/"
+    },
+    {
+      "keyword": "Notion leaks email addresses of all editors of any public...",
+      "traffic": "326 pts",
+      "source": "HN",
+      "url": "https://twitter.com/weezerOSINT/status/2045849358462222720"
+    },
+    {
+      "keyword": "Hot-wiring the Lisp machine",
+      "traffic": "28 pts",
+      "source": "HN",
+      "url": "https://scheatkode.com/blog/019d463d-38b3-7e63-80fd-6ed97bd8815e/hot-wiring-the-lisp-machine/"
+    },
+    {
+      "keyword": "Show HN: Prompt-to-Excalidraw demo with Gemma 4 E2B in th...",
+      "traffic": "92 pts",
+      "source": "HN",
+      "url": "https://teamchong.github.io/turboquant-wasm/draw.html"
+    },
+    {
+      "keyword": "The creative software industry has declared war on Adobe",
+      "traffic": "187 pts",
+      "source": "HN",
+      "url": "https://www.theverge.com/tech/913765/adobe-rivals-free-creative-software-app-updates"
+    },
+    {
+      "keyword": "KTaO3-Based Supercurrent Diode",
+      "traffic": "27 pts",
+      "source": "HN",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.nanolett.5c05590"
+    },
+    {
+      "keyword": "4-bit floating point FP4",
+      "traffic": "75 pts",
+      "source": "HN",
+      "url": "https://www.johndcook.com/blog/2026/04/17/fp4/"
+    },
+    {
+      "keyword": "A. J. Ayer – ‘What I Saw When I Was Dead’ (1988)",
+      "traffic": "69 pts",
+      "source": "HN",
+      "url": "https://www.philosopher.eu/others-writings/a-j-ayer-what-i-saw-when-i-was-dead/"
+    },
+    {
+      "keyword": "Show HN: Shader Lab, like Photoshop but for shaders",
+      "traffic": "136 pts",
+      "source": "HN",
+      "url": "https://eng.basement.studio/tools/shader-lab"
+    },
+    {
+      "keyword": "The world in which IPv6 was a good design (2017)",
+      "traffic": "210 pts",
+      "source": "HN",
+      "url": "https://apenwarr.ca/log/20170810"
+    },
+    {
+      "keyword": "Reading Input from an USB RFID Card Reader",
+      "traffic": "36 pts",
+      "source": "HN",
+      "url": "https://kevwe.com/blog/usb-rfid-reader"
+    },
+    {
+      "keyword": "Eliza a Play by Tom Holloway",
+      "traffic": "18 pts",
+      "source": "HN",
+      "url": "https://www.mtc.com.au/plays-and-tickets/whats-on/season-2026/eliza"
+    },
+    {
+      "keyword": "Why one of the largest digital banks chose Clojure [video]",
+      "traffic": "10 pts",
+      "source": "HN",
+      "url": "https://www.youtube.com/watch?v=pleo1VA9D70"
+    },
+    {
+      "keyword": "Canada's PM calls economic ties with US a weakness that m...",
+      "traffic": "7 pts",
+      "source": "HN",
+      "url": "https://abcnews.com/Business/wireStory/canadas-prime-minister-economic-ties-us-weakness-corrected-132187806"
+    },
+    {
+      "keyword": "Reverse Engineering ME2's USB with a Heat Gun and a Knife",
+      "traffic": "54 pts",
+      "source": "HN",
+      "url": "https://github.com/coremaze/ME2-Writeup"
+    },
+    {
+      "keyword": "Blue Origin's rocket reuse achievement marred by upper st...",
+      "traffic": "59 pts",
+      "source": "HN",
+      "url": "https://arstechnica.com/space/2026/04/errant-upper-stage-spoils-blue-origins-success-in-reusing-new-glenn-booster/"
+    },
+    {
+      "keyword": "C++26: Reflection, Memory Safety, Contracts, and a New As...",
+      "traffic": "30 pts",
+      "source": "HN",
+      "url": "https://www.infoq.com/news/2026/04/cpp-26-reflection-safety-async/"
+    },
+    {
+      "keyword": "Game devs explain the tricks involved with letting you pa...",
+      "traffic": "407 pts",
+      "source": "HN",
+      "url": "https://kotaku.com/video-game-devs-explain-how-pausing-works-and-sometimes-it-gets-weird-2000686339"
+    },
+    {
+      "keyword": "It's cool to care (2025)",
+      "traffic": "94 pts",
+      "source": "HN",
+      "url": "https://alexwlchan.net/2025/cool-to-care/"
+    },
+    {
+      "keyword": "Updating Gun Rocket through 10 years of Unity Engine",
+      "traffic": "109 pts",
+      "source": "HN",
+      "url": "https://jackpritz.com/blog/updating-gun-rocket-through-10-years-of-unity-engine"
+    },
+    {
+      "keyword": "I learned Unity the wrong way",
+      "traffic": "89 pts",
+      "source": "HN",
+      "url": "https://darkounity.com/blog/how-i-learned-unity-the-wrong-way"
+    },
+    {
+      "keyword": "Ask HN: How did you land your first projects as a solo en...",
+      "traffic": "245 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=47822940"
+    }
+  ]
+}
