@@ -1,0 +1,669 @@
+{
+  "timestamp": "2026-04-27-00",
+  "date": "2026-04-27",
+  "slot": "00",
+  "generated": "2026-04-27T02:08:43.629Z",
+  "count": 109,
+  "sources": [
+    "X",
+    "Wiki",
+    "TikTok",
+    "HN"
+  ],
+  "trends": [
+    {
+      "keyword": "#Euphoria",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23Euphoria"
+    },
+    {
+      "keyword": "Embiid",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Embiid"
+    },
+    {
+      "keyword": "Payton Pritchard",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Payton%20Pritchard"
+    },
+    {
+      "keyword": "Sixers",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sixers"
+    },
+    {
+      "keyword": "#RHOA",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23RHOA"
+    },
+    {
+      "keyword": "60 Minutes",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=60%20Minutes"
+    },
+    {
+      "keyword": "Lane Thomas",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Lane%20Thomas"
+    },
+    {
+      "keyword": "#GoBolts",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23GoBolts"
+    },
+    {
+      "keyword": "#90DayFiance",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%2390DayFiance"
+    },
+    {
+      "keyword": "Stearns",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Stearns"
+    },
+    {
+      "keyword": "Pied Piper",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Pied%20Piper"
+    },
+    {
+      "keyword": "Maxey",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Maxey"
+    },
+    {
+      "keyword": "Nick Nurse",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Nick%20Nurse"
+    },
+    {
+      "keyword": "Carson Hocevar",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Carson%20Hocevar"
+    },
+    {
+      "keyword": "Norah O&#x27;Donnell",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Norah%20O%26%23x27%3BDonnell"
+    },
+    {
+      "keyword": "#BaddiesUSAReunion",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23BaddiesUSAReunion"
+    },
+    {
+      "keyword": "WE WANT BOSTON",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=WE%20WANT%20BOSTON"
+    },
+    {
+      "keyword": "Kimmel",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Kimmel"
+    },
+    {
+      "keyword": "Tatum",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Tatum"
+    },
+    {
+      "keyword": "Kopi",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Kopi"
+    },
+    {
+      "keyword": "Brandon Hagel",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Brandon%20Hagel"
+    },
+    {
+      "keyword": "Rockies",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Rockies"
+    },
+    {
+      "keyword": "BOY WITH LUV",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=BOY%20WITH%20LUV"
+    },
+    {
+      "keyword": "Rollie",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Rollie"
+    },
+    {
+      "keyword": "Kucherov",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Kucherov"
+    },
+    {
+      "keyword": "Goonies",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Goonies"
+    },
+    {
+      "keyword": "Guentzel",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Guentzel"
+    },
+    {
+      "keyword": "Piggly Wiggly",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Piggly%20Wiggly"
+    },
+    {
+      "keyword": "Foraker",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Foraker"
+    },
+    {
+      "keyword": "Drummond",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Drummond"
+    },
+    {
+      "keyword": "Josh Harris",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Josh%20Harris"
+    },
+    {
+      "keyword": "Austin Slater",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Austin%20Slater"
+    },
+    {
+      "keyword": "Jordan Walsh",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jordan%20Walsh"
+    },
+    {
+      "keyword": "Ben Sasse",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Ben%20Sasse"
+    },
+    {
+      "keyword": "Hoss Cartwright",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Hoss%20Cartwright"
+    },
+    {
+      "keyword": "Mendoza",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mendoza"
+    },
+    {
+      "keyword": "Dan Blocker",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Dan%20Blocker"
+    },
+    {
+      "keyword": "Nate and Cassie",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Nate%20and%20Cassie"
+    },
+    {
+      "keyword": "Bubba",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Bubba"
+    },
+    {
+      "keyword": "Pinky",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Pinky"
+    },
+    {
+      "keyword": "Morey",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Morey"
+    },
+    {
+      "keyword": "Deni",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Deni"
+    },
+    {
+      "keyword": "Castle",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Castle"
+    },
+    {
+      "keyword": "The 76ers",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=The%2076ers"
+    },
+    {
+      "keyword": "Ziad",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Ziad"
+    },
+    {
+      "keyword": "Derrick White",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Derrick%20White"
+    },
+    {
+      "keyword": "Çağs",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%C3%87a%C4%9Fs"
+    },
+    {
+      "keyword": "Mendy",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mendy"
+    },
+    {
+      "keyword": "Oubre",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Oubre"
+    },
+    {
+      "keyword": "Talladega",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Talladega"
+    },
+    {
+      "keyword": "anime",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/anime"
+    },
+    {
+      "keyword": "longervideos",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/longervideos"
+    },
+    {
+      "keyword": "filmtok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/filmtok"
+    },
+    {
+      "keyword": "blacktiktok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/blacktiktok"
+    },
+    {
+      "keyword": "winteroutfit",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/winteroutfit"
+    },
+    {
+      "keyword": "backintheday",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/backintheday"
+    },
+    {
+      "keyword": "holi",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/holi"
+    },
+    {
+      "keyword": "materialgirl",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/materialgirl"
+    },
+    {
+      "keyword": "whenwomenwin",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/whenwomenwin"
+    },
+    {
+      "keyword": "I bought Friendster for $30k – Here's what I'm doing with it",
+      "traffic": "409 pts",
+      "source": "HN",
+      "url": "https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d"
+    },
+    {
+      "keyword": "Self-updating screenshots",
+      "traffic": "55 pts",
+      "source": "HN",
+      "url": "https://interblah.net/self-updating-screenshots"
+    },
+    {
+      "keyword": "Three constraints before I build anything",
+      "traffic": "41 pts",
+      "source": "HN",
+      "url": "https://jordanlord.co.uk/blog/3-constraints/"
+    },
+    {
+      "keyword": "Fast16: High-precision software sabotage 5 years before S...",
+      "traffic": "155 pts",
+      "source": "HN",
+      "url": "https://www.sentinelone.com/labs/fast16-mystery-shadowbrokers-reference-reveals-high-precision-software-sabotage-5-years-before-stuxnet/"
+    },
+    {
+      "keyword": "Box to save memory in Rust",
+      "traffic": "62 pts",
+      "source": "HN",
+      "url": "https://dystroy.org/blog/box-to-save-memory/"
+    },
+    {
+      "keyword": "Google banks on AI edge to catch up to cloud rivals Amazo...",
+      "traffic": "58 pts",
+      "source": "HN",
+      "url": "https://www.ft.com/content/2429f0f0-b685-4747-b425-bf8001a2e94c"
+    },
+    {
+      "keyword": "When the cheap one is the cool one",
+      "traffic": "17 pts",
+      "source": "HN",
+      "url": "https://arun.is/blog/cheap-cool/"
+    },
+    {
+      "keyword": "Butterflies are in decline across North America, a look a...",
+      "traffic": "131 pts",
+      "source": "HN",
+      "url": "https://www.smithsonianmag.com/science-nature/butterflies-are-in-dramatic-decline-across-north-america-a-close-look-at-the-western-monarch-shows-why-180988582/"
+    },
+    {
+      "keyword": "SWE-bench Verified no longer measures frontier coding cap...",
+      "traffic": "250 pts",
+      "source": "HN",
+      "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/"
+    },
+    {
+      "keyword": "The fastest Linux timestamps",
+      "traffic": "17 pts",
+      "source": "HN",
+      "url": "https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/"
+    },
+    {
+      "keyword": "Lessons from building multiplayer browsers",
+      "traffic": "10 pts",
+      "source": "HN",
+      "url": "https://www.alejandro.pe/writing/sail-muddy-lessons"
+    },
+    {
+      "keyword": "Show HN: The Unix Magic poster, annotated (updated)",
+      "traffic": "3 pts",
+      "source": "HN",
+      "url": "https://github.com/drio/unixmagic"
+    },
+    {
+      "keyword": "Show HN: AI memory with biological decay (52% recall)",
+      "traffic": "59 pts",
+      "source": "HN",
+      "url": "https://github.com/sachitrafa/YourMemory"
+    },
+    {
+      "keyword": "AI should elevate your thinking, not replace it",
+      "traffic": "285 pts",
+      "source": "HN",
+      "url": "https://www.koshyjohn.com/blog/ai-should-elevate-your-thinking-not-replace-it/"
+    },
+    {
+      "keyword": "Music of the BBC Microcomputer System",
+      "traffic": "9 pts",
+      "source": "HN",
+      "url": "https://www.acornelectron.co.uk/eug/72/a-musi.html"
+    },
+    {
+      "keyword": "Running Bare-Metal Rust Alongside ESP-IDF on the ESP32-S3...",
+      "traffic": "34 pts",
+      "source": "HN",
+      "url": "https://tingouw.com/blog/embedded/esp32/run_rust_on_app_core"
+    },
+    {
+      "keyword": "Magic: The Gathering took me from N2 to Japanese fluency",
+      "traffic": "87 pts",
+      "source": "HN",
+      "url": "https://www.tokyodev.com/articles/how-magic-the-gathering-took-me-from-n2-to-japanese-fluency"
+    },
+    {
+      "keyword": "Sawe becomes first athlete to run a sub-two-hour marathon...",
+      "traffic": "255 pts",
+      "source": "HN",
+      "url": "https://www.bbc.com/sport/athletics/articles/crm1m7e0zwzo"
+    },
+    {
+      "keyword": "Quirks of Human Anatomy",
+      "traffic": "90 pts",
+      "source": "HN",
+      "url": "https://www.sdbonline.org/sites/fly/lewheldquirk/figlegq6.htm"
+    },
+    {
+      "keyword": "MoQ Boy",
+      "traffic": "39 pts",
+      "source": "HN",
+      "url": "https://moq.dev/blog/moq-boy/"
+    },
+    {
+      "keyword": "FreeBSD Device Drivers Book",
+      "traffic": "12 pts",
+      "source": "HN",
+      "url": "https://github.com/ebrandi/FDD-book"
+    },
+    {
+      "keyword": "The Visible Zorker: Zork 1",
+      "traffic": "107 pts",
+      "source": "HN",
+      "url": "https://eblong.com/infocom/visi/zork1/"
+    },
+    {
+      "keyword": "Clay PCB Tutorial",
+      "traffic": "194 pts",
+      "source": "HN",
+      "url": "https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial"
+    },
+    {
+      "keyword": "XOXO Festival Archive",
+      "traffic": "42 pts",
+      "source": "HN",
+      "url": "https://xoxofest.com/"
+    },
+    {
+      "keyword": "Chernobyl Wildlife Forty Years On",
+      "traffic": "42 pts",
+      "source": "HN",
+      "url": "https://www.bbc.com/future/article/20260424-chernobyl-wildlife-forty-years-on"
+    },
+    {
+      "keyword": "An AI agent deleted our production database. The agent's ...",
+      "traffic": "458 pts",
+      "source": "HN",
+      "url": "https://twitter.com/lifeof_jer/status/2048103471019434248"
+    },
+    {
+      "keyword": "Statecharts: hierarchical state machines",
+      "traffic": "281 pts",
+      "source": "HN",
+      "url": "https://statecharts.dev/"
+    },
+    {
+      "keyword": "Show HN: Startup Equity Adventure Game",
+      "traffic": "15 pts",
+      "source": "HN",
+      "url": "https://options-game-polymathrobotics.pythonanywhere.com/"
+    },
+    {
+      "keyword": "Show HN: Free textbook on engineering thermodynamics",
+      "traffic": "108 pts",
+      "source": "HN",
+      "url": "https://thermodynamicsbook.com/"
+    },
+    {
+      "keyword": "The QEII garden – built from its own ruins – opens in Reg...",
+      "traffic": "8 pts",
+      "source": "HN",
+      "url": "https://www.ianvisits.co.uk/articles/a-garden-built-from-its-own-ruins-opens-in-regents-park-89152/"
+    },
+    {
+      "keyword": "The Last of the Lost Generation",
+      "traffic": "14 pts",
+      "source": "HN",
+      "url": "https://porticoquarterly.com/book/the-last-of-the-lost-generation/"
+    },
+    {
+      "keyword": "Show HN: Tiao, A two-player turn-based board game",
+      "traffic": "34 pts",
+      "source": "HN",
+      "url": "https://playtiao.com"
+    },
+    {
+      "keyword": "Dear friend, you have built a Kubernetes (2024)",
+      "traffic": "89 pts",
+      "source": "HN",
+      "url": "https://www.macchaffee.com/blog/2024/you-have-built-a-kubernetes/"
+    },
+    {
+      "keyword": "GoDaddy gave a domain to a stranger without any documenta...",
+      "traffic": "549 pts",
+      "source": "HN",
+      "url": "https://anchor.host/godaddy-gave-a-domain-to-a-stranger-without-any-documentation/"
+    },
+    {
+      "keyword": "Orinoco: Young Generation Garbage Collection",
+      "traffic": "35 pts",
+      "source": "HN",
+      "url": "https://v8.dev/blog/orinoco-parallel-scavenger"
+    },
+    {
+      "keyword": "The 1944 Warsaw Uprising, in Color",
+      "traffic": "115 pts",
+      "source": "HN",
+      "url": "https://www.barwypowstania.pl/"
+    },
+    {
+      "keyword": "Show HN: Turning a Gaussian Splat into a videogame",
+      "traffic": "205 pts",
+      "source": "HN",
+      "url": "https://blog.playcanvas.com/turning-a-gaussian-splat-into-a-videogame/"
+    },
+    {
+      "keyword": "Asahi Linux Progress Linux 7.0",
+      "traffic": "594 pts",
+      "source": "HN",
+      "url": "https://asahilinux.org/2026/04/progress-report-7-0/"
+    },
+    {
+      "keyword": "Why has there been so little progress on Alzheimer's dise...",
+      "traffic": "406 pts",
+      "source": "HN",
+      "url": "https://freakonomics.com/podcast/why-has-there-been-so-little-progress-on-alzheimers-disease/"
+    },
+    {
+      "keyword": "Voice Modems",
+      "traffic": "6 pts",
+      "source": "HN",
+      "url": "https://computer.rip/2026-04-26-voice-modems.html"
+    },
+    {
+      "keyword": "Dillo Browser Release 3.3.0",
+      "traffic": "158 pts",
+      "source": "HN",
+      "url": "https://dillo-browser.org/release/3.3.0/"
+    },
+    {
+      "keyword": "Tell HN: An app is silently installing itself on my iPhon...",
+      "traffic": "534 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=47906253"
+    },
+    {
+      "keyword": "Terra API (YC W21) Hiring: Applied AI Strategist (Health ...",
+      "traffic": "1 pts",
+      "source": "HN",
+      "url": "https://www.ycombinator.com/companies/terra-api/jobs/DY7BCZU-applied-ai-strategist-market-intelligence-health"
+    },
+    {
+      "keyword": "The Hottest Phone for Kids Right Now Is a $100 Landline",
+      "traffic": "13 pts",
+      "source": "HN",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-24/viral-tin-can-phone-brings-landline-nostalgia-back-for-kids-in-2026"
+    },
+    {
+      "keyword": "Agentic AI systems violate the implicit assumptions of da...",
+      "traffic": "96 pts",
+      "source": "HN",
+      "url": "https://arpitbhayani.me/blogs/defensive-databases/"
+    },
+    {
+      "keyword": "ELI: Explain Like I'm for any ArXiv Paper",
+      "traffic": "6 pts",
+      "source": "HN",
+      "url": "https://eli.voxos.ai/"
+    },
+    {
+      "keyword": "Sloppy Copies",
+      "traffic": "61 pts",
+      "source": "HN",
+      "url": "https://www.markround.com/blog/2026/04/19/sloppy-copies/"
+    },
+    {
+      "keyword": "Principia Softwarica: Fundamental Literate System Programs",
+      "traffic": "11 pts",
+      "source": "HN",
+      "url": "https://principia-softwarica.org/"
+    },
+    {
+      "keyword": "QNX on the Commodore 900 – Raiders of the lost hard drive...",
+      "traffic": "47 pts",
+      "source": "HN",
+      "url": "https://archive.fosdem.org/2025/schedule/event/fosdem-2025-5479-raiders-of-the-lost-hard-drive/"
+    },
+    {
+      "keyword": "GnuPG – post-quantum crypto landing in mainline",
+      "traffic": "163 pts",
+      "source": "HN",
+      "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q2/000504.html"
+    }
+  ]
+}
