@@ -1,0 +1,663 @@
+{
+  "timestamp": "2026-05-25-16",
+  "date": "2026-05-25",
+  "slot": "16",
+  "generated": "2026-05-25T17:28:33.274Z",
+  "count": 108,
+  "sources": [
+    "X",
+    "Wiki",
+    "TikTok",
+    "HN"
+  ],
+  "trends": [
+    {
+      "keyword": "Memorial Day",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Memorial%20Day"
+    },
+    {
+      "keyword": "George Floyd",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=George%20Floyd"
+    },
+    {
+      "keyword": "abraham accords",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=abraham%20accords"
+    },
+    {
+      "keyword": "Frey",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Frey"
+    },
+    {
+      "keyword": "Arlington National Cemetery",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Arlington%20National%20Cemetery"
+    },
+    {
+      "keyword": "NCAA",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=NCAA"
+    },
+    {
+      "keyword": "Derek Chauvin",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Derek%20Chauvin"
+    },
+    {
+      "keyword": "Mercer",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mercer"
+    },
+    {
+      "keyword": "Magnifica Humanitas",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Magnifica%20Humanitas"
+    },
+    {
+      "keyword": "#HonorAndRemember",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23HonorAndRemember"
+    },
+    {
+      "keyword": "#NeverForget",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23NeverForget"
+    },
+    {
+      "keyword": "OD&#x27;d",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=OD%26%23x27%3Bd"
+    },
+    {
+      "keyword": "springsteen",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=springsteen"
+    },
+    {
+      "keyword": "Pope Leo",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Pope%20Leo"
+    },
+    {
+      "keyword": "Kentucky",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Kentucky"
+    },
+    {
+      "keyword": "GAVI",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=GAVI"
+    },
+    {
+      "keyword": "God Bless America",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=God%20Bless%20America"
+    },
+    {
+      "keyword": "#LUNÉSelcaDay",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23LUN%C3%89SelcaDay"
+    },
+    {
+      "keyword": "Veterans",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Veterans"
+    },
+    {
+      "keyword": "Chapel Hill Regional",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Chapel%20Hill%20Regional"
+    },
+    {
+      "keyword": "Gold Star",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Gold%20Star"
+    },
+    {
+      "keyword": "Midas",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Midas"
+    },
+    {
+      "keyword": "More Info in Article Below",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=More%20Info%20in%20Article%20Below"
+    },
+    {
+      "keyword": "#LUNÉJidoriDay",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23LUN%C3%89JidoriDay"
+    },
+    {
+      "keyword": "Walter Reed",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Walter%20Reed"
+    },
+    {
+      "keyword": "Tomb of the Unknown Soldier",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Tomb%20of%20the%20Unknown%20Soldier"
+    },
+    {
+      "keyword": "Missouri State",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Missouri%20State"
+    },
+    {
+      "keyword": "College Station Regional",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=College%20Station%20Regional"
+    },
+    {
+      "keyword": "Overdose",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Overdose"
+    },
+    {
+      "keyword": "Jacksonville State",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jacksonville%20State"
+    },
+    {
+      "keyword": "Texas State",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Texas%20State"
+    },
+    {
+      "keyword": "#CeseTotalDeLasSanciones",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23CeseTotalDeLasSanciones"
+    },
+    {
+      "keyword": "AARON MERCURY",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=AARON%20MERCURY"
+    },
+    {
+      "keyword": "Coastal Carolina",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Coastal%20Carolina"
+    },
+    {
+      "keyword": "Hattiesburg Regional",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Hattiesburg%20Regional"
+    },
+    {
+      "keyword": "Pastor Shep",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Pastor%20Shep"
+    },
+    {
+      "keyword": "Darkseid",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Darkseid"
+    },
+    {
+      "keyword": "HWANGderful YEJI DAY",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=HWANGderful%20YEJI%20DAY"
+    },
+    {
+      "keyword": "Morgantown Regional",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Morgantown%20Regional"
+    },
+    {
+      "keyword": "Humberto",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Humberto"
+    },
+    {
+      "keyword": "Congrats Pat",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Congrats%20Pat"
+    },
+    {
+      "keyword": "Gainesville Regional",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Gainesville%20Regional"
+    },
+    {
+      "keyword": "Cyclops",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Cyclops"
+    },
+    {
+      "keyword": "Atmane",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Atmane"
+    },
+    {
+      "keyword": "Decoration Day",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Decoration%20Day"
+    },
+    {
+      "keyword": "Auburn",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Auburn"
+    },
+    {
+      "keyword": "Ciara",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Ciara"
+    },
+    {
+      "keyword": "Lincoln Regional",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Lincoln%20Regional"
+    },
+    {
+      "keyword": "Minneapolis",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Minneapolis"
+    },
+    {
+      "keyword": "NC State",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=NC%20State"
+    },
+    {
+      "keyword": "anime",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/anime"
+    },
+    {
+      "keyword": "longervideos",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/longervideos"
+    },
+    {
+      "keyword": "filmtok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/filmtok"
+    },
+    {
+      "keyword": "blacktiktok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/blacktiktok"
+    },
+    {
+      "keyword": "winteroutfit",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/winteroutfit"
+    },
+    {
+      "keyword": "backintheday",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/backintheday"
+    },
+    {
+      "keyword": "holi",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/holi"
+    },
+    {
+      "keyword": "materialgirl",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/materialgirl"
+    },
+    {
+      "keyword": "whenwomenwin",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/whenwomenwin"
+    },
+    {
+      "keyword": "C extensions, portability, and alternative compilers",
+      "traffic": "71 pts",
+      "source": "HN",
+      "url": "https://lemon.rip/w/6-c-extensions-compilers/"
+    },
+    {
+      "keyword": "Launch HN: Chert (YC P26) – Twilio for iMessage",
+      "traffic": "21 pts",
+      "source": "HN",
+      "url": "https://www.trychert.com"
+    },
+    {
+      "keyword": "Netherlands Seizes 800 Servers, Arrests 2 for Aiding Cybe...",
+      "traffic": "145 pts",
+      "source": "HN",
+      "url": "https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/"
+    },
+    {
+      "keyword": "IBM Spins Off the First Pure-Play Quantum Chip Foundry",
+      "traffic": "88 pts",
+      "source": "HN",
+      "url": "https://futurumgroup.com/insights/2-billion-chips-act-investment-in-quantum-bets-on-ibms-300mm-superconducting-silicon/"
+    },
+    {
+      "keyword": "Uber’s COO says it’s getting harder to justify money spen...",
+      "traffic": "63 pts",
+      "source": "HN",
+      "url": "https://www.businessinsider.com/uber-coo-andrew-macdonald-ai-token-spending-harder-justify-2026-5"
+    },
+    {
+      "keyword": "RentFlow (YC S24) Is Hiring",
+      "traffic": "1 pts",
+      "source": "HN",
+      "url": "https://www.ycombinator.com/companies/rentflow/jobs/V2yneIE-senior-ai-ml-lead"
+    },
+    {
+      "keyword": "Microsoft pulls plug on plans for 244-acre data center in...",
+      "traffic": "94 pts",
+      "source": "HN",
+      "url": "https://www.tmj4.com/news/racine-county/microsoft-pulls-plug-on-plans-for-244-acre-data-center-in-caledonia-after-community-pushback"
+    },
+    {
+      "keyword": "Leave Me Behind",
+      "traffic": "264 pts",
+      "source": "HN",
+      "url": "http://androidessence.com/leave-me-behind/"
+    },
+    {
+      "keyword": "Gnutella: A Protocol Outliving the World That Created It",
+      "traffic": "87 pts",
+      "source": "HN",
+      "url": "https://rickcarlino.com/notes/p2p/gnutella-explanation.html"
+    },
+    {
+      "keyword": "Didgeridoo playing as alternative treatment for obstructi...",
+      "traffic": "252 pts",
+      "source": "HN",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1360393/"
+    },
+    {
+      "keyword": "I manage teams without a single call",
+      "traffic": "30 pts",
+      "source": "HN",
+      "url": "https://orchidfiles.com/build-without-calls/"
+    },
+    {
+      "keyword": "Show HN: Audiomass – a free, open-source multitrack audio...",
+      "traffic": "457 pts",
+      "source": "HN",
+      "url": "https://audiomass.co/?multitrack=1"
+    },
+    {
+      "keyword": "DeepSeek reasonix, DeepSeek native coding agent with high...",
+      "traffic": "645 pts",
+      "source": "HN",
+      "url": "https://esengine.github.io/DeepSeek-Reasonix/"
+    },
+    {
+      "keyword": "He Lost It at the Movies",
+      "traffic": "11 pts",
+      "source": "HN",
+      "url": "https://www.theideasletter.org/essay/he-lost-it-at-the-movies/"
+    },
+    {
+      "keyword": "The physicists who convinced Fermilab to send Brazil's em...",
+      "traffic": "32 pts",
+      "source": "HN",
+      "url": "https://buttondown.com/blog/brazil-fermilab-email"
+    },
+    {
+      "keyword": "Migrating from Go to Rust",
+      "traffic": "395 pts",
+      "source": "HN",
+      "url": "https://corrode.dev/learn/migration-guides/go-to-rust/"
+    },
+    {
+      "keyword": "Bytecode VMs in surprising places (2024)",
+      "traffic": "97 pts",
+      "source": "HN",
+      "url": "https://dubroy.com/blog/bytecode-vms-in-surprising-places/"
+    },
+    {
+      "keyword": "Show HN: Geomatic – a command-driven geometry studio enab...",
+      "traffic": "52 pts",
+      "source": "HN",
+      "url": "https://www.tinyvolt.com/geomatic"
+    },
+    {
+      "keyword": "2026 HIPAA Security Rule Update",
+      "traffic": "65 pts",
+      "source": "HN",
+      "url": "https://medcurity.com/hipaa-security-rule-2026-update/"
+    },
+    {
+      "keyword": "AI errno(2) values",
+      "traffic": "79 pts",
+      "source": "HN",
+      "url": "https://www.netmeister.org/blog/ai-errno.html"
+    },
+    {
+      "keyword": "The analog computer museum's online library",
+      "traffic": "5 pts",
+      "source": "HN",
+      "url": "https://www.analogmuseum.org/english/library.html"
+    },
+    {
+      "keyword": "The Cost of Safetyism",
+      "traffic": "46 pts",
+      "source": "HN",
+      "url": "https://stevemagness.substack.com/p/the-cost-of-safetyism"
+    },
+    {
+      "keyword": "White Rabbit – sub-nanosecond synchronization for large d...",
+      "traffic": "157 pts",
+      "source": "HN",
+      "url": "https://ohwr.org/projects/white-rabbit/"
+    },
+    {
+      "keyword": "Notes about reading messages with the Python email packages",
+      "traffic": "42 pts",
+      "source": "HN",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/python/EmailPackagesNotes"
+    },
+    {
+      "keyword": "I spent 50 hours drawing a line graph",
+      "traffic": "620 pts",
+      "source": "HN",
+      "url": "https://www.dougmacdowell.com/50-hours-to-draw-some-lines.html"
+    },
+    {
+      "keyword": "A fundamental principle of aeronautical engineering has b...",
+      "traffic": "211 pts",
+      "source": "HN",
+      "url": "https://www.wired.com/story/a-fundamental-principle-of-aeronautical-engineering-has-been-overturned/"
+    },
+    {
+      "keyword": "Bug 1950764: Work Around Crash on Intel Raptor Lake CPU",
+      "traffic": "146 pts",
+      "source": "HN",
+      "url": "https://phabricator.services.mozilla.com/D301917"
+    },
+    {
+      "keyword": "Jira Is Turing-Complete",
+      "traffic": "268 pts",
+      "source": "HN",
+      "url": "https://seriot.ch/computation/jira.html"
+    },
+    {
+      "keyword": "Microsoft open-sources “the earliest DOS source code disc...",
+      "traffic": "500 pts",
+      "source": "HN",
+      "url": "https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/"
+    },
+    {
+      "keyword": "Search engines alternatives now that Google isn't Google ...",
+      "traffic": "464 pts",
+      "source": "HN",
+      "url": "https://techcrunch.com/2026/05/21/six-search-engines-worth-trying-now-that-google-isnt-really-google-anymore/"
+    },
+    {
+      "keyword": "Building Pi with Pi",
+      "traffic": "154 pts",
+      "source": "HN",
+      "url": "https://lucumr.pocoo.org/2026/5/24/pi-oss/"
+    },
+    {
+      "keyword": "I love my Bluetooth keyboard",
+      "traffic": "137 pts",
+      "source": "HN",
+      "url": "https://liquidbrain.net/blog/i-love-my-bluetooth-keyboard/"
+    },
+    {
+      "keyword": "Defeating Git Rigour Fatigue with Jujutsu",
+      "traffic": "160 pts",
+      "source": "HN",
+      "url": "https://ikesau.co/blog/defeating-git-rigour-fatigue-with-jujutsu/"
+    },
+    {
+      "keyword": "Scammers are abusing an internal Microsoft account to sen...",
+      "traffic": "300 pts",
+      "source": "HN",
+      "url": "https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-account-to-send-spam/"
+    },
+    {
+      "keyword": "Childhood Computing",
+      "traffic": "235 pts",
+      "source": "HN",
+      "url": "https://susam.net/childhood-computing.html"
+    },
+    {
+      "keyword": "Constraint Decay: The Fragility of LLM Agents in Back End...",
+      "traffic": "269 pts",
+      "source": "HN",
+      "url": "https://arxiv.org/abs/2605.06445"
+    },
+    {
+      "keyword": "Memory has grown to nearly two-thirds of AI chip componen...",
+      "traffic": "416 pts",
+      "source": "HN",
+      "url": "https://epoch.ai/data-insights/ai-chip-component-cost-shares"
+    },
+    {
+      "keyword": "Mastering Dyalog APL",
+      "traffic": "153 pts",
+      "source": "HN",
+      "url": "https://mastering.dyalog.com/README.html"
+    },
+    {
+      "keyword": "Greg Brockman interview [video]",
+      "traffic": "204 pts",
+      "source": "HN",
+      "url": "https://fs.blog/knowledge-project-podcast/greg-brockman/"
+    },
+    {
+      "keyword": "Using HTTP/2 Cleartext for a server in Go 1.24",
+      "traffic": "102 pts",
+      "source": "HN",
+      "url": "https://www.clarityboss.com/blog/go-http2-cleartext-h2c-cloud-run"
+    },
+    {
+      "keyword": "Why is Vivado 2026.1 dropping Linux support for free tier?",
+      "traffic": "340 pts",
+      "source": "HN",
+      "url": "https://adaptivesupport.amd.com/s/question/0D5Pd00001YQLdMKAX/why-is-vivado-20261-dropping-linux-support-for-free-tier-?language=en_US"
+    },
+    {
+      "keyword": "C constructs that still don't work in C++",
+      "traffic": "108 pts",
+      "source": "HN",
+      "url": "https://lospino.so/blog/c-constructs-that-still-dont-work-in-cpp/"
+    },
+    {
+      "keyword": "Scientists solve 200-year-old puzzle of how tobacco plant...",
+      "traffic": "109 pts",
+      "source": "HN",
+      "url": "https://www.york.ac.uk/news-and-events/news/2026/research/200-year-old-puzzle-tobacco-plants-nicotine/"
+    },
+    {
+      "keyword": "you_can::turn_off_the_borrow_checker",
+      "traffic": "46 pts",
+      "source": "HN",
+      "url": "https://docs.rs/you-can/latest/you_can/attr.turn_off_the_borrow_checker.html"
+    },
+    {
+      "keyword": "Build Adafruit projects right from Firefox",
+      "traffic": "177 pts",
+      "source": "HN",
+      "url": "https://www.firefox.com/en-US/landing/adafruit/"
+    },
+    {
+      "keyword": "Perceptual Image Codec: What Matters in Practical Learned...",
+      "traffic": "122 pts",
+      "source": "HN",
+      "url": "https://apple.github.io/ml-pico/"
+    },
+    {
+      "keyword": "Selling SaaS in Germany",
+      "traffic": "61 pts",
+      "source": "HN",
+      "url": "https://embedworkflow.com/blog/selling-saas-in-germany-austria-and-switzerland-dach/"
+    },
+    {
+      "keyword": "Green card seekers must leave U.S. to apply, Trump admini...",
+      "traffic": "1083 pts",
+      "source": "HN",
+      "url": "https://www.nytimes.com/2026/05/22/us/politics/green-card-changes-trump.html"
+    },
+    {
+      "keyword": "Noroboto: Lying Fonts and Mitigation in Rust",
+      "traffic": "83 pts",
+      "source": "HN",
+      "url": "https://tritium.legal/blog/noroboto"
+    }
+  ]
+}
