@@ -1,0 +1,669 @@
+{
+  "timestamp": "2026-07-15-00",
+  "date": "2026-07-15",
+  "slot": "00",
+  "generated": "2026-07-15T01:48:44.603Z",
+  "count": 109,
+  "sources": [
+    "X",
+    "Wiki",
+    "TikTok",
+    "HN"
+  ],
+  "trends": [
+    {
+      "keyword": "#AllStarGame",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23AllStarGame"
+    },
+    {
+      "keyword": "Spain",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Spain"
+    },
+    {
+      "keyword": "Sanchez",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sanchez"
+    },
+    {
+      "keyword": "#WWENXT",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23WWENXT"
+    },
+    {
+      "keyword": "NDAA",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=NDAA"
+    },
+    {
+      "keyword": "Yamal",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Yamal"
+    },
+    {
+      "keyword": "Standard Time",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Standard%20Time"
+    },
+    {
+      "keyword": "Dylan Cease",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Dylan%20Cease"
+    },
+    {
+      "keyword": "Sonia Citron",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sonia%20Citron"
+    },
+    {
+      "keyword": "Mbappe",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mbappe"
+    },
+    {
+      "keyword": "Jack Smith",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jack%20Smith"
+    },
+    {
+      "keyword": "España",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Espa%C3%B1a"
+    },
+    {
+      "keyword": "Mullin",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mullin"
+    },
+    {
+      "keyword": "Francia",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Francia"
+    },
+    {
+      "keyword": "Rodri",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Rodri"
+    },
+    {
+      "keyword": "Blue Beetle",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Blue%20Beetle"
+    },
+    {
+      "keyword": "Cody Bellinger",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Cody%20Bellinger"
+    },
+    {
+      "keyword": "Patti Labelle",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Patti%20Labelle"
+    },
+    {
+      "keyword": "Klay",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Klay"
+    },
+    {
+      "keyword": "Mike Trout",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mike%20Trout"
+    },
+    {
+      "keyword": "Daylight Saving Time",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Daylight%20Saving%20Time"
+    },
+    {
+      "keyword": "Dame",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Dame"
+    },
+    {
+      "keyword": "Olise",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Olise"
+    },
+    {
+      "keyword": "Digne",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Digne"
+    },
+    {
+      "keyword": "American League",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=American%20League"
+    },
+    {
+      "keyword": "Bovino",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Bovino"
+    },
+    {
+      "keyword": "#AGT",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23AGT"
+    },
+    {
+      "keyword": "Smoltz",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Smoltz"
+    },
+    {
+      "keyword": "Homan",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Homan"
+    },
+    {
+      "keyword": "#FRAESP",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23FRAESP"
+    },
+    {
+      "keyword": "deschamps",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=deschamps"
+    },
+    {
+      "keyword": "Section 219",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Section%20219"
+    },
+    {
+      "keyword": "Resign",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Resign"
+    },
+    {
+      "keyword": "Joe Davis",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Joe%20Davis"
+    },
+    {
+      "keyword": "Dembele",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Dembele"
+    },
+    {
+      "keyword": "National League",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=National%20League"
+    },
+    {
+      "keyword": "Freddie Freeman",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Freddie%20Freeman"
+    },
+    {
+      "keyword": "Amy Coney Barrett",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Amy%20Coney%20Barrett"
+    },
+    {
+      "keyword": "Phillies",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Phillies"
+    },
+    {
+      "keyword": "Miles Teller",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Miles%20Teller"
+    },
+    {
+      "keyword": "Fandango",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Fandango"
+    },
+    {
+      "keyword": "Jennifer Hudson",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jennifer%20Hudson"
+    },
+    {
+      "keyword": "The House",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=The%20House"
+    },
+    {
+      "keyword": "Tillis",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Tillis"
+    },
+    {
+      "keyword": "Pedro Porro",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Pedro%20Porro"
+    },
+    {
+      "keyword": "Brandel",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Brandel"
+    },
+    {
+      "keyword": "Vanity Project",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Vanity%20Project"
+    },
+    {
+      "keyword": "Permanent DST",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Permanent%20DST"
+    },
+    {
+      "keyword": "Cucurella",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Cucurella"
+    },
+    {
+      "keyword": "Egor",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Egor"
+    },
+    {
+      "keyword": "anime",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/anime"
+    },
+    {
+      "keyword": "longervideos",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/longervideos"
+    },
+    {
+      "keyword": "filmtok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/filmtok"
+    },
+    {
+      "keyword": "blacktiktok",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/blacktiktok"
+    },
+    {
+      "keyword": "winteroutfit",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/winteroutfit"
+    },
+    {
+      "keyword": "backintheday",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/backintheday"
+    },
+    {
+      "keyword": "holi",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/holi"
+    },
+    {
+      "keyword": "materialgirl",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/materialgirl"
+    },
+    {
+      "keyword": "whenwomenwin",
+      "traffic": "🎵",
+      "source": "TikTok",
+      "url": "https://www.tiktok.com/tag/whenwomenwin"
+    },
+    {
+      "keyword": "Vancouver PD website features Quick Escape button that wi...",
+      "traffic": "66 pts",
+      "source": "HN",
+      "url": "https://vpd.ca/"
+    },
+    {
+      "keyword": "TS-2026-009: Insecure argument handling in Tailscale SSH ...",
+      "traffic": "21 pts",
+      "source": "HN",
+      "url": "https://tailscale.com/security-bulletins"
+    },
+    {
+      "keyword": "Bonsai 27B: A 27B-Class model that runs on a phone",
+      "traffic": "434 pts",
+      "source": "HN",
+      "url": "https://prismml.com/news/bonsai-27b"
+    },
+    {
+      "keyword": "Dependabot version updates introduce default package cool...",
+      "traffic": "95 pts",
+      "source": "HN",
+      "url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/"
+    },
+    {
+      "keyword": "The Tower Keeps Rising",
+      "traffic": "337 pts",
+      "source": "HN",
+      "url": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/"
+    },
+    {
+      "keyword": "Financing the AI boom: from cash flows to debt [pdf]",
+      "traffic": "86 pts",
+      "source": "HN",
+      "url": "https://www.bis.org/publ/bisbull120.pdf"
+    },
+    {
+      "keyword": "Cursor 0day: When Full Disclosure Becomes the Only Protec...",
+      "traffic": "249 pts",
+      "source": "HN",
+      "url": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left"
+    },
+    {
+      "keyword": "Solving 20 Erdős Problems with 20 Codex Accounts Running ...",
+      "traffic": "15 pts",
+      "source": "HN",
+      "url": "https://www.starfleetmath.com/"
+    },
+    {
+      "keyword": "C++20 Improved the For-Loop Syntax",
+      "traffic": "24 pts",
+      "source": "HN",
+      "url": "https://lzon.ca/posts/tips/cpp-for-range-init/"
+    },
+    {
+      "keyword": "How I use HTMX with Go",
+      "traffic": "110 pts",
+      "source": "HN",
+      "url": "https://www.alexedwards.net/blog/how-i-use-htmx-with-go"
+    },
+    {
+      "keyword": "Your 'app' could have been a webpage (so I fixed it for you)",
+      "traffic": "719 pts",
+      "source": "HN",
+      "url": "https://danq.me/2026/07/09/your-app-could-have-been-a-webpage/"
+    },
+    {
+      "keyword": "LeMario: Training a JEPA World Model on Super Mario Bros",
+      "traffic": "48 pts",
+      "source": "HN",
+      "url": "https://www.benjamin-bai.com/projects/lemario"
+    },
+    {
+      "keyword": "Mathematical texts from a Maya site in Guatemala identify...",
+      "traffic": "37 pts",
+      "source": "HN",
+      "url": "https://www.nature.com/articles/d41586-026-02170-8"
+    },
+    {
+      "keyword": "Unlocking the PSP's Dual Core Setup",
+      "traffic": "41 pts",
+      "source": "HN",
+      "url": "https://wololo.net/2026/06/16/unlocking-the-psps-dual-core-setup/"
+    },
+    {
+      "keyword": "An unusual way for your DHCP server to run out of dynamic...",
+      "traffic": "17 pts",
+      "source": "HN",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/sysadmin/DHCPServerAndScreamingHost"
+    },
+    {
+      "keyword": "How to stop Claude from saying load-bearing",
+      "traffic": "434 pts",
+      "source": "HN",
+      "url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing"
+    },
+    {
+      "keyword": "Data centers have hiked electricity prices on the public ...",
+      "traffic": "39 pts",
+      "source": "HN",
+      "url": "https://fortune.com/2026/07/14/data-centers-23-billion-electricity-bills/"
+    },
+    {
+      "keyword": "The largest available Minecraft world, totalling 15 TB",
+      "traffic": "163 pts",
+      "source": "HN",
+      "url": "https://2b2t.place/1million"
+    },
+    {
+      "keyword": "The Estranged Worlds of J. G. Ballard",
+      "traffic": "38 pts",
+      "source": "HN",
+      "url": "https://lareviewofbooks.org/article/jg-ballard-illuminated-man-christopher-priest-nina-allan/"
+    },
+    {
+      "keyword": "I'm a USB-C Maximalist",
+      "traffic": "164 pts",
+      "source": "HN",
+      "url": "https://shkspr.mobi/blog/2026/07/im-a-usb-c-maximalist/"
+    },
+    {
+      "keyword": "Guardian Angels: LLM Personalization for Productivity and...",
+      "traffic": "57 pts",
+      "source": "HN",
+      "url": "https://gwern.net/guardian-angel"
+    },
+    {
+      "keyword": "The kids with phones are alright",
+      "traffic": "127 pts",
+      "source": "HN",
+      "url": "https://heatherburns.tech/2026/07/08/the-kids-with-phones-are-alright/"
+    },
+    {
+      "keyword": "Kontigo (YC S24) Is Hiring (Head of Security)",
+      "traffic": "1 pts",
+      "source": "HN",
+      "url": "https://www.ycombinator.com/companies/kontigo/jobs/uNttrlv-head-of-security"
+    },
+    {
+      "keyword": "The zero-cost fallacy: open-source software in the agenti...",
+      "traffic": "106 pts",
+      "source": "HN",
+      "url": "https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era"
+    },
+    {
+      "keyword": "Microsoft Patches a Record 570 Security Flaws",
+      "traffic": "25 pts",
+      "source": "HN",
+      "url": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/"
+    },
+    {
+      "keyword": "Are we offloading too much of our thinking to AI?",
+      "traffic": "379 pts",
+      "source": "HN",
+      "url": "https://www.artfish.ai/p/offloading-thinking-to-ai"
+    },
+    {
+      "keyword": "Show HN: Opening lines of famous literary works",
+      "traffic": "143 pts",
+      "source": "HN",
+      "url": "https://www.verbaprima.com/"
+    },
+    {
+      "keyword": "Probably check on your smart appliances",
+      "traffic": "18 pts",
+      "source": "HN",
+      "url": "https://xeiaso.net/notes/2026/check-your-smart-tv/"
+    },
+    {
+      "keyword": "Launch HN: Agnost AI (YC S26) – Extract user feedback fro...",
+      "traffic": "46 pts",
+      "source": "HN",
+      "url": "https://agnost.ai"
+    },
+    {
+      "keyword": "Show HN: Juggler – an open-source GUI coding agent, by th...",
+      "traffic": "177 pts",
+      "source": "HN",
+      "url": "https://github.com/juggler-ai/juggler"
+    },
+    {
+      "keyword": "Casio FX-870P Emulator",
+      "traffic": "15 pts",
+      "source": "HN",
+      "url": "https://github.com/urbancamo/fx870p-emulator"
+    },
+    {
+      "keyword": "Punch yourself in the face with reality",
+      "traffic": "212 pts",
+      "source": "HN",
+      "url": "https://adi.bio/reality"
+    },
+    {
+      "keyword": "The 3-degree limit could be exceeded as early as 2050",
+      "traffic": "14 pts",
+      "source": "HN",
+      "url": "https://www.dpg-physik.de/veroeffentlichungen/publikationen/stellungnahmen-der-dpg/klima-energie/klimaaufruf"
+    },
+    {
+      "keyword": "Measuring Input Latency on Linux: X11 vs. Wayland, VRR, a...",
+      "traffic": "347 pts",
+      "source": "HN",
+      "url": "https://marco-nett.de/blog/measuring-input-latency-on-linux-x11-vs-wayland-vrr-dxvk/"
+    },
+    {
+      "keyword": "Human Canaries: Remembering the Munitionettes",
+      "traffic": "14 pts",
+      "source": "HN",
+      "url": "https://www.historytoday.com/archive/great-debates/human-canaries-remembering-munitionettes"
+    },
+    {
+      "keyword": "StubHub, CEO hit with ‘deceptive practices’ class action ...",
+      "traffic": "120 pts",
+      "source": "HN",
+      "url": "https://www.cbc.ca/news/world/stubhub-ceo-class-action-scalping-9.7268987"
+    },
+    {
+      "keyword": "European \"age verification\" \"app\" forcing everyone to use...",
+      "traffic": "485 pts",
+      "source": "HN",
+      "url": "https://github.com/eu-digital-identity-wallet/av-doc-technical-specification/discussions/19"
+    },
+    {
+      "keyword": "Cyberstalkers Are Exploiting Chrome Sync to Spy on Victims",
+      "traffic": "10 pts",
+      "source": "HN",
+      "url": "https://www.certosoftware.com/insights/cyberstalkers-exploiting-chrome-sync-to-spy/"
+    },
+    {
+      "keyword": "The Agentic Loop: Three loops in a trench coat",
+      "traffic": "73 pts",
+      "source": "HN",
+      "url": "https://www.bobbytables.io/p/the-agentic-loop-three-loops-in-a"
+    },
+    {
+      "keyword": "Agnes Callard’s theory of the uni-context",
+      "traffic": "90 pts",
+      "source": "HN",
+      "url": "https://www.derekthompson.org/p/a-philosophers-one-word-theory-to"
+    },
+    {
+      "keyword": "Demis Hassabis has a plan to harness AI safely",
+      "traffic": "135 pts",
+      "source": "HN",
+      "url": "https://twitter.com/demishassabis/status/2076957440109625718"
+    },
+    {
+      "keyword": "Australian energy retailers must offer three hours of fre...",
+      "traffic": "265 pts",
+      "source": "HN",
+      "url": "https://lenergy.com.au/free-daytime-electricity-is-coming-heres-how-it-actually-works/"
+    },
+    {
+      "keyword": "House Votes for Permanent Daylight Saving Time",
+      "traffic": "7 pts",
+      "source": "HN",
+      "url": "https://www.nytimes.com/2026/07/14/us/politics/house-daylight-savings-time-sunshine-protection-act.html"
+    },
+    {
+      "keyword": "Accretive Editing",
+      "traffic": "18 pts",
+      "source": "HN",
+      "url": "https://justindfuller.com/programming/accretive-editing"
+    },
+    {
+      "keyword": "How the FSF sysadmins block botnets with reaction",
+      "traffic": "155 pts",
+      "source": "HN",
+      "url": "https://www.fsf.org/blogs/community/blocking-botnets-with-reaction"
+    },
+    {
+      "keyword": "I also filed the corners off my MacBook",
+      "traffic": "31 pts",
+      "source": "HN",
+      "url": "https://www.brt.fyi/posts/mac-book-filing/"
+    },
+    {
+      "keyword": "Legal AI, not a coding agent with scaffolding",
+      "traffic": "4 pts",
+      "source": "HN",
+      "url": "https://lexifina.com/blog/legal-ai-not-a-coding-agent-with-scaffolding"
+    },
+    {
+      "keyword": "Show HN: I RL-trained an agent that trains models with RL...",
+      "traffic": "97 pts",
+      "source": "HN",
+      "url": "https://github.com/Danau5tin/ai-trains-ai"
+    },
+    {
+      "keyword": "Why organizing knowledge in the age of AI sucks, and how ...",
+      "traffic": "3 pts",
+      "source": "HN",
+      "url": "https://jordangreen.bearblog.dev/why-organizing-knowledge-in-the-age-of-ai-sucks-and-what-i-built/"
+    },
+    {
+      "keyword": "We Demand Perfect Machines yet Tolerate Human Carnage",
+      "traffic": "6 pts",
+      "source": "HN",
+      "url": "https://www.noemamag.com/why-we-demand-perfect-machines-yet-tolerate-human-carnage/"
+    }
+  ]
+}
