@@ -1,0 +1,909 @@
+{
+  "timestamp": "2026-11-05-04",
+  "date": "2026-11-05",
+  "slot": "04",
+  "generated": "2026-11-05T04:38:30.788Z",
+  "count": 149,
+  "sources": [
+    "X",
+    "Wiki",
+    "TikTok",
+    "HN"
+  ],
+  "trends": [
+    {
+      "keyword": "#AEWDynamite",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23AEWDynamite"
+    },
+    {
+      "keyword": "#AEWBloodAndGuts",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23AEWBloodAndGuts"
+    },
+    {
+      "keyword": "#Survivor51",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23Survivor51"
+    },
+    {
+      "keyword": "#WWENXT",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23WWENXT"
+    },
+    {
+      "keyword": "#MitchJonesWoWGiveaway",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23MitchJonesWoWGiveaway"
+    },
+    {
+      "keyword": "Darby",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Darby"
+    },
+    {
+      "keyword": "vance",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=vance"
+    },
+    {
+      "keyword": "Okada",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Okada"
+    },
+    {
+      "keyword": "DeSantis",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=DeSantis"
+    },
+    {
+      "keyword": "Schumer",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Schumer"
+    },
+    {
+      "keyword": "UMass",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=UMass"
+    },
+    {
+      "keyword": "Hegseth",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Hegseth"
+    },
+    {
+      "keyword": "Megan Bayne",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Megan%20Bayne"
+    },
+    {
+      "keyword": "Jeffries",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jeffries"
+    },
+    {
+      "keyword": "Rubio",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Rubio"
+    },
+    {
+      "keyword": "Duncan Robinson",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Duncan%20Robinson"
+    },
+    {
+      "keyword": "Massie",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Massie"
+    },
+    {
+      "keyword": "Dalton Knecht",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Dalton%20Knecht"
+    },
+    {
+      "keyword": "Wardlow",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Wardlow"
+    },
+    {
+      "keyword": "Danny Wolf",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Danny%20Wolf"
+    },
+    {
+      "keyword": "Bandido",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Bandido"
+    },
+    {
+      "keyword": "Doyle",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Doyle"
+    },
+    {
+      "keyword": "Keyonte George",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Keyonte%20George"
+    },
+    {
+      "keyword": "Full Gear",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Full%20Gear"
+    },
+    {
+      "keyword": "Toney",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Toney"
+    },
+    {
+      "keyword": "Nick Wayne",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Nick%20Wayne"
+    },
+    {
+      "keyword": "Ball State",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Ball%20State"
+    },
+    {
+      "keyword": "Steven Borden",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Steven%20Borden"
+    },
+    {
+      "keyword": "Adam Copeland",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Adam%20Copeland"
+    },
+    {
+      "keyword": "Skye Blue",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Skye%20Blue"
+    },
+    {
+      "keyword": "Kyle Fletcher",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Kyle%20Fletcher"
+    },
+    {
+      "keyword": "Pop Watson",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Pop%20Watson"
+    },
+    {
+      "keyword": "Grayson Waller",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Grayson%20Waller"
+    },
+    {
+      "keyword": "Bryce Hopkins",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Bryce%20Hopkins"
+    },
+    {
+      "keyword": "dahlin",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=dahlin"
+    },
+    {
+      "keyword": "constantine",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=constantine"
+    },
+    {
+      "keyword": "Brandon Gill",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Brandon%20Gill"
+    },
+    {
+      "keyword": "Saddiq Bey",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Saddiq%20Bey"
+    },
+    {
+      "keyword": "Kuzma",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Kuzma"
+    },
+    {
+      "keyword": "Tre Johnson",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Tre%20Johnson"
+    },
+    {
+      "keyword": "Kempe",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Kempe"
+    },
+    {
+      "keyword": "Ted Cruz",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Ted%20Cruz"
+    },
+    {
+      "keyword": "Doris Burke",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Doris%20Burke"
+    },
+    {
+      "keyword": "Kristin",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Kristin"
+    },
+    {
+      "keyword": "Zilla Fatu",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Zilla%20Fatu"
+    },
+    {
+      "keyword": "Frank Nazar",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Frank%20Nazar"
+    },
+    {
+      "keyword": "Speaker",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Speaker"
+    },
+    {
+      "keyword": "Braden Smith",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Braden%20Smith"
+    },
+    {
+      "keyword": "Oshi",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Oshi"
+    },
+    {
+      "keyword": "Don Callis",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Don%20Callis"
+    },
+    {
+      "keyword": "Jon Ossoff",
+      "traffic": "612K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Jon_Ossoff"
+    },
+    {
+      "keyword": "United States midterm election",
+      "traffic": "524K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/United_States_midterm_election"
+    },
+    {
+      "keyword": "2026 United States Senate elections",
+      "traffic": "494K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections"
+    },
+    {
+      "keyword": "Keisha Lance Bottoms",
+      "traffic": "431K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Keisha_Lance_Bottoms"
+    },
+    {
+      "keyword": "Byron Donalds",
+      "traffic": "362K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Byron_Donalds"
+    },
+    {
+      "keyword": "Greg Abbott",
+      "traffic": "328K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Greg_Abbott"
+    },
+    {
+      "keyword": "Dan Osborn",
+      "traffic": "273K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Dan_Osborn"
+    },
+    {
+      "keyword": "Democratic Party (United States)",
+      "traffic": "257K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Democratic_Party_(United_States)"
+    },
+    {
+      "keyword": "United States Senate",
+      "traffic": "256K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/United_States_Senate"
+    },
+    {
+      "keyword": ".xyz",
+      "traffic": "254K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/.xyz"
+    },
+    {
+      "keyword": "2026 United States House of Representatives elections",
+      "traffic": "249K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections"
+    },
+    {
+      "keyword": "2028 United States Senate elections",
+      "traffic": "245K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/2028_United_States_Senate_elections"
+    },
+    {
+      "keyword": "Donald Trump",
+      "traffic": "240K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Donald_Trump"
+    },
+    {
+      "keyword": "Annie Andrews (pediatrician)",
+      "traffic": "238K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Annie_Andrews_(pediatrician)"
+    },
+    {
+      "keyword": "Amy Acton",
+      "traffic": "231K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Amy_Acton"
+    },
+    {
+      "keyword": "Vivek Ramaswamy",
+      "traffic": "227K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Vivek_Ramaswamy"
+    },
+    {
+      "keyword": "Jesús de Miguel",
+      "traffic": "225K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Jesús_de_Miguel"
+    },
+    {
+      "keyword": "Hakeem Jeffries",
+      "traffic": "214K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Hakeem_Jeffries"
+    },
+    {
+      "keyword": "Red states and blue states",
+      "traffic": "214K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Red_states_and_blue_states"
+    },
+    {
+      "keyword": "Xavier Becerra",
+      "traffic": "202K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Xavier_Becerra"
+    },
+    {
+      "keyword": "United States House of Representatives",
+      "traffic": "200K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/United_States_House_of_Representatives"
+    },
+    {
+      "keyword": "Ken Paxton",
+      "traffic": "198K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Ken_Paxton"
+    },
+    {
+      "keyword": "Chris Pappas (American politician)",
+      "traffic": "194K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Chris_Pappas_(American_politician)"
+    },
+    {
+      "keyword": "2026 United States Senate election in Texas",
+      "traffic": "193K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas"
+    },
+    {
+      "keyword": "Republican Party (United States)",
+      "traffic": "179K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Republican_Party_(United_States)"
+    },
+    {
+      "keyword": ".xxx",
+      "traffic": "175K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/.xxx"
+    },
+    {
+      "keyword": "Susan Collins",
+      "traffic": "174K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Susan_Collins"
+    },
+    {
+      "keyword": "Scott Colom",
+      "traffic": "172K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Scott_Colom"
+    },
+    {
+      "keyword": "Haley Stevens",
+      "traffic": "166K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Haley_Stevens"
+    },
+    {
+      "keyword": "Darline Graham",
+      "traffic": "162K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Darline_Graham"
+    },
+    {
+      "keyword": "2026 Texas gubernatorial election",
+      "traffic": "159K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election"
+    },
+    {
+      "keyword": "VisionQuest",
+      "traffic": "158K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/VisionQuest"
+    },
+    {
+      "keyword": "Ron DeSantis",
+      "traffic": "156K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Ron_DeSantis"
+    },
+    {
+      "keyword": "Gilberto Hinojosa",
+      "traffic": "146K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Gilberto_Hinojosa"
+    },
+    {
+      "keyword": "2026 United States Senate election in Mississippi",
+      "traffic": "142K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Mississippi"
+    },
+    {
+      "keyword": "Deaths in 2026",
+      "traffic": "140K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Deaths_in_2026"
+    },
+    {
+      "keyword": "Ann Richards",
+      "traffic": "134K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Ann_Richards"
+    },
+    {
+      "keyword": "Josh Turek",
+      "traffic": "131K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Josh_Turek"
+    },
+    {
+      "keyword": "Troy Jackson",
+      "traffic": "130K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Troy_Jackson"
+    },
+    {
+      "keyword": "2026 United States gubernatorial elections",
+      "traffic": "130K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_gubernatorial_elections"
+    },
+    {
+      "keyword": "2024 United States presidential election",
+      "traffic": "129K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election"
+    },
+    {
+      "keyword": "Michele Tafoya",
+      "traffic": "124K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Michele_Tafoya"
+    },
+    {
+      "keyword": "Gavin Newsom",
+      "traffic": "122K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Gavin_Newsom"
+    },
+    {
+      "keyword": "Lindsey Graham",
+      "traffic": "121K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Lindsey_Graham"
+    },
+    {
+      "keyword": "Deb Haaland",
+      "traffic": "120K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Deb_Haaland"
+    },
+    {
+      "keyword": "ChatGPT",
+      "traffic": "117K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT"
+    },
+    {
+      "keyword": "Adam Hamilton (pastor)",
+      "traffic": "116K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Adam_Hamilton_(pastor)"
+    },
+    {
+      "keyword": "Peggy Flanagan",
+      "traffic": "114K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Peggy_Flanagan"
+    },
+    {
+      "keyword": "Roy Cooper",
+      "traffic": "108K",
+      "source": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Roy_Cooper"
+    },
+    {
+      "keyword": "Residential proxies detected on White House network",
+      "traffic": "809 pts",
+      "source": "HN",
+      "url": "https://layer3intel.com/blog/residential-proxies-white-house-network"
+    },
+    {
+      "keyword": "Images 2.6",
+      "traffic": "180 pts",
+      "source": "HN",
+      "url": "https://openai.com/index/introducing-images-2-6/"
+    },
+    {
+      "keyword": "A thousand fewer paths to root",
+      "traffic": "209 pts",
+      "source": "HN",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/"
+    },
+    {
+      "keyword": "Starfall – Affordable, routine access to microgravity",
+      "traffic": "153 pts",
+      "source": "HN",
+      "url": "https://www.spacex.com/starfall"
+    },
+    {
+      "keyword": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+      "traffic": "252 pts",
+      "source": "HN",
+      "url": "https://www.ricursive.com/ripple"
+    },
+    {
+      "keyword": "Kimi K3.1 Pro model weights are out",
+      "traffic": "424 pts",
+      "source": "HN",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
+    },
+    {
+      "keyword": "Insects don't swarm at LED lights",
+      "traffic": "195 pts",
+      "source": "HN",
+      "url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/"
+    },
+    {
+      "keyword": "A new Go API for JSON",
+      "traffic": "253 pts",
+      "source": "HN",
+      "url": "https://go.dev/blog/jsonv2"
+    },
+    {
+      "keyword": "Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improv...",
+      "traffic": "82 pts",
+      "source": "HN",
+      "url": "https://icode4.coffee/?p=1746"
+    },
+    {
+      "keyword": "Conductor is joining Meta",
+      "traffic": "142 pts",
+      "source": "HN",
+      "url": "https://www.conductor.build/announcement"
+    },
+    {
+      "keyword": "Frustrated Ranchers Want People to Quit 'Rescuing' Their ...",
+      "traffic": "62 pts",
+      "source": "HN",
+      "url": "https://cowboystatedaily.com/2026/10/15/frustrated-ranchers-want-people-to-quit-rescuing-their-working-guardian-dogs/"
+    },
+    {
+      "keyword": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card wi...",
+      "traffic": "119 pts",
+      "source": "HN",
+      "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra"
+    },
+    {
+      "keyword": "Launch HN: Kino AI (YC S23) – AI media manager and video ...",
+      "traffic": "77 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=50368804"
+    },
+    {
+      "keyword": "Progress on provable inference for large language models",
+      "traffic": "191 pts",
+      "source": "HN",
+      "url": "https://www.anthropic.com/research/provable-inference"
+    },
+    {
+      "keyword": "AI is forcing us to pay off 40 years of technical debt",
+      "traffic": "1120 pts",
+      "source": "HN",
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability"
+    },
+    {
+      "keyword": "Show HN: After a decade of reversing, I got co-op working...",
+      "traffic": "130 pts",
+      "source": "HN",
+      "url": "https://fireflyk64.github.io/wcmulti/"
+    },
+    {
+      "keyword": "Guerrilla bike lanes: San Francisco makes illicit infrast...",
+      "traffic": "276 pts",
+      "source": "HN",
+      "url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/"
+    },
+    {
+      "keyword": "Ask HN: What's your current AI agentic setup?",
+      "traffic": "192 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=50366117"
+    },
+    {
+      "keyword": "OpenAI to acquire Pierre Computer Company",
+      "traffic": "211 pts",
+      "source": "HN",
+      "url": "https://openai.com/index/openai-to-acquire-pierre/"
+    },
+    {
+      "keyword": "Basically no one is using AI agents for their DoorDash or...",
+      "traffic": "91 pts",
+      "source": "HN",
+      "url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/"
+    },
+    {
+      "keyword": "Spreading Liquid with Three.js",
+      "traffic": "6 pts",
+      "source": "HN",
+      "url": "https://mofu-dev.com/en/blog/fluid-foundation/"
+    },
+    {
+      "keyword": "A wave of plastic-free coffee pods and machines",
+      "traffic": "64 pts",
+      "source": "HN",
+      "url": "https://www.cnn.com/2026/11/02/food/coffee-machine-plastic-free"
+    },
+    {
+      "keyword": "Tencent Hy4",
+      "traffic": "207 pts",
+      "source": "HN",
+      "url": "https://hy.tencent.ai/research/hy4"
+    },
+    {
+      "keyword": "Show HN: The DNA of DOOM – How code structure survives ac...",
+      "traffic": "33 pts",
+      "source": "HN",
+      "url": "https://squid-protocol.github.io/gitgalaxy/museum-of-code/doom-dna/"
+    },
+    {
+      "keyword": "AMD expects to outsell Intel in Q4 for the first time in ...",
+      "traffic": "509 pts",
+      "source": "HN",
+      "url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections"
+    },
+    {
+      "keyword": "PageScribe: Handwriting and offline dictionary audio for ...",
+      "traffic": "16 pts",
+      "source": "HN",
+      "url": "https://aspireai.kiranadimatyam.com/builds/pagescribe/"
+    },
+    {
+      "keyword": "Is Curiosity Good for Us?",
+      "traffic": "27 pts",
+      "source": "HN",
+      "url": "https://www.lrb.co.uk/the-paper/v48/n20/adam-phillips/is-curiosity-good-for-us"
+    },
+    {
+      "keyword": "'It's just vape, nail, charity shops': Can anything save ...",
+      "traffic": "83 pts",
+      "source": "HN",
+      "url": "https://www.theguardian.com/business/2026/nov/04/what-can-save-the-british-high-street-rotherham"
+    },
+    {
+      "keyword": "Ask HN: What cryptography book do you recommend for readi...",
+      "traffic": "63 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=50347425"
+    },
+    {
+      "keyword": "Incident with Pull Requests, Git Operations and Issues",
+      "traffic": "260 pts",
+      "source": "HN",
+      "url": "https://www.githubstatus.com/incidents/smtdswd1h2w4"
+    },
+    {
+      "keyword": "11 Nanoseconds per Word: Over-Optimizing Anagrams",
+      "traffic": "7 pts",
+      "source": "HN",
+      "url": "https://wiredream.com/anagram-fun/"
+    },
+    {
+      "keyword": "Show HN: Gauge – Open-Source CLI to recursively improve y...",
+      "traffic": "24 pts",
+      "source": "HN",
+      "url": "https://github.com/gauge-sh/gauge-cli"
+    },
+    {
+      "keyword": "Tell HN: Gemini trains on chat history, even for subscrib...",
+      "traffic": "640 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=50363461"
+    },
+    {
+      "keyword": "North Korean fake job interview led to $6.3B Binance heist",
+      "traffic": "589 pts",
+      "source": "HN",
+      "url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398"
+    },
+    {
+      "keyword": "Nvidia RTX Spark encrypted firmware slows inference speed...",
+      "traffic": "594 pts",
+      "source": "HN",
+      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop"
+    },
+    {
+      "keyword": "Hacking the T-Mobile Sidekick, 20 Years Too Late",
+      "traffic": "31 pts",
+      "source": "HN",
+      "url": "https://x86.cx/blog/redanger"
+    },
+    {
+      "keyword": "YC's Garry Tan uses AI agents so much, he spends up to $2...",
+      "traffic": "71 pts",
+      "source": "HN",
+      "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/"
+    },
+    {
+      "keyword": "Show HN: I built a tool that prices a pre-built PC part b...",
+      "traffic": "98 pts",
+      "source": "HN",
+      "url": "https://pcdealcheck.com/"
+    },
+    {
+      "keyword": "Have I befriended a murderer?",
+      "traffic": "117 pts",
+      "source": "HN",
+      "url": "https://longreads.com/2026/11/03/murder-friendship-doubt/"
+    },
+    {
+      "keyword": "Evergreen: A Provably Safe Systems Language",
+      "traffic": "102 pts",
+      "source": "HN",
+      "url": "https://evergreenlang.net"
+    },
+    {
+      "keyword": "From wild to mild: Friendly foxes show changes in brain r...",
+      "traffic": "37 pts",
+      "source": "HN",
+      "url": "https://news.cornell.edu/stories/2026/11/wild-mild-friendly-foxes-show-changes-brain-region"
+    },
+    {
+      "keyword": "Flims and TV shows created using AI have now reached a hi...",
+      "traffic": "5 pts",
+      "source": "HN",
+      "url": "https://crateh.com/en"
+    },
+    {
+      "keyword": "American Voters Overwhelmingly Reject AI Data Centers",
+      "traffic": "27 pts",
+      "source": "HN",
+      "url": "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers/"
+    },
+    {
+      "keyword": "Kitty 0.50",
+      "traffic": "364 pts",
+      "source": "HN",
+      "url": "https://sw.kovidgoyal.net/kitty/changelog/#"
+    },
+    {
+      "keyword": "Smiling can make you happier – unless someone forces you ...",
+      "traffic": "3 pts",
+      "source": "HN",
+      "url": "https://news.ufl.edu/2026/11/smiling-happiness/"
+    },
+    {
+      "keyword": "512GB Mac Studio",
+      "traffic": "28 pts",
+      "source": "HN",
+      "url": "https://www.apple.com/shop/buy-mac/mac-studio/m5-ultra-chip-36-core-cpu-80-core-gpu-512gb-memory-1tb-storage"
+    },
+    {
+      "keyword": "Death Comes for XSLT",
+      "traffic": "61 pts",
+      "source": "HN",
+      "url": "https://dbushell.com/2026/11/03/xslt-rip/"
+    },
+    {
+      "keyword": "Don't Call It a Decision Model",
+      "traffic": "13 pts",
+      "source": "HN",
+      "url": "https://typesafe.ai/blog/dont-call-it-a-decision-model"
+    },
+    {
+      "keyword": "Verification Is Not Knowledge: Science needs more than an...",
+      "traffic": "230 pts",
+      "source": "HN",
+      "url": "https://blog.cosmos-institute.org/p/verification-is-not-knowledge"
+    },
+    {
+      "keyword": "The SBND collaboration releases first neutrino results",
+      "traffic": "6 pts",
+      "source": "HN",
+      "url": "https://news.fnal.gov/2026/10/the-sbnd-collaboration-releases-first-neutrino-results/"
+    }
+  ]
+}
