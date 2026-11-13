@@ -1,0 +1,615 @@
+{
+  "timestamp": "2026-11-13-00",
+  "date": "2026-11-13",
+  "slot": "00",
+  "generated": "2026-11-13T00:49:36.669Z",
+  "count": 100,
+  "sources": [
+    "X",
+    "Wiki",
+    "TikTok",
+    "HN"
+  ],
+  "trends": [
+    {
+      "keyword": "Microsoft",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Microsoft"
+    },
+    {
+      "keyword": "#Chilis3ForMe",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23Chilis3ForMe"
+    },
+    {
+      "keyword": "NVIDIA",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=NVIDIA"
+    },
+    {
+      "keyword": "Pence",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Pence"
+    },
+    {
+      "keyword": "Salim",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Salim"
+    },
+    {
+      "keyword": "Jensen",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jensen"
+    },
+    {
+      "keyword": "Santander",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Santander"
+    },
+    {
+      "keyword": "RIP Young L",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=RIP%20Young%20L"
+    },
+    {
+      "keyword": "MatPat",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=MatPat"
+    },
+    {
+      "keyword": "Sonic",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sonic"
+    },
+    {
+      "keyword": "Husky Stadium",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Husky%20Stadium"
+    },
+    {
+      "keyword": "Blue Jays",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Blue%20Jays"
+    },
+    {
+      "keyword": "#internetinvitational",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23internetinvitational"
+    },
+    {
+      "keyword": "Mark Shapiro",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mark%20Shapiro"
+    },
+    {
+      "keyword": "Snap",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Snap"
+    },
+    {
+      "keyword": "#xboxplayback",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23xboxplayback"
+    },
+    {
+      "keyword": "Thursday Night Football",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Thursday%20Night%20Football"
+    },
+    {
+      "keyword": "#UFC334",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23UFC334"
+    },
+    {
+      "keyword": "Gmail",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Gmail"
+    },
+    {
+      "keyword": "#KittleRiddles",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23KittleRiddles"
+    },
+    {
+      "keyword": "All 20",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=All%2020"
+    },
+    {
+      "keyword": "Copilot",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Copilot"
+    },
+    {
+      "keyword": "Pensions",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Pensions"
+    },
+    {
+      "keyword": "Quran",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Quran"
+    },
+    {
+      "keyword": "Streamer Awards",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Streamer%20Awards"
+    },
+    {
+      "keyword": "Here&#x27;s 20",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Here%26%23x27%3Bs%2020"
+    },
+    {
+      "keyword": "Stephen A. Smith",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Stephen%20A.%20Smith"
+    },
+    {
+      "keyword": "Billionaires",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Billionaires"
+    },
+    {
+      "keyword": "Cindy Holscher",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Cindy%20Holscher"
+    },
+    {
+      "keyword": "Evan Phillips",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Evan%20Phillips"
+    },
+    {
+      "keyword": "Jeter",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jeter"
+    },
+    {
+      "keyword": "MetLife",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=MetLife"
+    },
+    {
+      "keyword": "Ro Khanna",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Ro%20Khanna"
+    },
+    {
+      "keyword": "Sor Juana",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sor%20Juana"
+    },
+    {
+      "keyword": "Commanders",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Commanders"
+    },
+    {
+      "keyword": "Friday the 13th",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Friday%20the%2013th"
+    },
+    {
+      "keyword": "Fantasy NFL",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Fantasy%20NFL"
+    },
+    {
+      "keyword": "AARON MERCURY X FUD",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=AARON%20MERCURY%20X%20FUD"
+    },
+    {
+      "keyword": "Columbia Bank Stadium",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Columbia%20Bank%20Stadium"
+    },
+    {
+      "keyword": "Zidane",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Zidane"
+    },
+    {
+      "keyword": "Cam Skattebo",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Cam%20Skattebo"
+    },
+    {
+      "keyword": "Asha",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Asha"
+    },
+    {
+      "keyword": "Josh Hokit",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Josh%20Hokit"
+    },
+    {
+      "keyword": "Helena Bianco",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Helena%20Bianco"
+    },
+    {
+      "keyword": "Jayden Daniels",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jayden%20Daniels"
+    },
+    {
+      "keyword": "GPUs",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=GPUs"
+    },
+    {
+      "keyword": "the pack",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=the%20pack"
+    },
+    {
+      "keyword": "Al Green",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Al%20Green"
+    },
+    {
+      "keyword": "Caleb Wilson",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Caleb%20Wilson"
+    },
+    {
+      "keyword": "George Kittle",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=George%20Kittle"
+    },
+    {
+      "keyword": "Jensen Huang resigns",
+      "traffic": "2866 pts",
+      "source": "HN",
+      "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f"
+    },
+    {
+      "keyword": "Rust 1.100",
+      "traffic": "377 pts",
+      "source": "HN",
+      "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/"
+    },
+    {
+      "keyword": "Gemini 4 Hydrogen and Orchestrator",
+      "traffic": "279 pts",
+      "source": "HN",
+      "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/"
+    },
+    {
+      "keyword": "Foundation Models framework",
+      "traffic": "110 pts",
+      "source": "HN",
+      "url": "https://developer.apple.com/foundation-models-framework/"
+    },
+    {
+      "keyword": "Dwarf planet candidate appears which takes roughly 280 ye...",
+      "traffic": "188 pts",
+      "source": "HN",
+      "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/"
+    },
+    {
+      "keyword": "Show HN: My $300 embroidery machine needed a subscription...",
+      "traffic": "307 pts",
+      "source": "HN",
+      "url": "https://github.com/simpsoka/zigzag"
+    },
+    {
+      "keyword": "Richard A. Posner has died",
+      "traffic": "25 pts",
+      "source": "HN",
+      "url": "https://www.law.uchicago.edu/news/senior-lecturer-richard-posner-law-and-economics-pioneer-and-former-federal-appellate-judge"
+    },
+    {
+      "keyword": "Service degradation on Microsoft 365",
+      "traffic": "464 pts",
+      "source": "HN",
+      "url": "https://status.cloud.microsoft/"
+    },
+    {
+      "keyword": "22-Year-Old PostgreSQL Bug Turned into Remote Code Execution",
+      "traffic": "138 pts",
+      "source": "HN",
+      "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/"
+    },
+    {
+      "keyword": "I'm making LLMs work on small and old devices",
+      "traffic": "275 pts",
+      "source": "HN",
+      "url": "https://github.com/hyperionaidev/smolmaxxing/"
+    },
+    {
+      "keyword": "AI is turning Apple's app review process into a nightmare...",
+      "traffic": "70 pts",
+      "source": "HN",
+      "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html"
+    },
+    {
+      "keyword": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
+      "traffic": "18 pts",
+      "source": "HN",
+      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer"
+    },
+    {
+      "keyword": "Abandoned Quake 4 expansion finished by modders and now p...",
+      "traffic": "234 pts",
+      "source": "HN",
+      "url": "https://www.moddb.com/mods/openq4/downloads/openq4-0141-windows-x64"
+    },
+    {
+      "keyword": "Relax: JIT compiler for Rust to reduce build times",
+      "traffic": "110 pts",
+      "source": "HN",
+      "url": "https://makepad.github.io/relax/"
+    },
+    {
+      "keyword": "Gemini 4 Hydrogen",
+      "traffic": "451 pts",
+      "source": "HN",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+    },
+    {
+      "keyword": "Why writing correct software is hard and why math (alone)...",
+      "traffic": "351 pts",
+      "source": "HN",
+      "url": "https://pron.github.io/posts/correctness-and-complexity"
+    },
+    {
+      "keyword": "Before Pixels: Speed-Minder",
+      "traffic": "11 pts",
+      "source": "HN",
+      "url": "https://unsung.aresluna.org/before-pixels-speed-minder/"
+    },
+    {
+      "keyword": "Talking Zen 6 with Mike Clark at AMD In-Depth",
+      "traffic": "183 pts",
+      "source": "HN",
+      "url": "https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at"
+    },
+    {
+      "keyword": "Fortune Telling and Speculative Design",
+      "traffic": "4 pts",
+      "source": "HN",
+      "url": "https://maggieappleton.com/fortune-telling"
+    },
+    {
+      "keyword": "Chinese frontier AI models carry the fingerprint of expor...",
+      "traffic": "133 pts",
+      "source": "HN",
+      "url": "https://unemploymentlabs.com/checkpoint-forensics"
+    },
+    {
+      "keyword": "Show HN: Kapso – Iterative learning from enterprise data",
+      "traffic": "37 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=50471281"
+    },
+    {
+      "keyword": "Safety in Algae Home Experiments",
+      "traffic": "26 pts",
+      "source": "HN",
+      "url": "https://chillphysicsenjoyer.substack.com/p/algae-safety-in-home-experiments"
+    },
+    {
+      "keyword": "Anthropic IPO",
+      "traffic": "804 pts",
+      "source": "HN",
+      "url": "https://ipo.anthropic.com/us/"
+    },
+    {
+      "keyword": "Distributed Ray Tracer",
+      "traffic": "35 pts",
+      "source": "HN",
+      "url": "https://ray.hatchet.run"
+    },
+    {
+      "keyword": "Show HN: AgentRun – open-source, Self-improving Managed A...",
+      "traffic": "74 pts",
+      "source": "HN",
+      "url": "https://github.com/Parcha-ai/agentrun/blob/main/README.md"
+    },
+    {
+      "keyword": "Adapting CPython for Yk",
+      "traffic": "41 pts",
+      "source": "HN",
+      "url": "https://tratt.net/laurie/blog/2026/adapting_cpython_for_yk.html"
+    },
+    {
+      "keyword": "Words of warning about radiocarbon dating medieval human ...",
+      "traffic": "53 pts",
+      "source": "HN",
+      "url": "https://www.nature.com/articles/s40494-026-02958-x"
+    },
+    {
+      "keyword": "Our software engineering interviews are changing a little",
+      "traffic": "166 pts",
+      "source": "HN",
+      "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/"
+    },
+    {
+      "keyword": "ExcalidrawZ: Local Native Excalidraw on macOS/iOS",
+      "traffic": "106 pts",
+      "source": "HN",
+      "url": "https://github.com/chocoford/ExcalidrawZ"
+    },
+    {
+      "keyword": "Show HN: Cerulion – ROS 2-compatible robotics runtime wit...",
+      "traffic": "7 pts",
+      "source": "HN",
+      "url": "https://github.com/cerulion-inc/cerulion"
+    },
+    {
+      "keyword": "Libreagi – Save OSS Models",
+      "traffic": "126 pts",
+      "source": "HN",
+      "url": "https://libreagi.com/"
+    },
+    {
+      "keyword": "Outlook Down, Microsoft Teams and Office may be impacted",
+      "traffic": "13 pts",
+      "source": "HN",
+      "url": "https://status.cloud.microsoft/m365/referrer=serviceStatusRedirect"
+    },
+    {
+      "keyword": "Beyond the compiler: Making IBM i run modified native code",
+      "traffic": "11 pts",
+      "source": "HN",
+      "url": "https://blog.silentsignal.eu/2026/11/10/Beyond-the-compiler-Making-IBM-i-run-modified-native-code-PVV/"
+    },
+    {
+      "keyword": "Researchers discover rare star system that emits radio si...",
+      "traffic": "117 pts",
+      "source": "HN",
+      "url": "https://www.curtin.edu.au/news/media-release/researchers-discover-rare-star-system-that-emits-radio-signals-every-eight-minutes/"
+    },
+    {
+      "keyword": "Show HN: Apron Chat Protocol",
+      "traffic": "28 pts",
+      "source": "HN",
+      "url": "https://apron.chat/"
+    },
+    {
+      "keyword": "Fitting Four 32 GB Resizable Bars Behind a PCIe Switch on...",
+      "traffic": "78 pts",
+      "source": "HN",
+      "url": "https://doug.sh/posts/gpu-bars-behind-a-pcie-switch/"
+    },
+    {
+      "keyword": "AWS Lambda Web Functions keep billing memory ~7 minutes a...",
+      "traffic": "66 pts",
+      "source": "HN",
+      "url": "https://www.easel.sh/blog/lambda-web-functions-idle-memory"
+    },
+    {
+      "keyword": "Singapore Says U.S. Not Helpful on Investigation into Sus...",
+      "traffic": "151 pts",
+      "source": "HN",
+      "url": "https://www.nytimes.com/2026/11/12/business/nvidia-megaspeed-alice-huang.html"
+    },
+    {
+      "keyword": "Nintendo Takes Down Emulators and Firmware in Massive Git...",
+      "traffic": "267 pts",
+      "source": "HN",
+      "url": "https://www.ign.com/articles/nintendo-takes-down-switch-emulators-and-mod-chip-firmware-in-massive-github-dmca-sweep"
+    },
+    {
+      "keyword": "Electric ship batteries promise compact, cooler power",
+      "traffic": "59 pts",
+      "source": "HN",
+      "url": "https://spectrum.ieee.org/electric-ship-batteries"
+    },
+    {
+      "keyword": "Alice Huang, tied to Nvidia CEO, was barred from re-enter...",
+      "traffic": "5 pts",
+      "source": "HN",
+      "url": "https://www.asiaone.com/singapore/alice-huang-entry-ban-nvidia-megaspeed"
+    },
+    {
+      "keyword": "Making a €40 USB-C hub work as a Nintendo Switch 2 dock",
+      "traffic": "146 pts",
+      "source": "HN",
+      "url": "http://blog.nozomi.space/posts/sw2_dock/"
+    },
+    {
+      "keyword": "Data centers need power – lower income, rural residents p...",
+      "traffic": "170 pts",
+      "source": "HN",
+      "url": "https://news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price"
+    },
+    {
+      "keyword": "Jensen Huang Third Affair Allegations Revealed",
+      "traffic": "50 pts",
+      "source": "HN",
+      "url": "https://www.forbes.com/sites/alisondurkee/2026/11/12/jensen-huang-had-a-third-affair-with-another-nvidia-employee-report-says/"
+    },
+    {
+      "keyword": "Vibes Don't Maintain",
+      "traffic": "38 pts",
+      "source": "HN",
+      "url": "https://roll.bybacon.com/2026/10/14/vibes-dont-maintain.html"
+    },
+    {
+      "keyword": "Librem 5 v2: A phone that frees us all",
+      "traffic": "6 pts",
+      "source": "HN",
+      "url": "https://puri.sm/librem-5-v2-crowdfunding-campaign/"
+    },
+    {
+      "keyword": "Socratic Tutor",
+      "traffic": "652 pts",
+      "source": "HN",
+      "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md"
+    },
+    {
+      "keyword": "Decoding REXPaint Files in Odin",
+      "traffic": "21 pts",
+      "source": "HN",
+      "url": "https://tylerelton.com/posts/decoding-rexpaint-files-in-odin/"
+    },
+    {
+      "keyword": "Tim Peters has died",
+      "traffic": "1394 pts",
+      "source": "HN",
+      "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028"
+    },
+    {
+      "keyword": "Hands-on fabrication of 2D material field-effect transist...",
+      "traffic": "10 pts",
+      "source": "HN",
+      "url": "https://iopscience.iop.org/article/10.1088/1361-6404/aeb51a"
+    }
+  ]
+}
