@@ -1,0 +1,615 @@
+{
+  "timestamp": "2026-11-14-00",
+  "date": "2026-11-14",
+  "slot": "00",
+  "generated": "2026-11-14T00:35:26.928Z",
+  "count": 100,
+  "sources": [
+    "X",
+    "Wiki",
+    "TikTok",
+    "HN"
+  ],
+  "trends": [
+    {
+      "keyword": "The FAA",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=The%20FAA"
+    },
+    {
+      "keyword": "Friday the 13th",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Friday%20the%2013th"
+    },
+    {
+      "keyword": "New Orleans",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=New%20Orleans"
+    },
+    {
+      "keyword": "#Groundstop",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23Groundstop"
+    },
+    {
+      "keyword": "Sean Duffy",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sean%20Duffy"
+    },
+    {
+      "keyword": "#JensenHuang",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23JensenHuang"
+    },
+    {
+      "keyword": "National Weather Service",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=National%20Weather%20Service"
+    },
+    {
+      "keyword": "Starship",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Starship"
+    },
+    {
+      "keyword": "Mississippi River",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mississippi%20River"
+    },
+    {
+      "keyword": "Leave the World Behind",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Leave%20the%20World%20Behind"
+    },
+    {
+      "keyword": "American Heritage",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=American%20Heritage"
+    },
+    {
+      "keyword": "Flights",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Flights"
+    },
+    {
+      "keyword": "Markwayne Mullin",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Markwayne%20Mullin"
+    },
+    {
+      "keyword": "John Brennan",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=John%20Brennan"
+    },
+    {
+      "keyword": "Skynet",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Skynet"
+    },
+    {
+      "keyword": "Planes",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Planes"
+    },
+    {
+      "keyword": "Atlantic Asphalt",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Atlantic%20Asphalt"
+    },
+    {
+      "keyword": "Transportation Secretary",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Transportation%20Secretary"
+    },
+    {
+      "keyword": "Real World",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Real%20World"
+    },
+    {
+      "keyword": "Road Rules",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Road%20Rules"
+    },
+    {
+      "keyword": "Amtrak",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Amtrak"
+    },
+    {
+      "keyword": "Air Traffic Control",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Air%20Traffic%20Control"
+    },
+    {
+      "keyword": "Cyber",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Cyber"
+    },
+    {
+      "keyword": "NOTAM",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=NOTAM"
+    },
+    {
+      "keyword": "All US",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=All%20US"
+    },
+    {
+      "keyword": "Nola",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Nola"
+    },
+    {
+      "keyword": "RexTrix",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=RexTrix"
+    },
+    {
+      "keyword": "Pete Buttigieg",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Pete%20Buttigieg"
+    },
+    {
+      "keyword": "Mayor Pete",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mayor%20Pete"
+    },
+    {
+      "keyword": "Die Hard 2",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Die%20Hard%202"
+    },
+    {
+      "keyword": "Tanker",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Tanker"
+    },
+    {
+      "keyword": "Extraordinary Circumstances",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Extraordinary%20Circumstances"
+    },
+    {
+      "keyword": "Radar",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Radar"
+    },
+    {
+      "keyword": "O&#x27;Hare",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=O%26%23x27%3BHare"
+    },
+    {
+      "keyword": "Homeland Security",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Homeland%20Security"
+    },
+    {
+      "keyword": "Dejounte Murray",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Dejounte%20Murray"
+    },
+    {
+      "keyword": "First Outlook",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=First%20Outlook"
+    },
+    {
+      "keyword": "Sabalenka",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sabalenka"
+    },
+    {
+      "keyword": "communication",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=communication"
+    },
+    {
+      "keyword": "RAF Lakenheath",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=RAF%20Lakenheath"
+    },
+    {
+      "keyword": "international",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=international"
+    },
+    {
+      "keyword": "Sports Illustrated",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Sports%20Illustrated"
+    },
+    {
+      "keyword": "American Cruise Lines",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=American%20Cruise%20Lines"
+    },
+    {
+      "keyword": "Routes and Trajectories",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Routes%20and%20Trajectories"
+    },
+    {
+      "keyword": "Béatrice",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=B%C3%A9atrice"
+    },
+    {
+      "keyword": "DON&#x27;T PANIC",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=DON%26%23x27%3BT%20PANIC"
+    },
+    {
+      "keyword": "Georgetown",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Georgetown"
+    },
+    {
+      "keyword": "Austin Mack",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Austin%20Mack"
+    },
+    {
+      "keyword": "Larper Larry",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Larper%20Larry"
+    },
+    {
+      "keyword": "#RaiseHail",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23RaiseHail"
+    },
+    {
+      "keyword": "FAA issues national ground stop",
+      "traffic": "1199 pts",
+      "source": "HN",
+      "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247"
+    },
+    {
+      "keyword": "First Strike",
+      "traffic": "30 pts",
+      "source": "HN",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/11/13/first-strike.html"
+    },
+    {
+      "keyword": "Live airband on all frequencies from KORS. Victoria, CA a...",
+      "traffic": "147 pts",
+      "source": "HN",
+      "url": "https://orcasairband.com/"
+    },
+    {
+      "keyword": "FM-1 Workbench",
+      "traffic": "174 pts",
+      "source": "HN",
+      "url": "https://open.m-vave.com/fm1-workbench"
+    },
+    {
+      "keyword": "What Happened to 3Com?",
+      "traffic": "9 pts",
+      "source": "HN",
+      "url": "https://dfarq.homeip.net/what-happened-to-3com/"
+    },
+    {
+      "keyword": "Reverse engineering my Coway air purifier to ditch the cloud",
+      "traffic": "664 pts",
+      "source": "HN",
+      "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/"
+    },
+    {
+      "keyword": "Found: A protein that drives ageing without unleashing in...",
+      "traffic": "111 pts",
+      "source": "HN",
+      "url": "https://www.nature.com/articles/d41586-026-03638-3"
+    },
+    {
+      "keyword": "After 600 experiments, here's what I discovered about JEP...",
+      "traffic": "206 pts",
+      "source": "HN",
+      "url": "https://haddyalchaer.com/jepa"
+    },
+    {
+      "keyword": "Perplexity Decider v1.3: Training, eval, and use cases",
+      "traffic": "92 pts",
+      "source": "HN",
+      "url": "https://www.perplexity.ai/hub/blog/perplexity-decider"
+    },
+    {
+      "keyword": "Doomsday: Friday, 13 November, A.D. 2026 (1960)",
+      "traffic": "441 pts",
+      "source": "HN",
+      "url": "https://www.science.org/doi/10.1126/science.132.3436.1291"
+    },
+    {
+      "keyword": "Terminal borders that don't cost a cell",
+      "traffic": "29 pts",
+      "source": "HN",
+      "url": "https://www.joshka.net/cell-borders/"
+    },
+    {
+      "keyword": "Live-migration support in FreeBSD and bhyve coming",
+      "traffic": "61 pts",
+      "source": "HN",
+      "url": "https://gyptazy.com/blog/freebsd-bhyve-live-migration-support-rfc/"
+    },
+    {
+      "keyword": "Autonomous (YC F25) is hiring MTS to build AI agents that...",
+      "traffic": "1 pts",
+      "source": "HN",
+      "url": "https://atg.science/careers"
+    },
+    {
+      "keyword": "Show HN: Isometric SF – A pixel-art map of the SF Bay Area",
+      "traffic": "144 pts",
+      "source": "HN",
+      "url": "https://isometricsf.com/"
+    },
+    {
+      "keyword": "Ctrl+C, Ctrl+v, Ctrl+cve: Bypassing Android's Clipboard R...",
+      "traffic": "65 pts",
+      "source": "HN",
+      "url": "https://toninoble.com/post/ctrlc-ctrlv-ctrlcve"
+    },
+    {
+      "keyword": "All US airports are currently ground stopped",
+      "traffic": "149 pts",
+      "source": "HN",
+      "url": "https://twitter.com/flightradar24/status/2121347654714077605"
+    },
+    {
+      "keyword": "A technical vision for the Haskell ecosystem",
+      "traffic": "174 pts",
+      "source": "HN",
+      "url": "https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078"
+    },
+    {
+      "keyword": "$11.4M in Nvidia hardware vanishes during shipment from C...",
+      "traffic": "276 pts",
+      "source": "HN",
+      "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas"
+    },
+    {
+      "keyword": "Minnesota guitarist's \"palmfrets\" invention strikes a new...",
+      "traffic": "128 pts",
+      "source": "HN",
+      "url": "https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord"
+    },
+    {
+      "keyword": "Weight Space Misfolding",
+      "traffic": "128 pts",
+      "source": "HN",
+      "url": "https://www.alphaxiv.org/abs/2611.weight-space-misfolding"
+    },
+    {
+      "keyword": "AI unlocks Gödel's notebooks, said to contain hundreds of...",
+      "traffic": "316 pts",
+      "source": "HN",
+      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths"
+    },
+    {
+      "keyword": "It Takes 16 Clicks for a Student to Open a PowerPoint on ...",
+      "traffic": "262 pts",
+      "source": "HN",
+      "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/"
+    },
+    {
+      "keyword": "Doc-foundry – AI writes Security detection rules, then pr...",
+      "traffic": "3 pts",
+      "source": "HN",
+      "url": "https://github.com/mjha-arya/DOC-foundry"
+    },
+    {
+      "keyword": "How Not to Build a Music Player",
+      "traffic": "8 pts",
+      "source": "HN",
+      "url": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player/"
+    },
+    {
+      "keyword": "Lonewolf 0.3 – A standalone XMPP server written in Rust",
+      "traffic": "126 pts",
+      "source": "HN",
+      "url": "https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0"
+    },
+    {
+      "keyword": "FAA issues nationwide ground stop due to \"extraordinary c...",
+      "traffic": "106 pts",
+      "source": "HN",
+      "url": "https://www.axios.com/2026/11/13/faa-nationwide-ground-stop"
+    },
+    {
+      "keyword": "CERN Built the Large Hadron Collider's Next-Gen Magnets",
+      "traffic": "71 pts",
+      "source": "HN",
+      "url": "https://spectrum.ieee.org/large-hadron-collider-superconducting-magnets"
+    },
+    {
+      "keyword": "US National Weather Service reports nationwide internet, ...",
+      "traffic": "27 pts",
+      "source": "HN",
+      "url": "https://www.reuters.com/technology/us-national-weather-service-reports-nationwide-internet-communications-issues-2026-11-13/"
+    },
+    {
+      "keyword": "Apify Security Incident",
+      "traffic": "86 pts",
+      "source": "HN",
+      "url": "https://status.apify.com/incidents/sxd1dj5j6749"
+    },
+    {
+      "keyword": "Lying to Zed to get its remote server running on FreeBSD",
+      "traffic": "3 pts",
+      "source": "HN",
+      "url": "https://hayzam.com/blog/03-lying-to-zeds-remote-editor/"
+    },
+    {
+      "keyword": "Microsoft outage gives customers a crash course in depend...",
+      "traffic": "122 pts",
+      "source": "HN",
+      "url": "https://www.theregister.com/saas/2026/11/13/microsoft-outage-gives-customers-a-crash-course-in-dependence-on-redmond/5309805"
+    },
+    {
+      "keyword": "Concurrent Shell Command Queues",
+      "traffic": "33 pts",
+      "source": "HN",
+      "url": "https://emmer.dev/blog/concurrent-shell-command-queues/"
+    },
+    {
+      "keyword": "OpenAI disbands its robotics team as its general models s...",
+      "traffic": "140 pts",
+      "source": "HN",
+      "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/"
+    },
+    {
+      "keyword": "Show HN: NETWAR – hacker MMO with 15-second card duels on...",
+      "traffic": "4 pts",
+      "source": "HN",
+      "url": "https://play-netwar.com/?from=hn"
+    },
+    {
+      "keyword": "Elevated errors on claude.ai, Claude Code, and platform.c...",
+      "traffic": "484 pts",
+      "source": "HN",
+      "url": "https://status.claude.com/incidents/nn11wk485zfn"
+    },
+    {
+      "keyword": "An open letter to the Nvidia Board of Directors",
+      "traffic": "17 pts",
+      "source": "HN",
+      "url": "https://standwithjensen.com/"
+    },
+    {
+      "keyword": "DeepSeek Ultrafast",
+      "traffic": "21 pts",
+      "source": "HN",
+      "url": "https://github.com/basetenlabs/deepseek-ultrafast"
+    },
+    {
+      "keyword": "Tell HN: Google Search to start locking down search behin...",
+      "traffic": "7 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=50491617"
+    },
+    {
+      "keyword": "LibreOffice actually works 365 days a year",
+      "traffic": "812 pts",
+      "source": "HN",
+      "url": "https://twitter.com/LibreOffice/status/2121205272479998268"
+    },
+    {
+      "keyword": "0.5B base model trained on 60B tokens rivals Qwen3.5-2B t...",
+      "traffic": "6 pts",
+      "source": "HN",
+      "url": "https://huggingface.co/ArsalanZ/Nenya-2.5B-A0.5B-Base"
+    },
+    {
+      "keyword": "Claude Meetings",
+      "traffic": "64 pts",
+      "source": "HN",
+      "url": "https://claude.com/resources/articles/claude-meetings"
+    },
+    {
+      "keyword": "Someone's Impersonating This Blog",
+      "traffic": "66 pts",
+      "source": "HN",
+      "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/"
+    },
+    {
+      "keyword": "Why is Google cutting off Search from AI-free schools? He...",
+      "traffic": "161 pts",
+      "source": "HN",
+      "url": "https://text.npr.org/nx-s1-6029408"
+    },
+    {
+      "keyword": "Technology as a Search Problem",
+      "traffic": "21 pts",
+      "source": "HN",
+      "url": "https://www.construction-physics.com/p/technology-as-a-search-problem"
+    },
+    {
+      "keyword": "Your room can be as bright as the outdoors (2019)",
+      "traffic": "12 pts",
+      "source": "HN",
+      "url": "https://www.benkuhn.net/lux/"
+    },
+    {
+      "keyword": "Agda v2.9.0",
+      "traffic": "9 pts",
+      "source": "HN",
+      "url": "https://github.com/agda/agda/releases/tag/v2.9.0"
+    },
+    {
+      "keyword": "Brazil's Caixa insurer breach exposes names and tax IDs o...",
+      "traffic": "161 pts",
+      "source": "HN",
+      "url": "https://filemanager-cdn.mziq.com/published/3972906b-e50b-4f74-ab74-4d0d32125d11/9567a559-d20a-486e-a7ae-5c6bbc030c5e"
+    },
+    {
+      "keyword": "The Dawn of the Data Intelligence Engineer",
+      "traffic": "137 pts",
+      "source": "HN",
+      "url": "https://motherduck.com/blog/the-data-intelligence-engineer/"
+    },
+    {
+      "keyword": "Starship Flight 15 live",
+      "traffic": "26 pts",
+      "source": "HN",
+      "url": "https://twitter.com/SpaceX/status/2121316300702056595"
+    },
+    {
+      "keyword": "AI is destroying the trust between writers and readers",
+      "traffic": "309 pts",
+      "source": "HN",
+      "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/"
+    }
+  ]
+}
