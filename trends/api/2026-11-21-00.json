@@ -1,0 +1,609 @@
+{
+  "timestamp": "2026-11-21-00",
+  "date": "2026-11-21",
+  "slot": "00",
+  "generated": "2026-11-21T01:00:14.426Z",
+  "count": 99,
+  "sources": [
+    "X",
+    "Wiki",
+    "TikTok",
+    "HN"
+  ],
+  "trends": [
+    {
+      "keyword": "Royce Lewis",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Royce%20Lewis"
+    },
+    {
+      "keyword": "Bobby Miller",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Bobby%20Miller"
+    },
+    {
+      "keyword": "Dodgers",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Dodgers"
+    },
+    {
+      "keyword": "Daniel Jones",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Daniel%20Jones"
+    },
+    {
+      "keyword": "Riemann",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Riemann"
+    },
+    {
+      "keyword": "Jonathan Rinderknecht",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Jonathan%20Rinderknecht"
+    },
+    {
+      "keyword": "Johan Oviedo",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Johan%20Oviedo"
+    },
+    {
+      "keyword": "Colts",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Colts"
+    },
+    {
+      "keyword": "Mets",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Mets"
+    },
+    {
+      "keyword": "Luis Gil",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Luis%20Gil"
+    },
+    {
+      "keyword": "Rikers",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Rikers"
+    },
+    {
+      "keyword": "Palisades Fire",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Palisades%20Fire"
+    },
+    {
+      "keyword": "Bayern",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Bayern"
+    },
+    {
+      "keyword": "Francisco Espinoza",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Francisco%20Espinoza"
+    },
+    {
+      "keyword": "transgender day of remembrance",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=transgender%20day%20of%20remembrance"
+    },
+    {
+      "keyword": "WhatsApp",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=WhatsApp"
+    },
+    {
+      "keyword": "Beer",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Beer"
+    },
+    {
+      "keyword": "Skubal",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Skubal"
+    },
+    {
+      "keyword": "Trumpcare",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Trumpcare"
+    },
+    {
+      "keyword": "David Fry",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=David%20Fry"
+    },
+    {
+      "keyword": "Lean",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Lean"
+    },
+    {
+      "keyword": "Fernando Cruz",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Fernando%20Cruz"
+    },
+    {
+      "keyword": "Inkling 2 Mini",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Inkling%202%20Mini"
+    },
+    {
+      "keyword": "The Nasdaq",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=The%20Nasdaq"
+    },
+    {
+      "keyword": "Twins",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Twins"
+    },
+    {
+      "keyword": "Halal",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Halal"
+    },
+    {
+      "keyword": "Muncy",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Muncy"
+    },
+    {
+      "keyword": "Vientos",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Vientos"
+    },
+    {
+      "keyword": "Puka",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Puka"
+    },
+    {
+      "keyword": "Moby",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Moby"
+    },
+    {
+      "keyword": "Shabbat Shalom",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Shabbat%20Shalom"
+    },
+    {
+      "keyword": "Seth Rogen",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Seth%20Rogen"
+    },
+    {
+      "keyword": "The President&#x27;s Own",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=The%20President%26%23x27%3Bs%20Own"
+    },
+    {
+      "keyword": "Troy Melton",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Troy%20Melton"
+    },
+    {
+      "keyword": "Third Rome",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Third%20Rome"
+    },
+    {
+      "keyword": "Buttons",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Buttons"
+    },
+    {
+      "keyword": "Happy Birthday Erika",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Happy%20Birthday%20Erika"
+    },
+    {
+      "keyword": "Thunderbolts",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Thunderbolts"
+    },
+    {
+      "keyword": "Vance and Rubio",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Vance%20and%20Rubio"
+    },
+    {
+      "keyword": "#ProtectNicki",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=%23ProtectNicki"
+    },
+    {
+      "keyword": "Thinking Machines",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Thinking%20Machines"
+    },
+    {
+      "keyword": "Olise",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Olise"
+    },
+    {
+      "keyword": "Al Nassr",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Al%20Nassr"
+    },
+    {
+      "keyword": "S&amp;P 500",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=S%26amp%3BP%20500"
+    },
+    {
+      "keyword": "zscaler",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=zscaler"
+    },
+    {
+      "keyword": "Achilles",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Achilles"
+    },
+    {
+      "keyword": "David Duke",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=David%20Duke"
+    },
+    {
+      "keyword": "Enron",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Enron"
+    },
+    {
+      "keyword": "Rod Carew",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Rod%20Carew"
+    },
+    {
+      "keyword": "Dioda",
+      "traffic": "🔥",
+      "source": "X",
+      "url": "https://x.com/search?q=Dioda"
+    },
+    {
+      "keyword": "Hurried Announcement: Alessandro Masullo GRH",
+      "traffic": "1491 pts",
+      "source": "HN",
+      "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/"
+    },
+    {
+      "keyword": "Levent Alpöge claims proof of the Generalized Riemann Hyp...",
+      "traffic": "2329 pts",
+      "source": "HN",
+      "url": "https://alpo.ge/remark.pdf"
+    },
+    {
+      "keyword": "Re: Riemann",
+      "traffic": "77 pts",
+      "source": "HN",
+      "url": "https://borretti.me/article/re-riemann"
+    },
+    {
+      "keyword": "NINLIVE: The Nine Inch Nails live archive",
+      "traffic": "93 pts",
+      "source": "HN",
+      "url": "https://ninlive.com/"
+    },
+    {
+      "keyword": "We promoted developers into architects without informing ...",
+      "traffic": "283 pts",
+      "source": "HN",
+      "url": "https://manidoraisamy.com/developer-to-architect.html"
+    },
+    {
+      "keyword": "Unforced Navier-Stokes Singularity and the Generalized Ri...",
+      "traffic": "327 pts",
+      "source": "HN",
+      "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/"
+    },
+    {
+      "keyword": "Sir Brian May adds new dimension to Hera asteroid",
+      "traffic": "27 pts",
+      "source": "HN",
+      "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/sir-brian-may-adds-new-dimension-to-hera-asteroid"
+    },
+    {
+      "keyword": "Language Models Can Rewrite Their Own Weights",
+      "traffic": "331 pts",
+      "source": "HN",
+      "url": "https://arxiv.org/abs/2611.21885"
+    },
+    {
+      "keyword": "DreamCoder: Coding harness and IDE from the author of Mas...",
+      "traffic": "93 pts",
+      "source": "HN",
+      "url": "https://www.masteringemacs.org/article/announcing-dreamcoder"
+    },
+    {
+      "keyword": "Finite-time blow-up for the Navier–Stokes equations",
+      "traffic": "257 pts",
+      "source": "HN",
+      "url": "https://github.com/tristanbuckmaster/navier-stokes/"
+    },
+    {
+      "keyword": "AI may have solved the most important problem in mathematics",
+      "traffic": "21 pts",
+      "source": "HN",
+      "url": "https://www.economist.com/science-and-technology/2026/11/20/ai-may-have-solved-the-most-important-problem-in-mathematics"
+    },
+    {
+      "keyword": "If you can't explain something in simple terms, you don't...",
+      "traffic": "618 pts",
+      "source": "HN",
+      "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it"
+    },
+    {
+      "keyword": "And yet, it moves",
+      "traffic": "75 pts",
+      "source": "HN",
+      "url": "https://signoregalilei.com/2026/11/20/and-yet-it-moves/"
+    },
+    {
+      "keyword": "Vibecoding an inference chip",
+      "traffic": "109 pts",
+      "source": "HN",
+      "url": "https://ankitg.me/blog/vibecoding-inference-chip/"
+    },
+    {
+      "keyword": "Winedroid – run Android apps without Android (WASM demo)",
+      "traffic": "94 pts",
+      "source": "HN",
+      "url": "https://winedroid.soham.sh/demo/"
+    },
+    {
+      "keyword": "Frostbite: A new CPU architecture discovered, designed an...",
+      "traffic": "618 pts",
+      "source": "HN",
+      "url": "https://architectlabs.com/blog/frostbite"
+    },
+    {
+      "keyword": "Signal Is Serious About Protecting Your Privacy",
+      "traffic": "501 pts",
+      "source": "HN",
+      "url": "https://signal.org/blog/protecting-your-privacy/"
+    },
+    {
+      "keyword": "The stochastic parrots have apparently proved the Riemann...",
+      "traffic": "203 pts",
+      "source": "HN",
+      "url": "https://scottaaronson.blog/?p=10344"
+    },
+    {
+      "keyword": "Valkey kills the skiplist, cuts sorted set overhead by up...",
+      "traffic": "7 pts",
+      "source": "HN",
+      "url": "https://valkey.io/blog/from-skiplist-to-b+tree/"
+    },
+    {
+      "keyword": "Nasdaq erases all 2026 gains",
+      "traffic": "110 pts",
+      "source": "HN",
+      "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
+    },
+    {
+      "keyword": "Nvidia accounting under SEC investigation, sources say",
+      "traffic": "216 pts",
+      "source": "HN",
+      "url": "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html"
+    },
+    {
+      "keyword": "Show HN: OpenComputer – an open source alternative to Devin",
+      "traffic": "56 pts",
+      "source": "HN",
+      "url": "https://github.com/diggerhq/opencomputer"
+    },
+    {
+      "keyword": "The Hungry Butler Effect: Concealed Commercial Incentives...",
+      "traffic": "11 pts",
+      "source": "HN",
+      "url": "https://www.researchgate.net/publication/418143113_The_Hungry_Butler_Effect_Concealed_Commercial_Incentives_and_the_Erosion_of_Epistemic_Rigour_in_Large_Language_Models"
+    },
+    {
+      "keyword": "I'm Peter Roberts, immigration attorney who does work for...",
+      "traffic": "93 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=50577613"
+    },
+    {
+      "keyword": "Replacing implicit optionals with a None type in TypeDB",
+      "traffic": "6 pts",
+      "source": "HN",
+      "url": "https://typedb.com/blog/replacing-implicit-optionals-with-a-none-type-in-typedb"
+    },
+    {
+      "keyword": "Show HN: I made an audio-to-MIDI model 60x more efficient",
+      "traffic": "230 pts",
+      "source": "HN",
+      "url": "https://kobi.music/research/dettato"
+    },
+    {
+      "keyword": "Show HN: An API for word timestamps from speech, 75% with...",
+      "traffic": "59 pts",
+      "source": "HN",
+      "url": "https://quebec.yarn.so"
+    },
+    {
+      "keyword": "Google Workers Tell Their Employer Not to Punish Schools ...",
+      "traffic": "258 pts",
+      "source": "HN",
+      "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/"
+    },
+    {
+      "keyword": "Microsoft announces Windows Server 2028 with hardened sec...",
+      "traffic": "69 pts",
+      "source": "HN",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/"
+    },
+    {
+      "keyword": "Running two PSP emulators on one Switch 2 and sharing one...",
+      "traffic": "52 pts",
+      "source": "HN",
+      "url": "https://github.com/XITRIX/ppsspp-nx2/blob/master/SWITCH2-GAMESHARE.md"
+    },
+    {
+      "keyword": "Uncontacted Indigenous people emerge from Amazon forest t...",
+      "traffic": "19 pts",
+      "source": "HN",
+      "url": "https://www.washingtonpost.com/world/2026/11/19/uncontacted-indigenous-people-emerge-amazon-forest-ask-food/"
+    },
+    {
+      "keyword": "Help github just deleted me",
+      "traffic": "48 pts",
+      "source": "HN",
+      "url": "https://nate.mecca1.net/posts/2026-11-20_help/"
+    },
+    {
+      "keyword": "Merkle Tree Certificates",
+      "traffic": "8 pts",
+      "source": "HN",
+      "url": "https://datatracker.ietf.org/doc/draft-ietf-plants-merkle-tree-certs/"
+    },
+    {
+      "keyword": "Floppy3.5: A portable 3.5-inch floppy WiFi NAS",
+      "traffic": "137 pts",
+      "source": "HN",
+      "url": "https://github.com/bigcrimping/floppy3.5"
+    },
+    {
+      "keyword": "The G1 Garbage Collector",
+      "traffic": "100 pts",
+      "source": "HN",
+      "url": "https://dev.java/learn/jvm/tool/garbage-collection/g1gc-overview/"
+    },
+    {
+      "keyword": "Reverse Engineering my cat's litter box",
+      "traffic": "22 pts",
+      "source": "HN",
+      "url": "https://master--ytulsiani.netlify.app/blog/furrytails/"
+    },
+    {
+      "keyword": "Slopstrap – Make your site look hastily vibecoded",
+      "traffic": "88 pts",
+      "source": "HN",
+      "url": "https://slopstrap.mikelacher.com/"
+    },
+    {
+      "keyword": "The Making of Oxygene",
+      "traffic": "193 pts",
+      "source": "HN",
+      "url": "https://jeanmicheljarre.com/aaa/the-making-of-oxygene"
+    },
+    {
+      "keyword": "PostgreSQL 19: A hands-on tour with runnable browser exam...",
+      "traffic": "41 pts",
+      "source": "HN",
+      "url": "https://certuvia.com/blog/postgres-19"
+    },
+    {
+      "keyword": "Why there are still no non-WebKit browsers on iOS",
+      "traffic": "329 pts",
+      "source": "HN",
+      "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/"
+    },
+    {
+      "keyword": "What people are building, discovered through new domains",
+      "traffic": "155 pts",
+      "source": "HN",
+      "url": "https://startups.novumsignals.com/"
+    },
+    {
+      "keyword": "AI is giving everyone the same advice",
+      "traffic": "50 pts",
+      "source": "HN",
+      "url": "https://a90.com/experiments/same-advice/"
+    },
+    {
+      "keyword": "LZ-RDO lands in ARM's astc-encoder",
+      "traffic": "16 pts",
+      "source": "HN",
+      "url": "https://www.jonolick.com/home/lz-rdo-lands-in-arms-astc-encoder"
+    },
+    {
+      "keyword": "Show HN: Fast deterministic natural language search for O...",
+      "traffic": "123 pts",
+      "source": "HN",
+      "url": "https://hippomaps.ch/?q=cafes+by+the+Limmat+100+m+from+the+lake+in+zurich#map=15.02/47.36708/8.54935"
+    },
+    {
+      "keyword": "I have been unemployed for 2y.15YOE,US.What to do?",
+      "traffic": "20 pts",
+      "source": "HN",
+      "url": "https://news.ycombinator.com/item?id=50583761"
+    },
+    {
+      "keyword": "Teskooano: A 3D N-body simulator in the browser",
+      "traffic": "18 pts",
+      "source": "HN",
+      "url": "https://teskooano.space/"
+    },
+    {
+      "keyword": "If you stop writing code, you also get worse at reviewing it",
+      "traffic": "321 pts",
+      "source": "HN",
+      "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/"
+    },
+    {
+      "keyword": "Carnival Cruises emits ten times more sulphur oxide than ...",
+      "traffic": "504 pts",
+      "source": "HN",
+      "url": "https://ecohustler.com/article/one-corporation-to-pollute-them-all/"
+    },
+    {
+      "keyword": "Claude solves two open problems in the physics of black h...",
+      "traffic": "552 pts",
+      "source": "HN",
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics"
+    }
+  ]
+}
